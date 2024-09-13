@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,29 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
-    <link rel="stylesheet" href="../front/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 
-    <script src="../front/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-    <h1>RPA Monitoring System-main</h1>
+    <div class="wrap">
+        <div class="gnb"> 
+            <nav id="navbar" class="navbarWrap">
+                <div class="navbar__logo">
+                    <a href="http://localhost:5080/" class="logo-text">
+                        <img src="../../assets/images/left_menu_m.png" alt="현대삼호" tabindex="1" class="navbar__logoimg">
+                        <h3 class="navbar__logo__tit">RPA Monitoring System</h3>
+                    </a>
+                </div>
+                <div class="navbar-wrap">
+                    <a href="http://localhost:5080/" id="url_btn_3" class="home__contact btn  btn-purple"> Main </a>
+                    <a href="http://localhost:5080/cu" id="url_btn_3" class="home__contact btn btn-sky"> WorkUser </a>
+                    <a href="http://localhost:5080/ds" id="url_btn_1" class="home__contact btn btn-bluePurple"> Dashboard </a>
+                    <a href="http://localhost:5080/mn" id="url_btn_2" class="home__contact btn btn-tea"> Management </a>
+                </div>
+            </nav>
+        </div>
+        <div class="contentsWrap"> contents</div>
+    </div>
 </body>
