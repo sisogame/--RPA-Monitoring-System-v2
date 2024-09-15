@@ -271,6 +271,7 @@ img {
 .card .col-h-1 {
     background-color: orange;
     flex: 1;
+    min-height:240px ;
 }
 
 
