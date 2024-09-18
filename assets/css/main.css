@@ -26,6 +26,7 @@ img {
     border-bottom: 1px solid #3C3C4A;
 
     padding: 0 15px;
+    z-index: 1;
 }
 
 .navbarWrap .navbar-logo {
@@ -211,6 +212,7 @@ img {
     display: flex;
     padding: 15px;
     gap: 15px;
+    flex-flow: nowrap;
 }
 
 .contentsWrap .con-left {
@@ -369,7 +371,7 @@ table.notice tbody tr td.date {
 
 
 /* /////////////  Fixed Table ///////////// */
-/* 
+
 .table100-head th {
     padding-top: 18px;
     padding-bottom: 18px
@@ -431,16 +433,17 @@ table.notice tbody tr td.date {
 }
 
 .table100.ver1 .ps__rail-y::before {
-    background-color: #ebebeb
+    background-color: #ebebeb;
+   
 }
 
 .table100.ver1 .ps__rail-y .ps__thumb-y::before {
-    background-color: #ccc
+    background-color: #ccc;
 }
 
 .js-pscroll {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .table100 .ps__rail-y {
@@ -479,7 +482,163 @@ table.notice tbody tr td.date {
     height: calc(100% - 30px);
     left: 0;
     top: 15px
-} */
+} 
+
+.table100 .ps__rail-x {
+    z-index: 1010;
+    height: 6px;
+    background-color: transparent;
+    opacity: 1 !important;
+    bottom: 10px
+}
+
+.table100 .ps__rail-x::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: calc(100% - 30px);
+    left: 15px;
+    top: 0
+}
+
+.table100 .ps__rail-x .ps__thumb-x {
+    height: 100%;
+    bottom: 0;
+    background-color: transparent;
+    opacity: 1 !important
+}
+
+.table100 .ps__rail-x .ps__thumb-x::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #b3b3b3;
+    height: 100%;
+    width: calc(100% - 30px);
+    top: 0;
+    left: 15px
+}
+
+/*  */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.primary {
+    overflow: auto;
+    scroll-snap-type: both mandatory;
+    height: 80vh;
+}
+
+.primary table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+.primary th,
+.primary td {
+    border: 1px solid #aaa;
+    background-clip: padding-box;
+    scroll-snap-align: start;
+}
+
+.primary tbody tr:last-child th,
+.primary tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.primary thead {
+    z-index: 1000;
+    position: relative;
+}
+
+.primary th,
+.primary td {
+    padding: 0.6rem;
+    min-width: 6rem;
+    text-align: left;
+    margin: 0;
+}
+
+.primary thead th {
+    position: sticky;
+    top: 0;
+    border-top: 0;
+    background-clip: padding-box;
+}
+
+.primary thead th.pin {
+    left: 0;
+    z-index: 1001;
+    border-left: 0;
+}
+
+.primary tbody th {
+    background-clip: padding-box;
+    border-left: 0;
+}
+
+.primary tbody {
+    z-index: 10;
+    position: relative;
+}
+
+.primary tbody th {
+    position: sticky;
+    left: 0;
+}
+
+.primary thead th,
+.primary tbody th {
+    background-color: #f8f8f8;
+}
 /* +++++++++++++++++++++++++++++ component [e] +++++++++++++++++++++++++++++ */
 
 
