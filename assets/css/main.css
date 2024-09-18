@@ -532,6 +532,8 @@ table.notice tbody tr td.date {
 #customers th {
     border: 1px solid #ddd;
     padding: 8px;
+    height: 40px;
+    max-height: 40px;min-height: 40px;
 }
 
 #customers tr:nth-child(even) {
