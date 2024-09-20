@@ -63,7 +63,13 @@ figcaption { margin: 0; padding: 0; }
 
 html,   body { width: 100%; } 
 
-body { height: 100%; min-width: 820px; background-color: #202636; } 
+body {
+    height: 100%;
+    /* min-width: 1600px; */
+    overflow: hidden;
+    background-color: #202636;
+    
+}
 
 select,
 input,
@@ -152,3 +158,5 @@ button:focus { outline: none; }
 /* disabled */
 select:disabled,
 input:disabled { border: 1px solid #CACACA; color: #969696 !important; -webkit-text-fill-color: rgba(150, 150, 150, 1) !important; -webkit-appearance: block; background: #F9F9F9 url(../images/icon_select_disabled.png) no-repeat center right 10px; } 
+
+
