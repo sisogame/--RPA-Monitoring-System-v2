@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/main-v2.css" />
 
-    <script src="../../assets/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 
     <script src="../../assets/js/ui.js"></script>
-
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         <div class="navbarWrap">
             <div class="navbar-logo">
                 <a href="#" class="logo-text">
-                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" tabindex="1" class="navbar-logo-img">
+                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고"  class="navbar-logo-img">
                     <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
                 </a>
             </div>
@@ -33,7 +35,7 @@
                     <li><a href="#" class="gnb-list btn btn-purple active"> Main </a></li>
                     <li><a href="#" class="gnb-list btn btn-sky"> WorkUser </a></li>
                     <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
-                    <li class="mlf_auto"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" tabindex="1" class="icon ico_cog"></a></li>
+                    <li class="mlf_auto"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog"  class="icon ico_cog"></a></li>
                 </ul>
             </nav>
         </div>
@@ -43,46 +45,64 @@
                     <li class="col-w-1">
                         <div class="tableWrap">
                             <table class="notice">
-                                <colgroup>
-                                    <col>
-                                    <col style="width: 120px;">
-                                </colgroup>
                                 <thead>
                                     <tr class="table-head rounded-corners">
-                                        <th colspan="2">
+                                        <th >
                                             <div class="titleWrap">
                                                 <h3 class="tit_head">공지사항</h3>
-                                                <a href="#" class="btn_dock"></a>
+                                                <a href="#" class="btn_arrow"></a>
                                             </div>
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="border-t -pl-20 ico_accent">
-                                            <!-- <img src="../../assets/images/icon_important.svg" alt="icon-important"> -->
-                                            신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#pop-search01" class="flex-sb-c pop-open">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open" >
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요C</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -91,108 +111,109 @@
                     <li class="col-w-1">
                         <div class="tableWrap">
                             <table class="notice">
-                                <colgroup>
-                                    <col>
-                                    <col style="width: 120px;">
-                                </colgroup>
                                 <thead>
                                     <tr class="table-head rounded-corners">
-                                        <th colspan="2">
+                                        <th>
                                             <div class="titleWrap">
                                                 <h3 class="tit_head">FAQ</h3>
-                                                <a href="#" class="btn_dock"></a>
+                                                <a href="#" class="btn_arrow"></a>
                                             </div>
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="border-t -pl-20 ico_accent">신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#pop-search02" class="flex-sb-c  pop-open">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">신규디자인 적용</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="border-t -pl-20">설계부문 참고하세…</td>
-                                        <td class="border-t date">24-09-01</td>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c pop-open">
+                                                <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요C</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </li>
                     <li class="col-w-1">
-                       <div style="display: flex;flex-direction: column;">
-                            <div style="height: 40px; color: #fff; line-height: 2.5;">
+                       <div class="flex-col">
+                            <div class="tit-header-wrap">
                                 <div class="titleWrap">
                                     <h3 class="tit_head">수행현황</h3>
-                                    <a href="#" class="btn_dock"></a>
+                                    <a href="#" class="btn_dock  show"></a>
                                 </div>
                             </div>
-                            
-                            <div style="display: flex;justify-content: center; align-items: center;height: 240px; background-color: #202634;     border-top: 3px solid #56566a;">
-                                <img src="../../assets/images/dummy_img01_edit.png" alt="dummy_img01" style="
-                                max-height: 230px; width: auto;">
+
+                            <div class="img-fx-wrap">
+                                <img src="../../assets/images/dummy_img01_edit.png" alt="dummy_img01" class="dummy_img01">
                             </div>
                        </div>
                     </li>
                 </ul>
                 <ul class="card card-box-bottom  -mt-10">
 
-                    <div class="table-test" style="
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    background-color: #161B2F;
-                    padding: 10px;
-                    border-radius: 6px;
-                    justify-content: space-between;
-                    height: 100%;
-                ">
+                    <div class="tableFixHead-con">
                         <div class="titleWrap">
                             <h3 class="tit_head">과제별대기순서표</h3>
-                            <a href="#" class="btn_dock"></a>
+                            <a href="#" class="btn_arrow"></a>
                         </div>
-                        <div class="" style="
-                        /* border-top-right-radius: 6px; border-top-left-radius: 6px;   */
-                        height: 100%; overflow: hidden;">
-
-                            <div class="table-scroll" style="overflow: auto;max-height: 460px;width: 100%;position: relative;  overflow-y: auto;  direction: ltr;  
-                            /* scrollbar-color: #d4aa70 #e4e4e4; 
-                             scrollbar-width: thin;  */
-                             min-height: 460px; ">
-                                <table id="customers" style="border-collapse: separate;
-	border-spacing: 0;width: 100%;min-width: 100vw;
-                                max-height: 460px; 
-                                ">
-                                    <thead style="position: sticky;top: 0;">
+                        <div class="tableFixHead-inner -mt-10">
+                            <div class="table-scroll" >
+                                <table class="fix-table">
+                                    <thead>
                                         <tr>
-                                            <th>Company</th>
-                                            <th>Contact</th>
-                                            <th>Country</th>
-                                            <th>Company</th>
-                                            <th>Company</th>
-                                            <th>Contact</th>
-                                            <th>Contact</th>
-                                            <th>Country</th>
-                                            <th>Country</th>
+                                            <th>No</th>
+                                            <th>과제명</th>
+                                            <th>봇(BOT)</th>
+                                            <th>수행목록</th>
+                                            <th>개발자</th>
+                                            <th>다음 작업시간</th>
+                                            <th>종료일자</th>
+                                            <th>배포일자</th>
+                                            <th>상태</th>
                                         </tr>
                                     </thead>
 
-                                    <tbody style="overflow: auto;">
+                                    <tbody>
                                         <tr>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
@@ -366,32 +387,128 @@
 
                         </div>
                     </div>
-
-
-
                 </ul>
             </div>
             <div class="con-right">
                 <ul class="card card-box-column  -mt-0">
                     <li class="col-h-1">
-                        <div style="display: flex;justify-content: center; align-items: center;height: 100%; background-color: #202634; ">
-                            <img src="../../assets/images/dummy_img02_edit.png" alt="dummy_img02">
+                        <div class="flex-col">
+                            <div class="tit-header-wrap">
+                                <div class="titleWrap">
+                                    <h3 class="tit_head">절감금액</h3>
+                                    <a href="#" class="btn_dock pop-open"></a>
+                                </div>
+                            </div>
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img02_edit.png" alt="dummy_img02">
+                            </div>
                         </div>
                     </li>
                     <li class="col-h-1">
-                        <div style="display: flex;justify-content: center; align-items: center;height: 100%; background-color: #202634; ">
-                            <img src="../../assets/images/dummy_img03_edit.png" alt="dummy_img03">
+                        <div class="flex-col">
+                            <div class="tit-header-wrap">
+                                <div class="titleWrap">
+                                    <h3 class="tit_head">과제별 절감 TOP5</h3>
+                                    <a href="#" class="btn_dock"></a>
+                                </div>
+                            </div>
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img03_edit.png" alt="dummy_img03">
+                            </div>
                         </div>
                     </li>
                     <li class="col-h-1">
-                        <div style="display: flex;justify-content: center; align-items: center;height: 100%; background-color: #202634; ">
-                            <img src="../../assets/images/dummy_img04_edit.png" alt="dummy_img04">
+                        <div class="flex-col">
+                            <div class="tit-header-wrap">
+                                <div class="titleWrap">
+                                    <h3 class="tit_head">RPA 절감시간</h3>
+                                    <a href="#" class="btn_dock"></a>
+                                </div>
+                            </div>
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img04_edit.png" alt="dummy_img04">
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
+
+
+<!-- pop[S] -->
+<div id="pop-search01" class="pop-wrap" style="display:;">
+    <div id="draggable" class="pop-inner pop-lg">
+        <div class="pop-tit">
+            Title1
+            <a href="#" onclick="closeLayer('pop-search01')" class="close pop-close-btn"></a>
+        </div>
+        <div class="pop-con">
+            contents
+        </div>
+        <div class="pop-btnBottomArea">
+            <a href="#" onclick="closeLayer('pop-search01')" class="btn-md01 btn-primary close">확인</a>
+        </div>
+    </div>
+</div>
+<!-- // pop-search -->
+
+<!-- pop[S] -->
+<div id="pop-search02" class="pop-wrap" style="display:;">
+    <div id="draggable02" class="pop-inner pop-lg" style=" border: 5px solid red; ">
+        <div class="pop-tit">
+            Title2
+            <a href="#" onclick="closeLayer('pop-search02')" class="close pop-close-btn"></a>
+        </div>
+        <div class="pop-con">
+            contents
+        </div>
+        <div class="pop-btnBottomArea">
+            <a href="#" onclick="closeLayer('pop-search02')" class="btn-md01 btn-primary close">확인</a>
+        </div>
+    </div>
+</div>
+<!-- // pop-search -->
+
+<!-- show modal -->
+
+<!-- basic modal -->
+<!-- <div id="modal-01" class="modal modal-01">
+    <div class="modal-wrapper">
+        <div class="modal-overlay close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Modal Title</div>
+                <div class="close modal-close">&times;</div>
+            </div>
+            <div class="modal-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquam possimus officiis deleniti.
+                <br>
+                voluptatibus odio voluptas commodi ea aliquid, quasi veritatis dolor expedita et nostrum eum amet.
+            </div>
+            <div class="modal-action">
+                <a href="" class="close">Close</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div id="modal-02" class="modal modal-02">
+    <div class="modal-wrapper">
+        <div class="modal-overlay close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Modal Title2222</div>
+                <div class="close modal-close">&times;</div>
+            </div>
+            <div class="modal-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquam possimus officiis deleniti.
+                <br>
+                voluptatibus odio voluptas commodi ea aliquid, quasi veritatis dolor expedita et nostrum eum amet.
+            </div>
+            <div class="modal-action">
+                <a href="" class="close">Close</a>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 
 
