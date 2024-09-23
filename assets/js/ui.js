@@ -64,4 +64,5 @@ function closeLayer(IdName) {
 $(function () {
     $("#draggable").draggable();
     $("#draggable02").draggable();
+    $("#draggable03").draggable();
 });

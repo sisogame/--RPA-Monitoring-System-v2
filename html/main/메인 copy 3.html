@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../assets/css/main-v2.css" />
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
-   
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 
@@ -25,7 +25,7 @@
         <div class="navbarWrap">
             <div class="navbar-logo">
                 <a href="#" class="logo-text">
-                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고"  class="navbar-logo-img">
+                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" class="navbar-logo-img">
                     <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
                 </a>
             </div>
@@ -35,11 +35,11 @@
                     <li><a href="#" class="gnb-list btn btn-purple active"> Main </a></li>
                     <li><a href="#" class="gnb-list btn btn-sky"> WorkUser </a></li>
                     <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
-                    <li class="mlf_auto"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog"  class="icon ico_cog"></a></li>
+                    <li class="mlf_auto"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
                 </ul>
             </nav>
         </div>
-        <div class="contentsWrap">
+        <div class="contentsWrap" style="height: 100%;">
             <div class="con-left">
                 <ul class="card card-box-top -mt-0" style="height: 300px;">
                     <li class="col-w-1">
@@ -47,7 +47,7 @@
                             <table class="notice">
                                 <thead>
                                     <tr class="table-head rounded-corners">
-                                        <th >
+                                        <th>
                                             <div class="titleWrap">
                                                 <h3 class="tit_head">공지사항</h3>
                                                 <a href="#" class="btn_arrow"></a>
@@ -66,7 +66,7 @@
                                     </tr>
                                     <tr id="row-1">
                                         <td class="border-t -pl-pr-10">
-                                            <a href="#" class="flex-sb-c pop-open" >
+                                            <a href="#" class="flex-sb-c pop-open">
                                                 <span class="notice-title">설계부문 참고하세요 설계부문 참고하세요 설계부문 참고하세요</span>
                                                 <span class="date">24-09-01</span>
                                             </a>
@@ -175,18 +175,18 @@
                         </div>
                     </li>
                     <li class="col-w-1">
-                       <div class="flex-col">
+                        <div class="flex-col">
                             <div class="tit-header-wrap">
                                 <div class="titleWrap">
                                     <h3 class="tit_head">수행현황</h3>
-                                    <a href="#" class="btn_dock  show"></a>
+                                    <a href="#pop-search03" class="btn_dock  pop-open"></a>
                                 </div>
                             </div>
 
                             <div class="img-fx-wrap">
-                                <img src="../../assets/images/dummy_img01_edit.png" alt="dummy_img01" class="dummy_img01">
+                                <img src="../../assets/images/dummy_img01_edit.png" alt="dummy_img01" class="dummy_img-sm">
                             </div>
-                       </div>
+                        </div>
                     </li>
                 </ul>
                 <ul class="card card-box-bottom  -mt-10">
@@ -197,7 +197,7 @@
                             <a href="#" class="btn_arrow"></a>
                         </div>
                         <div class="tableFixHead-inner -mt-10">
-                            <div class="table-scroll" >
+                            <div class="table-scroll">
                                 <table class="fix-table">
                                     <thead>
                                         <tr>
@@ -396,10 +396,10 @@
                             <div class="tit-header-wrap">
                                 <div class="titleWrap">
                                     <h3 class="tit_head">절감금액</h3>
-                                    <a href="#" class="btn_dock pop-open"></a>
+                                    <a href="#pop-search04" class="btn_dock pop-open"></a>
                                 </div>
                             </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img02_edit.png" alt="dummy_img02">
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img02_edit.png" alt="dummy_img02" class="dummy_img-md">
                             </div>
                         </div>
                     </li>
@@ -411,7 +411,7 @@
                                     <a href="#" class="btn_dock"></a>
                                 </div>
                             </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img03_edit.png" alt="dummy_img03">
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img03_edit.png" alt="dummy_img03" class="dummy_img-md">
                             </div>
                         </div>
                     </li>
@@ -423,7 +423,7 @@
                                     <a href="#" class="btn_dock"></a>
                                 </div>
                             </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img04_edit.png" alt="dummy_img04">
+                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img04_edit.png" alt="dummy_img04" class="dummy_img-md">
                             </div>
                         </div>
                     </li>
@@ -434,81 +434,69 @@
 
 
 
-<!-- pop[S] -->
-<div id="pop-search01" class="pop-wrap" style="display:;">
-    <div id="draggable" class="pop-inner pop-lg">
-        <div class="pop-tit">
-            Title1
-            <a href="#" onclick="closeLayer('pop-search01')" class="close pop-close-btn"></a>
-        </div>
-        <div class="pop-con">
-            contents
-        </div>
-        <div class="pop-btnBottomArea">
-            <a href="#" onclick="closeLayer('pop-search01')" class="btn-md01 btn-primary close">확인</a>
-        </div>
-    </div>
-</div>
-<!-- // pop-search -->
+    <!-- pop[S] -->
 
-<!-- pop[S] -->
-<div id="pop-search02" class="pop-wrap" style="display:;">
-    <div id="draggable02" class="pop-inner pop-lg" style=" border: 5px solid red; ">
-        <div class="pop-tit">
-            Title2
-            <a href="#" onclick="closeLayer('pop-search02')" class="close pop-close-btn"></a>
-        </div>
-        <div class="pop-con">
-            contents
-        </div>
-        <div class="pop-btnBottomArea">
-            <a href="#" onclick="closeLayer('pop-search02')" class="btn-md01 btn-primary close">확인</a>
-        </div>
-    </div>
-</div>
-<!-- // pop-search -->
+    <div id="pop-search01" class="pop-overlay" style="display: ;">
+        <div id="draggable" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-lg">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">
+                        공지사항
+                        <a href="#" onclick="closeLayer('pop-search02')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content" style="height: 200px;">
+                        /////////// contents table area ///////////
+                    </li>
 
-<!-- show modal -->
+                    <li class="pop-btnBottomArea">
+                        <a href="#" onclick="closeLayer('pop-search02')" class="btn-md01 btn-primary close">확인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // pop-search -->
 
-<!-- basic modal -->
-<!-- <div id="modal-01" class="modal modal-01">
-    <div class="modal-wrapper">
-        <div class="modal-overlay close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title">Modal Title</div>
-                <div class="close modal-close">&times;</div>
-            </div>
-            <div class="modal-body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquam possimus officiis deleniti.
-                <br>
-                voluptatibus odio voluptas commodi ea aliquid, quasi veritatis dolor expedita et nostrum eum amet.
-            </div>
-            <div class="modal-action">
-                <a href="" class="close">Close</a>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- <div id="modal-02" class="modal modal-02">
-    <div class="modal-wrapper">
-        <div class="modal-overlay close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title">Modal Title2222</div>
-                <div class="close modal-close">&times;</div>
-            </div>
-            <div class="modal-body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquam possimus officiis deleniti.
-                <br>
-                voluptatibus odio voluptas commodi ea aliquid, quasi veritatis dolor expedita et nostrum eum amet.
-            </div>
-            <div class="modal-action">
-                <a href="" class="close">Close</a>
+    <!-- pop[S] -->
+    <div id="pop-search02" class="pop-overlay" style="display:;">
+        <div id="draggable02" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-lg">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">
+                        FAQ
+                        <a href="#" onclick="closeLayer('pop-search02')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content" style="height: 200px;">
+                        /////////// contents table area ///////////
+                    </li>
+
+                    <li class="pop-btnBottomArea">
+                        <a href="#" onclick="closeLayer('pop-search02')" class="btn-md01 btn-primary close">확인</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-</div> -->
+    <!-- // pop-search -->
+    <!-- pop[S] -->
+    <div id="pop-search03" class="pop-overlay" style="display:;">
+        <div id="draggable03" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-lg">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">수행현황
+                        <a href="#" onclick="closeLayer('pop-search03')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content"><img src="../../assets/images/dummy_img05_edit.png" alt="dummy_img05" class=""></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // pop-search -->
+
+    <!-- show modal -->
+
+
 
 
 
