@@ -2,8 +2,4 @@
 
 @import url('reset.css'); 
 @import url('font.css'); 
-@import url('main.css');
-/* @import url('perfect-scrollbar.css'); */
-
-/* @import url('dataTables.dataTables.css');
-@import url('fixedHeader.dataTables.css'); */
+@import url('ui.css');

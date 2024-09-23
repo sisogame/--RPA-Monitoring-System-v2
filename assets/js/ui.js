@@ -17,8 +17,6 @@ $(document).ready(function () {
             });
         });
 
-
-
 });
 
 //팝업
@@ -26,6 +24,8 @@ $(function () {
     var target = document.querySelectorAll('.pop-open');
     var btnPopClose01 = document.querySelectorAll('.pop-close01');
     var btnPopClose02 = document.querySelectorAll('.pop-close02');
+    var btnPopClose03 = document.querySelectorAll('.pop-close03');
+    var btnPopClose04 = document.querySelectorAll('.pop-close04');
     var targetID;
 
     // 팝업 열기
@@ -35,7 +35,6 @@ $(function () {
             document.querySelector(targetID).style.display = 'block';
         });
     }
-
 
 });
 
@@ -50,19 +49,13 @@ function closeLayer(IdName) {
 
 }
 
-
-// $(function () {
-// let $modal = $("#pop-search01");
-// $modal.draggable({
-//     handle: ".modal-header",
-// });
-//     $modal.resizable();
-
-// });
-
+//팝업 드레그
 
 $(function () {
     $("#draggable").draggable();
     $("#draggable02").draggable();
     $("#draggable03").draggable();
+    $("#draggable04").draggable();
+    $("#draggable05").draggable();
+    $("#draggable06").draggable();
 });
