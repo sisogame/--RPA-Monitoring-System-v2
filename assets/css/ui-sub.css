@@ -176,3 +176,8 @@
 }
 
 /* 20240724 [e] */
+
+
+/* ////////////// Forms - search area ////////////// */
+
+.-search{display: flex;flex-wrap: wrap; padding: 20px; font-size: 14px;border-radius: 10px; border: 1px solid red;background-color: #202636;color: #fff;}
