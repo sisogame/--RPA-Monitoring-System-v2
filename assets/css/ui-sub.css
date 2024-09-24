@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+.sub-contentsWrap {
+    background-color: transparent;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    padding: 0;
+    flex-flow: nowrap;
+}
+
+.fixed-sidebar-left {
+    background-color: #202636;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #3c3c4a;
+}
+
+.fixed-sidebar-right {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: lightblue;
+    margin-left: 150px;
+    padding: 15px;
+    min-width: 1080px;
+    background: #202636;
+}
+
+
+/* left menu */
+.left-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-nav {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/* 20240724 [s] */
+
+
+.btn-nav {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom:1px solid #3c3c4a;
+}
+
+.btn-nav a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+}
+.btn-nav a.st2 {
+    display: block;
+    padding: 0px 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-nav a.st2.on {
+    color: #cb4432;
+    background: #fff;
+    font-weight: 700;
+}
+
+.btn-nav a.st2 p{position: relative;}
+
+.btn-nav a.st2>p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    left: 0;
+    width: 20px;
+    height: 18px;
+}
+
+.btn-nav a.st2.active>p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 18px;
+}
+
+.btn-nav a.st2>p.ico-01::before {
+    background: url('../images/icon_028.png') no-repeat center center/ 20px 18px;
+}
+
+
+
+/* nav-menu hover effect */
+.btn-nav .circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 80%;
+    background: #7699bd;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+.btn-nav .st2 {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+.btn-nav:hover .circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
+
+.btn-nav:hover .st2 {
+    color: #fff;
+}
+
+.al_bottom {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.al_bottom .circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 80%;
+    background: #000;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+.al_bottom .logout {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+.al_bottom:hover .circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
+
+.al_bottom:hover a {
+    color: #fff !important;
+}
+
+/* 20240724 [e] */
