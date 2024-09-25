@@ -57,7 +57,7 @@
                         <a rel="Home" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_028.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">Home</span>
+                                <span class="textColor">Home</span>
                             </div>
                         </a>
                     </li>
@@ -65,7 +65,7 @@
                         <a rel="대기" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_023.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">대기</span>
+                                <span class="textColor">대기</span>
                             </div>
                         </a>
                     </li>
@@ -73,7 +73,7 @@
                         <a rel="동작" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_024.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">동작</span>
+                                <span class="textColor -mt-5">동작</span>
                             </div>
                         </a>
                     </li>
@@ -81,7 +81,7 @@
                         <a rel="작업" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_016.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">작업</span>
+                                <span class="textColor -mt-5">작업</span>
                             </div>
                         </a>
                     </li>
@@ -89,7 +89,7 @@
                         <a rel="공지" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_020.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">공지</span>
+                                <span class="textColor -mt-5">공지</span>
                             </div>
                         </a>
                     </li>
@@ -97,7 +97,7 @@
                         <a rel="FAQ" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_021.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">FAQ</span>
+                                <span class="textColor -mt-5">FAQ</span>
                             </div>
                         </a>
                     </li>
@@ -105,7 +105,14 @@
                         <a rel="과제" href="#" class="ripple st2">
                             <div class="flex-fd-c">
                                 <img src="../../assets/images/icon_022.png" class="menu-img">
-                                <span class="textColor" style="font-size: 14px; margin-top: 10px;">과제</span>
+                                <span class="textColor -mt-5">과제</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="로그아웃" href="#" class="ripple st2">
+                            <div class="flex-fd-c">
+                                <span class="textColor">로그아웃</span>
                             </div>
                         </a>
                     </li>
@@ -113,9 +120,9 @@
             </div>
             <div class="fixed-sidebar-right">
                 <div class="-search">
-                   <div style="width: 100%; background-color: lightblue;">
+                   <div style="width: 100%;">
                         <ul style="display: flex; gap: 20px;">
-                            <li>
+                            <li class="forms">
                                 <label class="label" for="유형구분">유형구분</label>
                                 <select>
                                     <option value="" selected="selected">--유형구분 전체--</option>
@@ -123,26 +130,23 @@
                                     <option value="">중요</option>
                                 </select>
                             </li>
-                            <li>
+                            <li class="forms">
                                 <label class="label" for="유형구분">등록일</label>
                                 <div class="calendar">
-                                    <input type="text" id="startDate" autocomplete="off" placeholder="2022/07/12 00:00" class="input-line input-calendar">
-                                    <em class="entiti-tilde">~</em>
-                                    <input type="text" id="endDate" autocomplete="off" placeholder="2022/07/13 24:00" class="input-line input-calendar">
-                                    <a href="#" class="btn-md02 btn-primary">조회</a>
+                                    <input type="text" id="startDate" autocomplete="off" placeholder="2022/07/12" class="input-line input-calendar">
+                                    <em class="entiti-tilde"></em>
+                                    <input type="text" id="endDate" autocomplete="off" placeholder="2022/07/13" class="input-line input-calendar">
                                 </div>
                             </li>
-                            <li>
+                            <li  class="forms">
                                 <label class="label" for="검색키워드">검색키워드</label>
                                 <select>
                                     <option value="" selected="selected">--검색키워드 전체--</option>
                                     <option value="">일반</option>
                                     <option value="">중요</option>
                                 </select>
-                                <input type="text" class="hg46" placeholder="키워드 검색
+                                <input type="text" class="input hg46" placeholder="키워드 검색
                                 ">
-                               
-                                
                             </li>
                             <li>
                               

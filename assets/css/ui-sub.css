@@ -105,7 +105,11 @@
 .btn-nav a.st2>p.ico-01::before {
     background: url('../images/icon_028.png') no-repeat center center/ 20px 18px;
 }
-
+.btn-nav .textColor {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+}
 
 /* nav-menu hover effect */
 
@@ -155,7 +159,6 @@
     padding: 20px;
     font-size: 14px;
     border-radius: 10px;
-    border: 1px solid red;
     background-color: #202636;
     color: #fff;
     padding: 20px;
@@ -166,33 +169,38 @@
     display: flex;
     height: 40px;
     align-items: center;
+    gap: 16px;
 }
 
-.label {
+/* .label {
     margin-right: 16px;
-}
-em {
-    width: 52px;
-    height: 52px;
-    line-height: 52px;
+} */
+/* em {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-}
-.entiti-tilde::after {
+} */
+em.entiti-tilde::after {
     content: ' \007E';
     font-size: 20px;
-
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
 }
 
 
 .-search select {
-    background: #FFFFFF url(../images/icon_select.png) no-repeat center right 10px;
-    padding: 0 2rem 0 1.5rem;
-    min-width: 80px;
-height: 40px;}
+    background: #202636 url('../images/icon_select.png') no-repeat center right 10px;
+    padding: 0 20px 0 15px;
+    min-width: 160px;
+    height: 40px;
+}
 
 .-search .input {
-    width: 32.5rem;
-    margin-right: 2rem;
+    width: 250px;
 }
 
 .-search .date_picker {
@@ -200,40 +208,49 @@ height: 40px;}
     margin-top: 1rem;
     height: 40px;
     line-height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #CACACA;
+    background: #202636;
+    border: 1px solid #555;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
 }
 
+
+.-table {
+    height: calc(100% - 80px - 20px);
+}
+.-table .table-scroll{max-height: 580px;}
+
+
 /* datepicker */
 .calendar {
     display: flex;
     justify-content: space-between;
 }
-.calendar input {
+
+/* .calendar input {
     width: 276px;
-}
+} */
 
 input.input-line {
-    height: 52px;
-    line-height: 52px;
-    font-size: 18px;
-    color: #111;
-    border: 1px solid #BFBFBF;
-    background: #fff;
-    border-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #ff0000;
+    border: 1px solid #555;
+    background: #202636;
+    border-radius: 5px;
 }
 
 
-input.input-line:hover, input.input-line:focus, input.input-line.focus {
-    height: 52px;
-    line-height: 52px;
-    border: 2px solid #4F4694;
-    border-radius: 10px;
-    text-indent: 19px;
+input.input-line:hover,
+input.input-line:focus,
+input.input-line.focus {
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 
@@ -242,7 +259,9 @@ input.input-calendar {
     z-index: 10;
     background-position: right 20px center
 }
-input.input-calendar:hover, input.input-calendar:focus {
+
+input.input-calendar:hover,
+input.input-calendar:focus {
     background-position: right 19px center
 }
 
@@ -268,12 +287,57 @@ input.input-calendar:hover, input.input-calendar:focus {
     line-height: 46px
 }
 
-.btn-line02, a.btn-line02 {
+.btn-line02,
+a.btn-line02 {
     border: 2px solid #4A418B;
     background: #fff;
     color: #4A418B;
     padding: 0 25px
 }
 
-.btn-primary, a.btn-primary { background-color: #4F4694; color: #fff}
-.btn-primary:hover, a.btn-primary:hover { background-color: #413a7a}
+.btn-primary,
+a.btn-primary {
+    background-color: #4F4694;
+    color: #fff
+}
+
+.btn-primary:hover,
+a.btn-primary:hover {
+    background-color: #413a7a
+}
+
+/* button */
+.btn-sm,
+.btn-xs,
+.btn-md01,
+.btn-md02,
+.btn-md,
+.btn-lg,
+.btn-xl,
+.mainVsl-btn {
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer
+}
+
+.btn-md {
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 400
+}
+
+
+
+.input-search a {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: url("../../static/images/search_icon02.png") no-repeat;
+    z-index: 10
+}
