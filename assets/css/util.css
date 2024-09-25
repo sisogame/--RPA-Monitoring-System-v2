@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* +++++++++++++++++++++++++++++ util [s] +++++++++++++++++++++++++++++ */
+
+
+/*[ width ]
+///////////////////////////////////////////////////////////
+*/
+.-w100 {
+    width: 100% !important;
+}
+
+.-w100-h100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/*[ height ]
+///////////////////////////////////////////////////////////
+*/
+.-h100 {
+    height: 100% !important;
+}
+
+/*[ PADDING ]
+///////////////////////////////////////////////////////////
+*/
+.-pl-10 {
+    padding-left: 10px;
+}
+
+.-pl-20 {
+    padding-left: 20px;
+}
+
+.-pl-pr-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*[ margin ]
+///////////////////////////////////////////////////////////
+*/
+.-mt-0 {
+    margin-top: 0;
+}
+
+.-mt-10 {
+    margin-top: 10px;
+}
+
+.-mt-15 {
+    margin-top: 15px;
+}
+
+/*[ Flex ] 
+///////////////////////////////////////////////////////////
+ */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-fd-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* +++++++++++++++++++++++++++++ util [e] +++++++++++++++++++++++++++++ */
