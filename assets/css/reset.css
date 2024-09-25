@@ -1,21 +1,56 @@
-@charset "utf-8";/* Reset */
+@charset "utf-8";
+
+/* Reset */
 /* :root { font-size: 62.5%; } */
-* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 *[class]:before,
-*[class]:after { box-sizing: border-box; } 
+*[class]:after {
+    box-sizing: border-box;
+}
 
 *,
 ::after,
-::before { -webkit-box-sizing: border-box; box-sizing: border-box } 
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
 
-*[class]._hidden { overflow: hidden; white-space: nowrap; clip: rect(.0625rem, .0625rem, .0625rem, .0625rem); clip-path: inset(50%); position: absolute; width: .0625rem; height: .0625rem; margin: 0; padding: 0; border: 0; } 
+*[class]._hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(.0625rem, .0625rem, .0625rem, .0625rem);
+    clip-path: inset(50%);
+    position: absolute;
+    width: .0625rem;
+    height: .0625rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-* { outline: 0 !important; box-sizing: border-box; } 
+* {
+    outline: 0 !important;
+    box-sizing: border-box;
+}
 
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; } 
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
 
-body, button, input, select, textarea { font-family: "Spoqa Han Sans Neo", sans-serif, Verdana, Arial } 
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Spoqa Han Sans Neo", sans-serif, Verdana, Arial
+}
 
 html,
 body,
@@ -59,16 +94,22 @@ button,
 textarea,
 object,
 figure,
-figcaption { margin: 0; padding: 0; } 
+figcaption {
+    margin: 0;
+    padding: 0;
+}
 
-html,   body { width: 100%; } 
+html,
+body {
+    width: 100%;
+}
 
 body {
     height: 100%;
     /* min-width: 1600px; */
     overflow: hidden;
     background-color: #202636;
-    
+
 }
 
 select,
@@ -79,7 +120,9 @@ footer,
 h3,
 h4,
 h5,
-h6 { line-height: 1 } 
+h6 {
+    line-height: 1
+}
 
 article,
 aside,
@@ -91,44 +134,86 @@ header,
 hgroup,
 menu,
 nav,
-section { display: block; } 
+section {
+    display: block;
+}
 
 body,
 input,
 select,
 textarea,
-button { border: none; } 
+button {
+    border: none;
+}
 
 ul,
 ol,
-li { list-style: none; } 
+li {
+    list-style: none;
+}
 
 blockquote,
-q { quotes: none; } 
+q {
+    quotes: none;
+}
 
 blockquote:after,
 blockquote:before,
 q:after,
-q:before { content: ""; content: none; } 
+q:before {
+    content: "";
+    content: none;
+}
 
-table { border-collapse: collapse; border-spacing: 0; table-layout: fixed; background-color: transparent; width: 100%; } 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    background-color: transparent;
+    width: 100%;
+}
 
-a { text-decoration: none; cursor: pointer; } 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
-button { cursor: pointer; background-color: transparent; } 
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
 
-.hidden { display: block !important; overflow: hidden !important; position: absolute !important; left: -625000000000000rem !important; top: -62499.9375rem !important; width: 0; height: 0; font-size: .0625rem; } 
+.hidden {
+    display: block !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -625000000000000rem !important;
+    top: -62499.9375rem !important;
+    width: 0;
+    height: 0;
+    font-size: .0625rem;
+}
 
 /* reset */
-button { border: 0 none; background-color: transparent; cursor: pointer; outline: none; } 
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
 
-::-webkit-input-placeholder { color: #000; } 
+::-webkit-input-placeholder {
+    color: #000;
+}
 
 button,
 input[type='button'],
 input[type='submit'],
 input[type='reset'],
-input[type='file'] { -webkit-appearance: button; border-radius: 0; } 
+input[type='file'] {
+    -webkit-appearance: button;
+    border-radius: 0;
+}
 
 input[type=text],
 input[type=password],
@@ -141,22 +226,57 @@ input[type=date],
 input[type=datetime],
 input[type=tel],
 input[type=search],
-input[type=color] { display: inline-block; width: 100%; height: 4rem; line-height: 4rem; margin: 0; color: #000; text-align: left; padding: 10px 15px; vertical-align: middle; border: 0.1rem solid #CACACA; border-radius: 0.4rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; outline: none; -webkit-outline: none; } 
+input[type=color] {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    color: #000;
+    text-align: left;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border: 0.1rem solid #CACACA;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-outline: none;
+}
 
 /* forms focus start */
 .forms input[type=text]:focus,
-.forms select:focus { color: #00256C; font-size: 1.4rem; border-radius: 4px; border: 1px solid #00256C; } 
+.forms select:focus {
+    color: #00256C;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #00256C;
+}
 
 input:focus,
 select:focus,
 option:focus,
 textarea:focus,
-button:focus { outline: none; } 
+button:focus {
+    outline: none;
+}
+
+
+
 
 /* forms focus end */
 
 /* disabled */
 select:disabled,
-input:disabled { border: 1px solid #CACACA; color: #969696 !important; -webkit-text-fill-color: rgba(150, 150, 150, 1) !important; -webkit-appearance: block; background: #F9F9F9 url(../images/icon_select_disabled.png) no-repeat center right 10px; } 
+input:disabled {
+    border: 1px solid #CACACA;
+    color: #969696 !important;
+    -webkit-text-fill-color: rgba(150, 150, 150, 1) !important;
+    -webkit-appearance: block;
+    background: #F9F9F9 url(../images/icon_select_disabled.png) no-repeat center right 10px;
+}
+
 
 

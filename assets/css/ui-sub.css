@@ -41,33 +41,29 @@
     flex-direction: column;
 }
 
+.fixed-sidebar-left .left-menu a .menu-img {
+    width: 20px;
+}
+
 .btn-nav {
     position: relative;
     overflow: hidden;
     cursor: pointer;
     width: 100%;
-}
-
-
-
-/* 20240724 [s] */
-
-
-.btn-nav {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+    height: 60px;
     border-bottom: 1px solid #3c3c4a;
 }
 
 .btn-nav a {
     font-size: 13px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.68);
     font-weight: 400;
     width: 58px;
-    /* height: 64px;
-    line-height: 64px; */
     padding: 5px;
+}
+
+.btn-nav a:hover {
+    background-color: #161b2f;
 }
 
 .btn-nav a.st2 {
@@ -111,72 +107,41 @@
 }
 
 
-
 /* nav-menu hover effect */
-.btn-nav .circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 80%;
-    background: #7699bd;
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
-}
 
 .btn-nav .st2 {
     position: relative;
     transition: all .45s ease-Out;
 }
 
-.btn-nav:hover .circle {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-}
-
 .btn-nav:hover .st2 {
     color: #fff;
 }
 
-.al_bottom {
+/* Button Ripple Effect */
+.ripple {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
-.al_bottom .circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 80%;
-    background: #000;
+.ripple:before {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    content: '';
     position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
 }
 
-.al_bottom .logout {
-    position: relative;
-    transition: all .45s ease-Out;
-}
-
-.al_bottom:hover .circle {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-}
-
-.al_bottom:hover a {
-    color: #fff !important;
+.ripple:focus:before {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    width: 160px;
+    height: 160px;
+    margin-top: -80px;
+    margin-left: -80px;
 }
 
 /* 20240724 [e] */
@@ -193,5 +158,122 @@
     border: 1px solid red;
     background-color: #202636;
     color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-.fixed-sidebar-left .left-menu  a .menu-img{width: 20px;}
+
+.-search li {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.label {
+    margin-right: 16px;
+}
+em {
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+.entiti-tilde::after {
+    content: ' \007E';
+    font-size: 20px;
+
+}
+
+
+.-search select {
+    background: #FFFFFF url(../images/icon_select.png) no-repeat center right 10px;
+    padding: 0 2rem 0 1.5rem;
+    min-width: 80px;
+height: 40px;}
+
+.-search .input {
+    width: 32.5rem;
+    margin-right: 2rem;
+}
+
+.-search .date_picker {
+    position: relative;
+    margin-top: 1rem;
+    height: 40px;
+    line-height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* datepicker */
+.calendar {
+    display: flex;
+    justify-content: space-between;
+}
+.calendar input {
+    width: 276px;
+}
+
+input.input-line {
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    color: #111;
+    border: 1px solid #BFBFBF;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+input.input-line:hover, input.input-line:focus, input.input-line.focus {
+    height: 52px;
+    line-height: 52px;
+    border: 2px solid #4F4694;
+    border-radius: 10px;
+    text-indent: 19px;
+}
+
+
+input.input-calendar {
+    background: url("../images/calendar_icon.png") no-repeat;
+    z-index: 10;
+    background-position: right 20px center
+}
+input.input-calendar:hover, input.input-calendar:focus {
+    background-position: right 19px center
+}
+
+.btn_calendar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+}
+
+.btn_calendar a {
+    width: 205px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px
+}
+
+.btn_calendar a:first-child {
+    margin-right: 20px
+}
+
+.btn_calendar .btn-line02 {
+    line-height: 46px
+}
+
+.btn-line02, a.btn-line02 {
+    border: 2px solid #4A418B;
+    background: #fff;
+    color: #4A418B;
+    padding: 0 25px
+}
+
+.btn-primary, a.btn-primary { background-color: #4F4694; color: #fff}
+.btn-primary:hover, a.btn-primary:hover { background-color: #413a7a}
