@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="icon_calendar" transform="translate(-1483 -1126)">
+    <rect id="사각형_7290" data-name="사각형 7290" width="54" height="54" transform="translate(1483 1126)" fill="none"/>
+    <g id="그룹_13916" data-name="그룹 13916" transform="translate(1484 1126)">
+      <g id="그룹_13915" data-name="그룹 13915">
+        <g id="그룹_13917" data-name="그룹 13917">
+          <rect id="사각형_7297" data-name="사각형 7297" width="48" height="43" transform="translate(2 9)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <line id="선_3" data-name="선 3" x2="48" transform="translate(2 22)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <line id="선_4" data-name="선 4" y2="11" transform="translate(15 2)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <line id="선_5" data-name="선 5" y2="11" transform="translate(37 2)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+      <path id="패스_13878" data-name="패스 13878" d="M43.3,43.074l-10.8,10.8-6.72-6" transform="translate(-7.218 -12.061)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

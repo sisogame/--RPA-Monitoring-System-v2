@@ -365,7 +365,7 @@ c
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div.xdsoft_current {
-	background: #4F4694;
+	background: #2646ab;
 	color: #fff;
 	font-weight: 400;
 }
@@ -388,7 +388,7 @@ c
 	/*color: #F277A4 !important;
 	background: #fff !important;
 	box-shadow: none !important;*/
-	background: #4F4694 !important;
+	background: #2646ab !important;
 	color: #fff !important;
 	border-radius: 50% !important;
 }
