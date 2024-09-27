@@ -155,7 +155,7 @@ input::-webkit-input-placeholder { color: #ccc; font-size: 14px; }
 .forms [type=tel],
 .forms [type=text],
 .forms select,
-.forms textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; display: block; opacity: 1; height: 40px; border: 0; border: 1px solid #555; color: #aaa; font-size: 14px; border-radius: 5px; background-color: #202636; min-width: 200px; padding: 0 20px 0 15px; } 
+.forms textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box;  opacity: 1; height: 40px; border: 0; border: 1px solid #555; color: #aaa; font-size: 14px; border-radius: 5px; background-color: #202636; min-width: 200px; padding: 0 20px 0 15px; } 
 
 .forms [type=text]:hover,
 .forms select:focus,

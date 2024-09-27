@@ -8,13 +8,14 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
-
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
-
+    <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
+    <!-- datepicker -->
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
 </head>
 
 <body>
@@ -28,12 +29,16 @@
             </div>
 
             <nav class="nav-container">
-                <ul class="gnbWrap">
-                    <li><a href="#" class="gnb-list btn btn-purple active"> Main </a></li>
-                    <li><a href="#" class="gnb-list btn btn-sky"> WorkUser </a></li>
-                    <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
-                    <li class="mlf_auto"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
-                </ul>
+                <div class="gnbWrap">
+                    <ul class="gnbWrap-menu">
+                        <li><a href="#" class="gnb-list btn btn-purple active"> Main </a></li>
+                        <li><a href="#" class="gnb-list btn btn-sky"> WorkUser </a></li>
+                        <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
+                    </ul>
+                    <ul class="gnbWrap-cog">
+                        <li class="" style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <div class="contentsWrap" style="height: 100%;">
@@ -122,7 +127,7 @@
                                     <tr id="row-1">
                                         <td class="border-t -pl-pr-10">
                                             <a href="#pop-search02" class="flex-sb-c pop-open">
-                                                <span class="notice-title"><i class="ico_accent"></i>신규디자인 적용</span>
+                                                <span class="notice-title">신규디자인 적용</span>
                                                 <span class="date">24-09-01</span>
                                             </a>
                                         </td>
@@ -196,6 +201,20 @@
                         <div class="tableFixHead-inner -mt-10">
                             <div class="table-scroll">
                                 <table class="fix-table">
+
+                                    <colgroup>
+                                        <col width="60px">
+                                        <col width="*">
+                                        <col width="120px">
+                                        <col width="*">
+                                        <col width="120px">
+                                        <col width="120px">
+                                        <col width="120px">
+                                        <col width="120px">
+                                        <col width="60px">
+                                    </colgroup>
+
+
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -211,172 +230,61 @@
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
+                                        <tr class="-txt-c">
+                                            <td>1</td>
                                             <td>Maria Anders</td>
                                             <td>Germany</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
+                                            <td>2024.09.27</td>
+                                            <td>2024.10.15</td>
+                                            <td>정상</td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
+                                        <tr class="-txt-c">
+                                            <td>2</td>
                                             <td>Maria Anders</td>
                                             <td>Germany</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
+                                            <td>2024.09.27</td>
+                                            <td>2024.10.15</td>
+                                            <td>정상</td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
+                                        <tr class="-txt-c">
+                                            <td>3e</td>
                                             <td>Maria Anders</td>
                                             <td>Germany</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
+                                            <td>2024.09.27</td>
+                                            <td>2024.10.15</td>
+                                            <td>정상</td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
+                                        <tr class="-txt-c">
+                                            <td>4</td>
                                             <td>Maria Anders</td>
                                             <td>Germany</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
+                                            <td>2024.09.27</td>
+                                            <td>2024.10.15</td>
+                                            <td>정상</td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
+                                        <tr class="-txt-c">
+                                            <td>5</td>
                                             <td>Maria Anders</td>
                                             <td>Germany</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Alfreds Futterkiste</td>
                                             <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
+                                            <td>2024.09.27</td>
+                                            <td>2024.10.15</td>
+                                            <td>정상</td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Germany</td>
-                                        </tr>
-
                                     </tbody>
                                 </table>
                                 </table>
@@ -501,7 +409,7 @@
     <!-- // pop-search -->
 
     <!-- pop[S] -->
-    <div id="pop-search02" class="pop-overlay" style="display:block;">
+    <div id="pop-search02" class="pop-overlay" style="display:C;">
         <div id="draggable02" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
