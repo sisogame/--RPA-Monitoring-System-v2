@@ -1083,10 +1083,11 @@ table.notice tbody tr td.date {
 
 .pop-table tbody td.tb_contents .tb_contents-inner {
     height: 100%;
-    white-space: pre-line !important;
     text-align: left;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    word-wrap: break-word;  
+    word-break:  break-all;
+    /* white-space: pre-line !important;
+    white-space: pre-wrap; */
 }
 
 .pop-table tbody td p {
@@ -1118,3 +1119,18 @@ table.notice tbody tr td.date {
 .table-row-link tbody tr {
     cursor: pointer;
 }
+
+
+
+/* monthPicker */
+
+.intervalInput {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* monthpicker.css */
+
+
+/* months */

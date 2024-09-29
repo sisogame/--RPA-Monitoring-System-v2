@@ -13,9 +13,11 @@
 
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
+    
     <!-- datepicker -->
     <script src="../../assets/js/jquery-ui.js"></script>
     <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+    <script src="../../assets/js/datetimepicker.js"></script>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                         <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
                     </ul>
                     <ul class="gnbWrap-cog">
-                        <li class="" style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
+                        <li style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -45,58 +47,38 @@
             <div class="fixed-sidebar-left">
                 <ul class="left-menu">
                     <li class="btn-nav">
-                        <a rel="Home" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_home00_wt.svg" class="menu-img test">
-                                <!-- <span class="textColor">Home</span> -->
-                            </div>
+                        <a rel="Home" href="#" class="-h100 ripple side-nav-on">
+                            <p class="flex-c-c -h100 menu-home ico-01"></p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="대기" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_workuser01_wt.svg" class="menu-img icon_test">
-                                <span class="textColor">대기</span>
-                            </div>
+                        <a rel="대기" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-01">대기</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="작업" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_workuser02_wt.svg" class="menu-img">
-                                <span class="textColor -mt-5">작업</span>
-                            </div>
+                        <a rel="작업" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-02">작업</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="공지" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_workuser03_wt.svg" class="menu-img">
-                                <span class="textColor -mt-5">공지</span>
-                            </div>
+                        <a rel="공지" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-03">공지</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="FAQ" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_workuser04_wt.svg" class="menu-img">
-                                <span class="textColor -mt-5">FAQ</span>
-                            </div>
+                        <a rel="FAQ" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-04">FAQ</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="상시" href="#" class="ripple st2">
-                            <div class="flex-fd-c">
-                                <img src="../../assets/images/m_workuser05_wt.svg" class="menu-img">
-                                <span class="textColor -mt-5">상시</span>
-                            </div>
+                        <a rel="상시" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-05">상시</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="로그아웃" href="#pop-small-logout" class="ripple st2 pop-open">
-                            <div class="flex-fd-c">
-                                <span class="textColor">로그아웃</span>
-                            </div>
+                        <a rel="로그아웃" href="#pop-small-logout" class="-h100 ripple side-nav-on pop-open">
+                            <p class="flex-c-c -h100 txt-logout">로그아웃</p>
                         </a>
                     </li>
                 </ul>
@@ -104,33 +86,41 @@
             <div class="contents-right">
                 <div class="contents-right-inner">
                     <div class="-search">
-                        <div style="width: 100%;">
-                            <ul style="display: flex; gap: 20px;">
+                        <div class="-w100">
+                            <ul class="-search-area">
                                 <li class="forms">
-                                    <label class="label" for="유형구분">유형구분</label>
+                                    <label class="label" for="과제구분항목">과제구분항목</label>
                                     <select>
-                                        <option value="" selected="selected">--유형구분 전체--</option>
-                                        <option value="">일반</option>
-                                        <option value="">중요</option>
+                                        <option value="" selected="selected">--과제구분항목 전체--</option>
+                                        <option value="">과제명 1</option>
+                                        <option value="">과제명 2</option>
                                     </select>
                                 </li>
                                 <li class="forms">
-                                    <label class="label" for="유형구분">등록일</label>
+                                    <label class="label" for="수행 BOT">수행 BOT</label>
+                                    <select>
+                                        <option value="" selected="selected">--수행 BOT 전체--</option>
+                                        <option value="">BOT_01</option>
+                                        <option value="">BOT_02</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="상태">상태</label>
+                                    <select>
+                                        <option value="" selected="selected">--상태 전체--</option>
+                                        <option value="">대기중</option>
+                                        <option value="">지연</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="수행 예정시간">수행 예정시간</label>
                                     <div class="calendar">
-                                        <input type="text" id="startDate" autocomplete="off" placeholder="2022/07/12" class="input-line input-calendar">
-                                        <em class="entiti-tilde"></em>
-                                        <input type="text" id="endDate" autocomplete="off" placeholder="2022/07/13" class="input-line input-calendar">
+                                        <input type="text" id="startDate" name="startDate" class="input-line input-calendar" placeholder="오늘날짜" />
                                     </div>
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
-                                    <select>
-                                        <option value="" selected="selected">--검색키워드 전체--</option>
-                                        <option value="">일반</option>
-                                        <option value="">중요</option>
-                                    </select>
-                                    <input type="text" class="input hg46" placeholder="키워드 검색
-                                    ">
+                                    <input type="text" class="input hg46" placeholder="키워드 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -138,9 +128,7 @@
                                             검색하기
                                         </a>
                                     </div>
-
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -151,9 +139,6 @@
                                 <div class="btn-wrap">
                                     <a href="#" class="btn-inner btn-excel -mr-10">
                                         엑셀다운로드
-                                    </a>
-                                    <a href="#pop-open01" class="btn-inner btn-pj pop-open">
-                                        신규과제제출
                                     </a>
                                 </div>
                             </div>
@@ -285,7 +270,7 @@
 
 
     <!-- 상시과제제출 pop[S] -->
-    <div id="pop-open" class="pop-overlay" style="display: ;">
+    <div id="pop-open" class="pop-overlay">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
@@ -366,113 +351,5 @@
         </div>
     </div>
     <!-- // pop-search -->
-
-    <!-- 상시과제등록 pop[S]  -->
-    <div id="pop-open01" class="pop-overlay" style="display:;">
-        <div id="draggable02" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-md">
-                <ul class="pop-sheet-container">
-                    <li class="sheet-header">
-                        상시과제제출
-                        <a href="#" onclick="closeLayer('pop-open01')" class="close pop-close-btn"></a>
-                    </li>
-                    <li class="sheet-content">
-                        <div class="table-scroll">
-                            <table class="pop-table">
-                                <tbody>
-                                    <colgroup>
-                                        <col style="width: 200px;">
-                                        <col>
-                                        <col style="width: 200px;">
-                                        <col>
-                                    </colgroup>
-                                    <tr>
-                                        <th>유형구분</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="유형구분"></td>
-                                        <th>적용범위</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="종합/기장/선장 으로 입력"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>작성자</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="작성자"></td>
-                                        <th>작성자 부서</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="작성자 부서"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>1회 소요시간</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="1회 소요시간"></td>
-                                        <th>수행주기</th>
-                                        <td class="pop-tb-forms"><input type="text" class="" placeholder="평균 수행 횟수 / 월"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>제목</th>
-                                        <td colspan="3" class="pop-tb-forms"><input type="text" class="" placeholder="제목"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>내용</th>
-                                        <td colspan="3" class="pop-tb-forms tb_contents">
-                                            <textarea name="" class="textarea-ai" rows="8" maxlength="800" style=" resize: none;">가. 홍길동은 반도체에 대한 관심을 갖고 1970년에 반도체 제조업을 시작하였고 2000년 9월 8일에 길동법인회사를 설립하였습니다. 당사는 반도체 생산 및 수출 전문기업으로서 반도체 비교 및 분석을 위해 부산광역시 본사에 그치지 않고 해외로 진출하여 2010년 중국에 해외지사를 </textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>첨부파일</th>
-                                        <td colspan="3" class="-p-15">
-                                            <ul>
-                                                <li class="drop_zone">
-                                                    <span>영역을 클릭 또는 파일을 드래그하세요.</span>
-                                                    <span>(※ 업로드 최대용량은 100MB입니다.)</span>
-                                                </li>
-                                                <li>
-                                                    <p class="txt-note -mt-10">※ 첨부파일은 동영상과 ppt를 첨부해 주세요.</p>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </li>
-                    <li class="pop-btnBottomArea -gap-10">
-                        <a href="#pop-small" class="btn-md01 pop-btn-wrap btn-save pop-open">저장</a>
-                        <a href="#" onclick="closeLayer('pop-open01')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- // pop-search -->
-
-    <!-- pop-small -->
-    <div id="pop-small" class="pop-overlay" style="display:;">
-        <div id="draggable03" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-sm">
-                <div class="pop-btnBottomArea flex-col">
-                    <a href="#" onclick="closeLayer('pop-small')" class="close pop-close-btn"></a>
-                    <p class="pop-sm-txt">
-                        <span>상시과제제출이 정상적으로</span> <span>저장되었습니다</span>
-                    </p>
-                    <a href="#" onclick="closeLayer('pop-small')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
-                </div class="">
-            </div>
-        </div>
-    </div>
-    <!--// pop-small -->
-
-
-    <!-- pop-small -->
-    <div id="pop-small-logout" class="pop-overlay" style="display:;">
-        <div id="draggable03" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-sm">
-                <div class="pop-btnBottomArea flex-col">
-                    <a href="#" onclick="closeLayer('pop-small-logout')" class="close pop-close-btn"></a>
-                    <p class="pop-sm-txt">
-                        <span>정상적으로 로그아웃</span>
-                        <span>되었습니다.</span>
-                    </p>
-                    <a href="#" onclick="closeLayer('pop-small-logout')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
-                </div class="">
-            </div>
-        </div>
-    </div>
-    <!--// pop-small -->
+   
 </body>

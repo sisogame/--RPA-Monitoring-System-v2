@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>현대삼호-RPA Monitoring System</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
+
+    <script src="../../assets/js/jquery-3.7.1.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    
+    <!-- datepicker -->
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+    <script src="../../assets/js/datetimepicker.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="navbarWrap">
+            <div class="navbar-logo">
+                <a href="#" class="logo-text">
+                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" class="navbar-logo-img">
+                    <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
+                </a>
+            </div>
+
+            <nav class="nav-container">
+                <div class="gnbWrap">
+                    <ul class="gnbWrap-menu">
+                        <li><a href="#" class="gnb-list btn btn-purple"> Main </a></li>
+                        <li><a href="#" class="gnb-list btn btn-sky active"> WorkUser </a></li>
+                        <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
+                    </ul>
+                    <ul class="gnbWrap-cog">
+                        <li style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sub-contentsWrap">
+            <div class="fixed-sidebar-left">
+                <ul class="left-menu">
+                    <li class="btn-nav">
+                        <a rel="Home" href="#" class="-h100 ripple side-nav-on">
+                            <p class="flex-c-c -h100 menu-home ico-01"></p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="대기" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-01">대기</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="작업" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-02">작업</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="공지" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-03">공지</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="FAQ" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-04">FAQ</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="상시" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-05">상시</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="로그아웃" href="#pop-small-logout" class="-h100 ripple side-nav-on pop-open">
+                            <p class="flex-c-c -h100 txt-logout">로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents-right">
+                <div class="contents-right-inner">
+                    <div class="-search">
+                        <div class="-w100">
+                            <ul class="-search-area">
+                                <li class="forms">
+                                    <label class="label" for="과제구분항목">과제구분항목</label>
+                                    <select>
+                                        <option value="" selected="selected">--과제구분항목 전체--</option>
+                                        <option value="">과제명 1</option>
+                                        <option value="">과제명 2</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="수행 BOT">수행 BOT</label>
+                                    <select>
+                                        <option value="" selected="selected">--수행 BOT 전체--</option>
+                                        <option value="">BOT_01</option>
+                                        <option value="">BOT_02</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="상태">상태</label>
+                                    <select>
+                                        <option value="" selected="selected">--상태 전체--</option>
+                                        <option value="">대기중</option>
+                                        <option value="">지연</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="수행기간">수행기간</label>
+                                    <div class="calendar">
+                                        <input type="text" id="startDate" autocomplete="off" placeholder="2022/07/12" class="input-line input-calendar">
+                                        <em class="entiti-tilde"></em>
+                                        <input type="text" id="endDate" autocomplete="off" placeholder="2022/07/13" class="input-line input-calendar">
+                                    </div>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="검색키워드">검색키워드</label>
+                                    <input type="text" class="input hg46" placeholder="RPA작업대상+오류내역 검색">
+                                </li>
+                                <li>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-inner-from btn-search ">
+                                            검색하기
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="-table ">
+                        <div class="tableFixHead-con">
+                            <div class="titleWrap -pt-pb-5">
+                                <h3 class="tit_head">과제별작업내역</h3>
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn-inner btn-excel -mr-10">
+                                        엑셀다운로드
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tableFixHead-inner -mt-10">
+                                <div class="table-scroll">
+                                    <table class="fix-table tb-layout-auto table-row-link">
+                                        <colgroup>
+                                            <col width="80px">
+                                            <col width="150px">
+                                            <col width="15%">
+                                            <col width="*">
+                                            <col width="15%">
+                                            <col width="200px">
+                                            <col width="150px">
+                                            <col width="150px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>동작시간</th>
+                                                <th>과제코드</th>
+                                                <th>과제명</th>
+                                                <th>수행BOT</th>
+                                                <th>RPA 작업대상</th>
+                                                <th>처리결과</th>
+                                                <th>오류내용</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>1</td>
+                                                <td>동작시간</td>
+                                                <td>과제코드</td>
+                                                <td class="-txt-lf">과제명과제명과제명과제명과제명</td>
+                                                <td>수행BOT수행BOT수행BOT</td>
+                                                <td>RPA 작업대상</td>
+                                                <td>처리결과</td>
+                                                <td>오류내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 상시과제제출 pop[S] -->
+    <div id="pop-open" class="pop-overlay">
+        <div id="draggable" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-md">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">
+                        상시과제제출
+                        <a href="#" onclick="closeLayer('pop-open')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content">
+                        <div class=" table-scroll">
+                            <table class="pop-table">
+                                <tbody>
+                                    <colgroup>
+                                        <col style="width: 200px;">
+                                        <col>
+                                        <col style="width: 200px;">
+                                        <col>
+                                    </colgroup>
+                                    <tr>
+                                        <th>유형구분</th>
+                                        <td><span>설계 - 호선 자료</span> </td>
+                                        <th>적용범위</th>
+                                        <td><span>설계</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작성자</th>
+                                        <td><span>임혜지</span> </td>
+                                        <th>부서</th>
+                                        <td><span>설계운영부 임혜지</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>소요시간</th>
+                                        <td><span>10</span> </td>
+                                        <th>수행주기</th>
+                                        <td><span>2</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>등록일시</th>
+                                        <td><span>2024-07-03 15:58:07</span> </td>
+                                        <th>조회수</th>
+                                        <td><span>10</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제목</th>
+                                        <td colspan="3">설계 완료보고서_8150 호선 (15.6K CNTR, FLOURISH)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>내용</th>
+                                        <td class="tb_contents" colspan="3">
+                                            <div class="tb_contents-inner">
+                                                <p>8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td colspan="3">
+                                            <p>첨부파일-01.txt</p>
+                                            <p>첨부파일-02.txt</p>
+                                            <p>첨부파일-03.txt</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>검토의견</th>
+                                        <td colspan="3">
+                                            <p>8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="pop-btnBottomArea">
+                        <a href="#" onclick="closeLayer('pop-open')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // pop-search -->
+   
+</body>

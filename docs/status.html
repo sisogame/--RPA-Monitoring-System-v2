@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IFS-Feedback 퍼블리싱 현황판</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" data-description="정보구조도 스타일" href="css/index.css" />
+    <style>
+        .totalBox{position:fixed;right:250px;top:6px;z-index:1000;}
+        .totalBox p{float:left;width:100px; }
+        .전체::before{content:'전체 : ';color:red;vertical-align:bottom;}
+        .전::before{content:'작업전 : ';color:gray;vertical-align:bottom;}
+        .작::before{content:'작업중 : ';color:blue ;vertical-align:bottom;}
+        .검::before{content:'검수중 : ';color:#f8c657;vertical-align:bottom;}
+        .완료::before{content:'완료 : ';color:green;vertical-align:bottom;}
+        .퍼센트::before{content:'진행률 : ';color:green;vertical-align:bottom;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="project-name">RPA Monitoring System</div>
+        <div class="document-name">퍼블리싱 현황판</div>
+    </div>
+
+    <div class="contents">
+        <div class="section">
+            <div class="table">
+                <div class="title">
+                    <div>Level<sup>1</sup></div>
+                    <div>Level<sup>2</sup></div>
+                    <div>Level<sup>3</sup></div>
+                    <div>Level<sup>4</sup></div>
+                    <div>File Name</div>
+                    <div>Author</div>
+                    <div>Progress</div>
+                    <div>Memo</div>
+                </div>
+                <a href="../html/main/메인.html">
+                    <div>메인</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>메인</div>
+                    <div>이은영</div>
+                    <div><i progress="작업중"></i></div>
+                    <div>레이아웃변경예정</div>
+                </a>
+                <a href="">
+                    <div>WorkUser</div>
+                    <div>Home</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-Home</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/workuser/대기.html">
+                    <div></div>
+                    <div>대기</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-대기</div>
+                    <div>이은영</div>
+                    <div><i progress="작업중"></i></div>
+                    <div>calendar</div>
+                </a>
+                <a href="../html/workuser/작업.html">
+                    <div></div>
+                    <div>작업</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-작업</div>
+                    <div>이은영</div>
+                    <div><i progress="작업중"></i></div>
+                    <div>calendar</div>
+                </a>
+                <a href="../html/workuser/공지.html">
+                    <div></div>
+                    <div>공지</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-공지</div>
+                    <div>이은영</div>
+                    <div><i progress="검수중"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/workuser/FAQ.html">
+                    <div></div>
+                    <div>FAQ</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-FAQ</div>
+                    <div>이은영</div>
+                    <div><i progress="검수중"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/workuser/상시.html">
+                    <div></div>
+                    <div>상시</div>
+                    <div></div>
+                    <div></div>
+                    <div>WorkUser-상시</div>
+                    <div>이은영</div>
+                    <div><i progress="작업중"></i></div>
+                    <div>calendar-시간</div>
+                </a>
+                <a href="#">
+                    <div>DashBoard</div>
+                    <div>Home</div>
+                    <div></div>
+                    <div></div>
+                    <div>DashBoard-Home</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="#">
+                    <div></div>
+                    <div>스케줄</div>
+                    <div></div>
+                    <div></div>
+                    <div>DashBoard-스케줄</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+
+                <a href="#">
+                    <div>Management</div>
+                    <div>리소스</div>
+                    <div>pop</div>
+                    <div>calendar</div>
+                    <div>Management-리소스</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="#">
+                    <div></div>
+                    <div>관리자</div>
+                    <div>pop</div>
+                    <div>interface-1step</div>
+                    <div>Management-관리자</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="#">
+                    <div></div>
+                    <div>과제</div>
+                    <div></div>
+                    <div>interface-2step</div>
+                    <div>Management-과제</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="#">
+                    <div></div>
+                    <div>산정금</div>
+                    <div></div>
+                    <div></div>
+                    <div>Management-산정금</div>
+                    <div>이은영</div>
+                    <div><i progress="작업전"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/Management/공지.html">
+                    <div></div>
+                    <div>공지</div>
+                    <div>reply</div>
+                    <div></div>
+                    <div>Management-공지</div>
+                    <div>이은영</div>
+                    <div><i progress="검수중"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/workuser/FAQ.html">
+                    <div></div>
+                    <div>FAQ</div>
+                    <div></div>
+                    <div></div>
+                    <div>Management-FAQ</div>
+                    <div>이은영</div>
+                    <div><i progress="검수중"></i></div>
+                    <div></div>
+                </a>
+                <a href="../html/Management/상시.html">
+                    <div></div>
+                    <div>상시</div>
+                    <div>reply</div>
+                    <div></div>
+                    <div>Management-상시</div>
+                    <div>이은영</div>
+                    <div><i progress="검수중"></i></div>
+                    <div></div>
+                </a>         
+            </div>
+        </div>
+
+    </div>
+    <div class="function">
+        <button type="button" class="function__top">TOP</button>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function(){
+            var 작 = $('i[progress="작업중"]').length;
+            var 검 = $('i[progress="검수중"]').length;
+            var 전 = $('i[progress=""]').length;
+            var 완료 = $('i[progress="완료"]').length;
+            var 전체 = 작 + 검 + 전 + 완료;
+            var 퍼센트 = 완료 / 전체 * 100;;
+            var floor = Math.floor(퍼센트);
+
+            $('.전체').text(전체);
+            $('.전').text(전);
+            $('.작').text(작);
+            $('.검').text(검);
+            $('.완료').text(완료);
+            $('.퍼센트').text(floor + '%');
+        });
+    </script>
+</body>
+</html>

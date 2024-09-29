@@ -1,6 +1,20 @@
-$(document).ready(function () {
+// $(document).ready(function () {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const navItems = document.querySelectorAll(".side-nav-on");
+
+//     navItems.forEach((item) => {
+//       item.addEventListener("click", function () {
+//         navItems.forEach((navItem) => navItem.classList.remove("active"));
+//         this.classList.add("active");
+//       });
+//     });
+//   });
+// });
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
-    const navItems = document.querySelectorAll(".st2");
+    const navItems = document.querySelectorAll(".side-nav-on");
 
     navItems.forEach((item) => {
       item.addEventListener("click", function () {
@@ -9,7 +23,8 @@ $(document).ready(function () {
       });
     });
   });
-});
+
+
 
 //팝업
 $(function () {
@@ -51,56 +66,57 @@ $(function () {
 });
 
 // 달력
-$(function () {
-  $.datetimepicker.setLocale("kr");
+// $(function () {
+//   $.datetimepicker.setLocale("kr");
 
-  $(document).ready(function () {
-    fn_egov_init_date();
-  });
+//   $(document).ready(function () {
+//     fn_egov_init_date();
+//   });
 
-  function fn_egov_init_date() {
-    var $startDate = $("#startDate");
-    var $endDate = $("#endDate");
-    $startDate.datetimepicker({
-      lang: "kr",
-      dateFormat: "yy/mm/dd",
-      // timeFormat: "hh:mm:ss",
-      timeFormat: false,
-      scrollMonth: false,
-      scrollInput: false,
-      showMonthAfterYear: true,
-      onShow: function (ct) {
-        this.setOptions({
-          maxDate: $endDate.val() ? $endDate.val() : false,
-        });
-      },
-    });
+//   function fn_egov_init_date() {
+//     var $startDate = $("#startDate");
+//     var $endDate = $("#endDate");
+//     $startDate.datetimepicker({
+//       lang: "kr",
+//       dateFormat: "yy/mm/dd",
+//       // timeFormat: "hh:mm:ss",
+//       timeFormat: false,
+//       scrollMonth: false,
+//       scrollInput: false,
+//       showMonthAfterYear: true,
+//       onShow: function (ct) {
+//         this.setOptions({
+//           maxDate: $endDate.val() ? $endDate.val() : false,
+//         });
+//       },
+//     });
 
-    $endDate.datetimepicker({
-      lang: "kr",
-      dateFormat: "yy/mm/dd",
-      // timeFormat: "hh:mm:ss",
-      timeFormat: false,
-      scrollMonth: false,
-      scrollInput: false,
-      showMonthAfterYear: true,
-      onShow: function (ct) {
-        this.setOptions({
-          minDate: $startDate.val() ? $startDate.val() : false,
-        });
-      },
-    });
-  }
+//     $endDate.datetimepicker({
+//       lang: "kr",
+//       dateFormat: "yy/mm/dd",
+//       // timeFormat: "hh:mm:ss",
+//       timeFormat: false,
+//       scrollMonth: false,
+//       scrollInput: false,
+//       showMonthAfterYear: true,
+//       onShow: function (ct) {
+//         this.setOptions({
+//           minDate: $startDate.val() ? $startDate.val() : false,
+//         });
+//       },
+//     });
+//   }
 
-  $("#datebasicSvc").datetimepicker({
-    lang: "kr",
-    timepicker: false,
-    format: "Y/m/d",
-    formatDate: "Y/m/d",
-  });
+//   $("#datebasicSvc").datetimepicker({
+//     lang: "kr",
+//     timepicker: false,
+//     format: "Y/m/d",
+//     formatDate: "Y/m/d",
+//   });
 
-  $("#open").click(function () {
-    $("#datebasicSvc").datetimepicker("show");
-  });
-});
+//   $("#open").click(function () {
+//     $("#datebasicSvc").datetimepicker("show");
+//   });
+
+// });
 
