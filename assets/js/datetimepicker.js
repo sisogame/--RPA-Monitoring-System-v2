@@ -1,4 +1,4 @@
-// 달력
+// 달력-년월일+시간
 
 $(function () {
   $.datetimepicker.setLocale("kr");
@@ -39,9 +39,13 @@ $(function () {
         });
       },
     });
+
+
   }
 
-  $("#datebasicSvc").datetimepicker({
+
+  // 달력-년월일 
+  $("#datebasicStart").datetimepicker({
     lang: "kr",
     timepicker: false,
     format: "Y/m/d",
@@ -49,7 +53,27 @@ $(function () {
   });
 
   $("#open").click(function () {
-    $("#datebasicSvc").datetimepicker("show");
+    $("#datebasicStart").datetimepicker("show");
   });
 
+
+    $("#datebasicEnd").datetimepicker({
+      lang: "kr",
+      timepicker: false,
+      format: "Y/m/d",
+      formatDate: "Y/m/d",
+    });
+
+    $("#open").click(function () {
+      $("#datebasicEnd").datetimepicker("show");
+    });
+
 });
+
+$(function () {
+// Appending the timepicker element to the body or a container
+
+
+
+
+  });

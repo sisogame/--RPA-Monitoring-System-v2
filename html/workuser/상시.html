@@ -9,15 +9,22 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
-    
+    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
+
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
-    
+
+    <!-- datepicker -->
     <script src="../../assets/js/jquery-ui.js"></script>
-    
-    <!-- monthpicker -->
-    <link rel="stylesheet" href="../../assets/css/monthpicker.css">
-    <script src="../../assets/js/monthpicker-modifyt.js"></script>
+    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+    <script src="../../assets/js/datetimepicker.js"></script>
+
+    <!-- datepicker >  reset, 확인버튼 감추기 -->
+    <style>
+        .xdsoft_datetimepicker .btn_calendar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -99,9 +106,9 @@
                                 <li class="forms">
                                     <label class="label" for="유형구분">등록일</label>
                                     <div class="calendar">
-                                        <input type="text" id="startDate" name="startDate" class="input-line input-calendar" placeholder="시작연도-월" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" />
                                         <em class="entiti-tilde"></em>
-                                        <input type="text" id="endDate" name="endDate" class="input-line input-calendar" placeholder="마지막연도-월" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" />
                                     </div>
                                 </li>
                                 <li class="forms">
@@ -478,5 +485,5 @@
                 });
             });
     </script> -->
-   
+
 </body>

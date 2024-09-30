@@ -65,7 +65,7 @@
 }
 
 .xdsoft_datetimepicker .xdsoft_datepicker.active
-/* , .xdsoft_datetimepicker .xdsoft_timepicker.active  */
+, .xdsoft_datetimepicker .xdsoft_timepicker.active 
 {
 	display: block;
 }
@@ -358,7 +358,7 @@
 
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today{
 	width: 40px; height: 40px;
-	background: url('../images/c') left top no-repeat;
+	background: url('../images/calendar_over.png') left top no-repeat;
 	display: inline-block;
 	color: #F277A4;
 }
@@ -456,7 +456,8 @@
 }
 .xdsoft_scroller_box {
 	position: relative;
-	display: none;
+	/* display: none; */
+	display:  block;
 }
 
 .xdsoft_datetimepicker.xdsoft_dark {
@@ -609,3 +610,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f8fa', endColorstr='#FFF',GradientType=0 );
   /* IE6-9 */
 }
+
+
+#ui-datepicker-div{display: none !important;}

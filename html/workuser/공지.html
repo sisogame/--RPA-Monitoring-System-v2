@@ -13,11 +13,18 @@
 
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
-    
+
     <!-- datepicker -->
     <script src="../../assets/js/jquery-ui.js"></script>
     <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
     <script src="../../assets/js/datetimepicker.js"></script>
+
+    <!-- datepicker >  reset, 확인버튼 감추기 -->
+    <style>
+        .xdsoft_datetimepicker .btn_calendar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -106,12 +113,11 @@
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="등록일">등록일</label>
-                                    <!-- <div class="calendar">
-                                        <input type="text" id="startDate" name="startDate" class="input-line input-calendar" placeholder="2024/09/29 00:00">
+                                    <div class="calendar">
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" />
                                         <em class="entiti-tilde"></em>
-                                        <input type="text" id="endDate" name="endDate" class="input-line input-calendar" placeholder="2024/09/30 00:00">
-                                    </div> -->
-                                    <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicSvc"/>
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" />
+                                    </div>
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
@@ -178,7 +184,7 @@
                                                 <td>2024.09.25</td>
                                                 <td>10</td>
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                     </table>
@@ -193,7 +199,7 @@
 
 
     <!-- 상시과제제출 pop[S] -->
-    <div id="pop-open" class="pop-overlay" style="display: block;">
+    <div id="pop-open" class="pop-overlay" style="display: ;">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">

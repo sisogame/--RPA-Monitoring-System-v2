@@ -2624,8 +2624,9 @@ var datetimepickerFactory = function ($) {
         ),
         calendar = $('<div class="xdsoft_calendar"></div>'),
         timepicker = $(
-          '<div class="xdsoft_timepicker active"><button type="button" class="xdsoft_prev"></button><div class="xdsoft_time_box"></div><button type="button" class="xdsoft_next"></button></div> <div class="btn_calendar"><a href="#" class="btn-md btn-line02">Reset</a><a href="#" class="btn-md btn-primary">확인</a></div>'
-        ),
+          '<div class="xdsoft_timepicker active"><button type="button" class="xdsoft_prev"></button><div div class= "xdsoft_time_box" ></div > <button type="button" class="xdsoft_next"></button></div > <div class="btn_calendar"><a href="#" class="btn-md btn-line02" id="resetBtn">Reset</a><a href="#" class="btn-md btn-primary" id="confirmBtn">확인</a></div>'
+      ),
+        
         timeboxparent = timepicker.find(".xdsoft_time_box").eq(0),
         timebox = $('<div class="xdsoft_time_variant"></div> '),
         applyButton = $(
@@ -5115,4 +5116,9 @@ var datetimepickerFactory = function ($) {
       absDelta % 120 === 0
     );
   }
+
+  //test
+
+ 
+  
 });
