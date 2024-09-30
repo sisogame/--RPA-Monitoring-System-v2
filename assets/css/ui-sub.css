@@ -491,6 +491,7 @@ a.btn-primary:hover {
     text-align: center;
     position: relative;
     line-height: 28px;
+    
 }
 
 .drop_zone>span {
@@ -502,5 +503,33 @@ a.btn-primary:hover {
     color: #2646ab;
     font-weight: 500;
 }
+
+.drop_zone .file-size{font-size: 16px ; color: #666; font-weight: 500 ; text-align: right;}
+.drop_zone .file-list{font-size: 16px; text-align: left;
+position: relative;color: #fff;
+line-height: 32px;}
+
+
+.drop_zone .file-list::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon_file.svg') no-repeat center center/ 20px 20px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+
+.drop_zone .file_delete{position: relative;}
+.drop_zone .file_delete span{display: none;}
+.drop_zone .file_delete::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/icon_file_delete.svg') no-repeat center center/ 16px 16px;
+    position: absolute;
+    margin-left: 10px;
+top: 5px;}
 
 /* File Drag and Drop UI [e] */

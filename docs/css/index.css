@@ -434,11 +434,11 @@ i:after {
     animation: defer 2s infinite;
 }
 
-[progress="검수중"]:before {
+[progress="검토요청"]:before {
     content: attr(progress);
 }
 
-[progress="검수중"]:after {
+[progress="검토요청"]:after {
     background-image: linear-gradient(90deg, #f8c657 0, #f8c657 1.5rem, transparent 1.5rem, transparent 1.7rem, #f8c657 1.7rem, #f8c657 3.2rem, transparent 3.2rem, transparent 3.4rem, #d0d7e4 3.4rem, #d0d7e4 4.9rem, transparent 4.9rem);
 }
 

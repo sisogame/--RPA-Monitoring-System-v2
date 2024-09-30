@@ -14,7 +14,7 @@
         .전체::before{content:'전체 : ';color:red;vertical-align:bottom;}
         .전::before{content:'작업전 : ';color:gray;vertical-align:bottom;}
         .작::before{content:'작업중 : ';color:blue ;vertical-align:bottom;}
-        .검::before{content:'검수중 : ';color:#f8c657;vertical-align:bottom;}
+        .검::before{content:'검토요청 : ';color:#f8c657;vertical-align:bottom;}
         .완료::before{content:'완료 : ';color:green;vertical-align:bottom;}
         .퍼센트::before{content:'진행률 : ';color:green;vertical-align:bottom;}
     </style>
@@ -66,7 +66,7 @@
                     <div>WorkUser-대기</div>
                     <div>이은영</div>
                     <div><i progress="작업중"></i></div>
-                    <div>calendar</div>
+                    <div>calendar-시간</div>
                 </a>
                 <a href="../html/workuser/작업.html">
                     <div></div>
@@ -76,17 +76,17 @@
                     <div>WorkUser-작업</div>
                     <div>이은영</div>
                     <div><i progress="작업중"></i></div>
-                    <div>calendar</div>
+                    <div>calendar-시간</div>
                 </a>
                 <a href="../html/workuser/공지.html">
                     <div></div>
                     <div>공지</div>
-                    <div></div>
+                    <div> </div>
                     <div></div>
                     <div>WorkUser-공지</div>
                     <div>이은영</div>
-                    <div><i progress="검수중"></i></div>
-                    <div></div>
+                    <div><i progress="검토요청"></i></div>
+                    <div>공지> 첨부파일> 영역 추가.</div>
                 </a>
                 <a href="../html/workuser/FAQ.html">
                     <div></div>
@@ -95,7 +95,7 @@
                     <div></div>
                     <div>WorkUser-FAQ</div>
                     <div>이은영</div>
-                    <div><i progress="검수중"></i></div>
+                    <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>
                 <a href="../html/workuser/상시.html">
@@ -132,8 +132,8 @@
                 <a href="#">
                     <div>Management</div>
                     <div>리소스</div>
-                    <div>pop</div>
-                    <div>calendar</div>
+                    <div></div>
+                    <div></div>
                     <div>Management-리소스</div>
                     <div>이은영</div>
                     <div><i progress="작업전"></i></div>
@@ -142,8 +142,8 @@
                 <a href="#">
                     <div></div>
                     <div>관리자</div>
-                    <div>pop</div>
-                    <div>interface-1step</div>
+                    <div></div>
+                    <div></div>
                     <div>Management-관리자</div>
                     <div>이은영</div>
                     <div><i progress="작업전"></i></div>
@@ -153,7 +153,7 @@
                     <div></div>
                     <div>과제</div>
                     <div></div>
-                    <div>interface-2step</div>
+                    <div></div>
                     <div>Management-과제</div>
                     <div>이은영</div>
                     <div><i progress="작업전"></i></div>
@@ -172,11 +172,11 @@
                 <a href="../html/Management/공지.html">
                     <div></div>
                     <div>공지</div>
-                    <div>reply</div>
+                    <div></div>
                     <div></div>
                     <div>Management-공지</div>
                     <div>이은영</div>
-                    <div><i progress="검수중"></i></div>
+                    <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>
                 <a href="../html/workuser/FAQ.html">
@@ -186,17 +186,17 @@
                     <div></div>
                     <div>Management-FAQ</div>
                     <div>이은영</div>
-                    <div><i progress="검수중"></i></div>
+                    <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>
                 <a href="../html/Management/상시.html">
                     <div></div>
                     <div>상시</div>
-                    <div>reply</div>
+                    <div></div>
                     <div></div>
                     <div>Management-상시</div>
                     <div>이은영</div>
-                    <div><i progress="검수중"></i></div>
+                    <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>         
             </div>
@@ -213,7 +213,7 @@
     <script>
         $(function(){
             var 작 = $('i[progress="작업중"]').length;
-            var 검 = $('i[progress="검수중"]').length;
+            var 검 = $('i[progress=검토요청"]').length;
             var 전 = $('i[progress=""]').length;
             var 완료 = $('i[progress="완료"]').length;
             var 전체 = 작 + 검 + 전 + 완료;

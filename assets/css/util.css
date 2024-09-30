@@ -43,7 +43,7 @@
 /*[ Flex ] 
 ///////////////////////////////////////////////////////////
  */
-
+ .flex { display: flex; } 
 .flex-col { display: flex; flex-direction: column; height: 100%; } 
 
 .flex-sb-c { display: flex; justify-content: space-between; align-items: center; } 

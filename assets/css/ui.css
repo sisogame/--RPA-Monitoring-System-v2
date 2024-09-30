@@ -991,7 +991,14 @@ table.notice tbody tr td.date {
     background-color: #fff;
     color: #2C8ECF;
 }
+.pop-btnBottomArea .pop-btn-wrap.btn-delete {
+    background-color: #6E6E6E;
+}
 
+.pop-btnBottomArea .pop-btn-wrap.btn-delete:hover {
+    background-color: #fff;
+    color: #6E6E6E;
+}
 
 .pop-btnBottomArea {
     display: flex;

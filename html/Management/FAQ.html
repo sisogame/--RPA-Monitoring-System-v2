@@ -93,8 +93,8 @@
                                     <label class="label" for="유형구분">유형구분</label>
                                     <select>
                                         <option value="" selected="selected">--유형구분 전체--</option>
-                                        <option value="">일반</option>
-                                        <option value="">중요</option>
+                                        <option value="">자주묻는질문</option>
+                                        <option value="">메뉴얼</option>
                                     </select>
                                 </li>
                                 <li class="forms">
@@ -115,7 +115,7 @@
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
-                                    <input type="text" class="input hg46" placeholder="짉문+답변 검색">
+                                    <input type="text" class="input hg46" placeholder="제목+내용 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -142,7 +142,7 @@
                             </div>
                             <div class="tableFixHead-inner -mt-10">
                                 <div class="table-scroll">
-                                    <table class="fix-table tb-layout-auto table-row-link">
+                                    <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
                                             <col width="80px">
                                             <col width="100px">
@@ -310,18 +310,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>작성자</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="작성자"></td>
-                                        <th>작성자 부서</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="작성자 부서"></td>
-                                    </tr>
-                                    <tr>
                                         <th>등록일시</th>
                                         <td class="pop-tb-forms"><input type="text" placeholder="등록일시는 상세 정보일때 표출"></td>
                                         <th>조회수</th>
                                         <td class="pop-tb-forms"><input type="text" placeholder="조회수는 상세 정보일때 표출"></td>
                                     </tr>
-
+                                    <tr>
+                                        <th>제목</th>
+                                        <td colspan="3" class="pop-tb-forms">
+                                            <input type="text" placeholder="제목입력">
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <th>내용</th>
                                         <td colspan="3" class="pop-tb-forms tb_contents">
@@ -348,7 +347,7 @@
                     </li>
                     <li class="pop-btnBottomArea -gap-10">
                         <a href="#pop-small-save" class="btn-md01 pop-btn-wrap btn-save pop-open">저장</a>
-                        <a href="#pop-small-delete" class="btn-md01 pop-btn-wrap btn-save pop-open">삭제</a>
+                        <a href="#pop-small-delete" class="btn-md01 pop-btn-wrap btn-delete pop-open">삭제</a>
                         <a href="#" onclick="closeLayer('pop-open01')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
                     </li>
                 </ul>

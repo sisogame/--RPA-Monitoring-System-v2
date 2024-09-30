@@ -13,7 +13,7 @@ $(function () {
     $startDate.datetimepicker({
       lang: "kr",
       dateFormat: "yy/mm/dd",
-      // timeFormat: "hh:mm:ss",
+      timeFormat: "hh:mm:ss",
       timeFormat: false,
       scrollMonth: false,
       scrollInput: false,
@@ -28,7 +28,7 @@ $(function () {
     $endDate.datetimepicker({
       lang: "kr",
       dateFormat: "yy/mm/dd",
-      // timeFormat: "hh:mm:ss",
+      timeFormat: "hh:mm:ss",
       timeFormat: false,
       scrollMonth: false,
       scrollInput: false,
