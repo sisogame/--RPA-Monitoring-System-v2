@@ -481,4 +481,23 @@ $(function () {
   });
 
 
+  // test
+  $("#M_startDate2").Monthpicker({
+    onSelect: function () {
+      $("#M_endDate2").Monthpicker("option", {
+        minValue: $("#M_startDate2").val() // YYYY-MM format now
+      });
+    }
+  });
+
+  $("#M_endDate2").Monthpicker({
+    onSelect: function () {
+      $("#M_startDate2").Monthpicker("option", {
+        maxValue: $("#M_endDate2").val() // YYYY-MM format now
+      });
+    }
+  });
+
+
+
 });

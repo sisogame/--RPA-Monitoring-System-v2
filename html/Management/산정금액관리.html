@@ -9,22 +9,15 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
-
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
-
-    <!-- datepicker -->
+    
     <script src="../../assets/js/jquery-ui.js"></script>
-    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
-    <script src="../../assets/js/datetimepicker.js"></script>
+    
+    <!-- monthpicker -->
+    <link rel="stylesheet" href="../../assets/css/monthpicker.css">
+    <script src="../../assets/js/monthpicker-modifyt.js"></script>
 
-    <!-- datepicker >  reset, 확인버튼 감추기 -->
-    <style>
-        .xdsoft_datetimepicker .btn_calendar {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -94,34 +87,14 @@
                 <div class="contents-right-inner">
                     <div class="-search">
                         <div class="-w100">
-                            <ul class="-search-area">
-                                <li class="forms">
-                                    <label class="label" for="유형구분">유형구분</label>
-                                    <select>
-                                        <option value="" selected="selected">--전체--</option>
-                                        <option value="">자주묻는질문</option>
-                                        <option value="">메뉴얼</option>
-                                    </select>
-                                </li>
-                                <li class="forms">
-                                    <label class="label" for="과제명">과제명</label>
-                                    <select>
-                                        <option value="" selected="selected">--과제명 전체--</option>
-                                        <option value="">일반</option>
-                                        <option value="">중요</option>
-                                    </select>
-                                </li>
+                            <ul class="-search-area">                               
                                 <li class="forms">
                                     <label class="label" for="등록일">등록일</label>
-                                    <div class="calendar">
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart"  class="input-line input-calendar" />
-                                        <em class="entiti-tilde"></em>
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd"  class="input-line input-calendar" />
-                                    </div>
-                                </li>
-                                <li class="forms">
-                                    <label class="label" for="검색키워드">검색키워드</label>
-                                    <input type="text" class="input hg46" placeholder="짉문+답변 검색">
+                                <div class="calendar">
+                                    <input type="text" id="M_startDate" name="M_startDate" class="input-line input-calendar" placeholder="시작연도-월" />
+                                    <em class="entiti-tilde"></em>
+                                    <input type="text" id="M_endDate" name="M_endDate" class="input-line input-calendar" placeholder="마지막연도-월" />
+                                </div>
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -136,10 +109,10 @@
                     <div class="-table ">
                         <div class="tableFixHead-con">
                             <div class="titleWrap -pt-pb-5">
-                                <h3 class="tit_head">FAQ목록</h3>
+                                <h3 class="tit_head">소요시간 산정금액</h3>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-inner btn-excel -mr-10">
-                                        엑셀다운로드
+                                    <a href="#pop-open01" class="btn-inner btn-price -mr-10 pop-open">
+                                        산정금액등록
                                     </a>
                                 </div>
                             </div>
@@ -148,41 +121,73 @@
                                     <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
                                             <col width="80px">
-                                            <col width="100px">
-                                            <col width="250px" max-width="250px">
                                             <col width="*">
-                                            <col width="80px">
-                                            <col width="150px">
-                                            <col width="150px">
-                                            <col width="150px">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="15%">
                                         </colgroup>
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>유형</th>
-                                                <th>과제명</th>
-                                                <th>제목</th>
-                                                <th>첨부파일</th>
-                                                <th>작성자</th>
+                                                <th>소요시간별 산정금액(1시간당)</th>
+                                                <th>적용시작년월 </th>
+                                                <th>적용종료년월</th>
+                                                <th>등록자</th>
                                                 <th>등록일</th>
-                                                <th>조회수</th>
                                             </tr>
                                         </thead>
+
                                         <tbody>
                                             <tr class="-txt-c pop-open" href="#pop-open">
                                                 <td>1</td>
-                                                <td>일반</td>
-                                                <td class="-txt-lf">과제명과제명과제명과제명과제명과제명과제명</td>
-                                                <td class="-txt-lf">제목제목제목제목제목제목제목제목</td>
-                                                <td>
-                                                    <img src="../../assets/images/icon_clip_wt.svg" alt="첨부파일" class="icon_clip">
-                                                </td>
-                                                <td>관리자</td>
-                                                <td>2024.09.25</td>
-                                                <td>10</td>
+                                                <td class="-txt-rt time-price">12,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>2</td>
+                                                <td class="-txt-rt time-price">15,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>3</td>
+                                                <td class="-txt-rt time-price">11,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>4</td>
+                                                <td class="-txt-rt time-price">17,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>5</td>
+                                                <td class="-txt-rt time-price">16,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>6</td>
+                                                <td class="-txt-rt time-price">12,000 <em>원</em></td>
+                                                <td>2024-09</td>
+                                                <td>9999-12</td>
+                                                <td>홍길동</td>
+                                                <td>2024-09-01</td>
                                             </tr>
                                         </tbody>
-                                    </table>
                                     </table>
                                 </div>
                             </div>
@@ -204,7 +209,7 @@
                         <a href="#" onclick="closeLayer('pop-open')" class="close pop-close-btn"></a>
                     </li>
                     <li class="sheet-content">
-                        <div class="pop-scroll">
+                        <div class=" table-scroll">
                             <table class="pop-table">
                                 <tbody>
                                     <colgroup>
@@ -269,6 +274,53 @@
     </div>
     <!-- // pop-search -->
 
+      <!-- 소요시간별 산정금액 pop[S]  -->
+      <div id="pop-open01" class="pop-overlay" style="display: block;">
+        <div id="draggable02" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-smd">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">
+                        소요시간별 산정금액
+                        <a href="#" onclick="closeLayer('pop-open01')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content">
+                        <div class="table-scroll">
+                            <table class="pop-table">
+                                <tbody>
+                                    <colgroup>
+                                        <col style="width: 200px;">
+                                        <col>
+                                        <col style="width: 200px;">
+                                        <col>
+                                    </colgroup>
+                                    <tr>
+                                        <th>산정금액</th>
+                                        <td colspan="3" class="pop-tb-forms">
+                                            <input id="input-price" type="text" class="-w95 -txt-rt just-number price-format-input" placeholder="산정금액 입력">
+                                            <em> 원</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>적용시작년월</th>
+                                        <td colspan="3" class="pop-tb-forms">
+                                         
+                                                <input type="text" id="M_startDate2" name="M_startDate2" class="input-line input-calendar" placeholder="시작연도-월2222" style="height: 40px;"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="pop-btnBottomArea -gap-10">
+                        <a href="#pop-small-save" class="btn-md01 pop-btn-wrap btn-save pop-open">저장</a>
+                        <a href="#" onclick="closeLayer('pop-open01')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // pop-search -->
+
     <!-- pop-small-logout -->
     <div id="pop-small-logout" class="pop-overlay" style="display:;">
         <div id="draggable03" class="-w100-h100 flex-c-c">
@@ -276,7 +328,7 @@
                 <div class="pop-btnBottomArea flex-col">
                     <a href="#" onclick="closeLayer('pop-small-logout')" class="close pop-close-btn"></a>
                     <p class="pop-sm-txt">
-                        <span>정상적으로 로그아웃</span>
+                        <span>소요시간별 산정금액이</span>
                         <span>되었습니다.</span>
                     </p>
                     <a href="#" onclick="closeLayer('pop-small-logout')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
