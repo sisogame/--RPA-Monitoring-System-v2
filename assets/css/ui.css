@@ -290,7 +290,7 @@ img {
     height: 100%;
 }
 
-.titleWrap {
+.tableFixHead-con .titleWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -735,24 +735,28 @@ table.notice tbody tr td.date {
 /* scroll-xy */
 /* 스크롤바의 폭 너비 */
 .table-scroll {
-    scrollbar-width: auto;
+    /* scrollbar-width: auto;
     scrollbar-color: auto;
     max-height: 400px;
-    overflow-y: scroll; 
+    overflow-y: scroll;  */
     min-height:100%;
+    height: calc(100% - 56px);
 }
 
 
-.table-scroll::-webkit-scrollbar {
+.table-scroll::-webkit-scrollbar,
+.pop-scroll::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
 
-.table-scroll::-webkit-scrollbar-track {
+.table-scroll::-webkit-scrollbar-track,
+.pop-scroll::-webkit-scrollbar-track  {
     background-color: rgba(255, 255, 255, .15)
 }
 
-.table-scroll::-webkit-scrollbar-thumb {
+.table-scroll::-webkit-scrollbar-thumb,
+.pop-scroll::-webkit-scrollbar-thumb  {
     border-radius: 6px;
     /* background-color: rgba(255, 255, 255, 0.5); */
     background-color: #7699bd;
@@ -926,7 +930,10 @@ table.notice tbody tr td.date {
     width: 400px;
     padding: 0
 }
-
+.pop-smd {
+    width:600px;
+    padding: 0
+}
 .pop-md {
     width: 1000px;
     padding: 0
@@ -943,7 +950,11 @@ table.notice tbody tr td.date {
     max-width: 1600px;
     width: 100%;
 }
-
+.pop-sheet-container .sheet-content .pop-scroll {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+    max-height: 400px;
+    overflow-y: scroll; } 
 
 
 .pop-btnBottomArea .pop-btn-wrap {

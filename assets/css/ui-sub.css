@@ -264,10 +264,12 @@ em.entiti-tilde::after {
     min-width: 160px;
     height: 40px;
     background-size: 15px 15px;
+    color: #aaa;
 }
-
+.-search select:hover,
+.-search select:focus
 .-search .input {
-    width: 250px;
+    color: #fff;
 }
 
 .-search .date_picker {
@@ -290,6 +292,7 @@ em.entiti-tilde::after {
 
 .-table .table-scroll {
     min-height: 100%;
+    height: calc(100% - 56px);
 }
 
 
@@ -356,21 +359,23 @@ input.input-calendar:focus {
 
 .btn-line02,
 a.btn-line02 {
-    border: 2px solid #4A418B;
+    border: 2px solid #2646ab;;
     background: #fff;
-    color: #4A418B;
-    padding: 0 25px
+    color: #2646ab;
+    padding: 0 25px;
+    font-weight: 500;
 }
 
 .btn-primary,
 a.btn-primary {
-    background-color: #4F4694;
-    color: #fff
+    background-color: #2646ab;;
+    color: #fff;
+    font-weight: 500;
 }
 
 .btn-primary:hover,
 a.btn-primary:hover {
-    background-color: #413a7a
+    background-color: #1f3b93
 }
 
 /* Datepicker [e]*/
@@ -430,20 +435,36 @@ a.btn-primary:hover {
 
 .btn-wrap .btn-inner.btn-excel {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #949ACE;
+    /* background: #949ACE; */
+    background: #2E7D32;
 }
 
 .btn-wrap .btn-inner.btn-excel:hover {
-    background: #767BA4;
+    /* background: #767BA4; */
+    background: #247128;
+    color: #fff;
     border: 1px solid rgba(255, 255, 255, .5);
 }
 
+
+.btn-wrap .btn-inner.btn-price {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #00b1bc;
+}
+
+.btn-wrap .btn-inner.btn-price:hover {
+    background: #00b1bc;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+
+
 .btn-wrap .btn-inner.btn-pj {
-    background: #84C2B7
+    background: #2C8ECF
 }
 
 .btn-wrap .btn-inner.btn-pj:hover {
-    background: #699B92;
+    background: #2684c4;
     border: 1px solid rgba(255, 255, 255, .5);
 }
 
@@ -471,6 +492,17 @@ a.btn-primary:hover {
     border: 1px solid rgba(255, 255, 255, .5);
 }
 
+.btn-wrap .btn-inner-from.btn-rpa {
+    background: transparent;
+    border: 2px solid #2972DF;
+    color: #fff;
+}
+
+.btn-wrap .btn-inner-from.btn-rpa:hover {
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: #2972DF;
+}
 /* File Inputs [s] */
 .-table .icon_clip {
     max-width: 24px;
@@ -533,3 +565,6 @@ line-height: 32px;}
 top: 5px;}
 
 /* File Drag and Drop UI [e] */
+
+.fix-table td.time-price{font-weight: 700;font-size: 16px;}
+.fix-table td.time-price em{font-size: 14px; font-weight: 400; font-style: normal;}

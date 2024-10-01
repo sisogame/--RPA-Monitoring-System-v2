@@ -65,58 +65,34 @@ $(function () {
   $("#draggable06").draggable();
 });
 
-// 달력
-// $(function () {
-//   $.datetimepicker.setLocale("kr");
+//인풋박스 가격 콤마 
+$(function () {
+  $(document).on("keypress", ".just-number", function (e) {
+    let charCode = (e.which) ? e.which : e.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+  });
+  $(document).on('keyup', '.price-format-input', function (e) {
+    let val = this.value;
+    val = val.replace(/,/g, "");
+    if (val.length > 3) {
+      let noCommas = Math.ceil(val.length / 3) - 1;
+      let remain = val.length - (noCommas * 3);
+      let newVal = [];
+      for (let i = 0; i < noCommas; i++) {
+        newVal.unshift(val.substr(val.length - (i * 3) - 3, 3));
+      }
+      newVal.unshift(val.substr(0, remain));
+      this.value = newVal;
+    }
+    else {
+      this.value = val;
+    }
+  });
+  
+  $(document).ready(function(){
+    $('#input-price').focus();
+  })
 
-//   $(document).ready(function () {
-//     fn_egov_init_date();
-//   });
-
-//   function fn_egov_init_date() {
-//     var $startDate = $("#startDate");
-//     var $endDate = $("#endDate");
-//     $startDate.datetimepicker({
-//       lang: "kr",
-//       dateFormat: "yy/mm/dd",
-//       // timeFormat: "hh:mm:ss",
-//       timeFormat: false,
-//       scrollMonth: false,
-//       scrollInput: false,
-//       showMonthAfterYear: true,
-//       onShow: function (ct) {
-//         this.setOptions({
-//           maxDate: $endDate.val() ? $endDate.val() : false,
-//         });
-//       },
-//     });
-
-//     $endDate.datetimepicker({
-//       lang: "kr",
-//       dateFormat: "yy/mm/dd",
-//       // timeFormat: "hh:mm:ss",
-//       timeFormat: false,
-//       scrollMonth: false,
-//       scrollInput: false,
-//       showMonthAfterYear: true,
-//       onShow: function (ct) {
-//         this.setOptions({
-//           minDate: $startDate.val() ? $startDate.val() : false,
-//         });
-//       },
-//     });
-//   }
-
-//   $("#datebasicSvc").datetimepicker({
-//     lang: "kr",
-//     timepicker: false,
-//     format: "Y/m/d",
-//     formatDate: "Y/m/d",
-//   });
-
-//   $("#open").click(function () {
-//     $("#datebasicSvc").datetimepicker("show");
-//   });
-
-// });
-
+});

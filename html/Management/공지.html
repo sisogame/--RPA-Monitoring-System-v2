@@ -9,16 +9,22 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
-
+    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
 
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
 
+    <!-- datepicker -->
     <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+    <script src="../../assets/js/datetimepicker.js"></script>
 
-    <!-- monthpicker -->
-    <link rel="stylesheet" href="../../assets/css/monthpicker.css">
-    <script src="../../assets/js/monthpicker-modifyt.js"></script>
+    <!-- datepicker >  reset, 확인버튼 감추기 -->
+    <style>
+        .xdsoft_datetimepicker .btn_calendar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -108,9 +114,9 @@
                                 <li class="forms">
                                     <label class="label" for="등록일">등록일</label>
                                     <div class="calendar">
-                                        <input type="text" id="startDate" name="startDate" class="input-line input-calendar" placeholder="시작연도-월" style="display: ;" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" class="input-line input-calendar"/>
                                         <em class="entiti-tilde"></em>
-                                        <input type="text" id="endDate" name="endDate" class="input-line input-calendar" placeholder="마지막연도-월" style="display: ;" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" class="input-line input-calendar"/>
                                     </div>
                                 </li>
                                 <li class="forms">
@@ -297,7 +303,7 @@
                                             </select>
                                         </td>
                                         <th>작성자/소속부서</th>
-                                        <td class="pop-tb-forms">관리자/소속부서</td>
+                                        <td>관리자/소속부서</td>
                                     </tr>
                                     <tr>
                                         <th>과제명</th>
@@ -311,10 +317,10 @@
                                     </tr>
                                     <tr>
                                         <th>등록일시</th>
-                                        <td class="pop-tb-forms">2024-09-30
+                                        <td>2024-09-30
                                         </td>
                                         <th>조회수</th>
-                                        <td class="pop-tb-forms">조회수는 상세 정보일때 표출</td>
+                                        <td>조회수는 상세 정보일때 표출</td>
                                     </tr>
                                     <tr>
                                         <th>제목</th>

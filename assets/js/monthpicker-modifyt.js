@@ -464,18 +464,18 @@ $(function () {
   //   }
   // });
 
-  $("#startDate").Monthpicker({
+  $("#M_startDate").Monthpicker({
     onSelect: function () {
-      $("#endDate").Monthpicker("option", {
-        minValue: $("#startDate").val() // YYYY-MM format now
+      $("#M_endDate").Monthpicker("option", {
+        minValue: $("#M_startDate").val() // YYYY-MM format now
       });
     }
   });
 
-  $("#endDate").Monthpicker({
+  $("#M_endDate").Monthpicker({
     onSelect: function () {
-      $("#startDate").Monthpicker("option", {
-        maxValue: $("#endDate").val() // YYYY-MM format now
+      $("#M_startDate").Monthpicker("option", {
+        maxValue: $("#M_endDate").val() // YYYY-MM format now
       });
     }
   });

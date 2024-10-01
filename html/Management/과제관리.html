@@ -96,32 +96,32 @@
                         <div class="-w100">
                             <ul class="-search-area">
                                 <li class="forms">
-                                    <label class="label" for="유형구분">유형구분</label>
+                                    <label class="label" for="설계부문">설계부문</label>
                                     <select>
-                                        <option value="" selected="selected">--유형구분 전체--</option>
-                                        <option value="">자주묻는질문</option>
-                                        <option value="">메뉴얼</option>
-                                    </select>
-                                </li>
-                                <li class="forms">
-                                    <label class="label" for="과제명">과제명</label>
-                                    <select>
-                                        <option value="" selected="selected">--과제명 전체--</option>
+                                        <option value="" selected="selected">--설계부문 전체--</option>
                                         <option value="">일반</option>
                                         <option value="">중요</option>
                                     </select>
                                 </li>
                                 <li class="forms">
-                                    <label class="label" for="등록일">등록일</label>
-                                    <div class="calendar">
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" />
-                                        <em class="entiti-tilde"></em>
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" />
-                                    </div>
+                                    <label class="label" for="과제명칭">과제명칭</label>
+                                    <select>
+                                        <option value="" selected="selected">--과제명칭 전체--</option>
+                                        <option value="">과제명 1</option>
+                                        <option value="">과제명 2</option>
+                                    </select>
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="운영부서">운영부서</label>
+                                    <input type="text" class="input hg46 -w120" placeholder="텍스트 입력">
+                                </li>
+                                <li class="forms">
+                                    <label class="label" for="운영자">운영자</label>
+                                    <input type="text" class="input hg46 -w120" placeholder="텍스트 입력">
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
-                                    <input type="text" class="input hg46" placeholder="제목+내용 검색">
+                                    <input type="text" class="input hg46" placeholder="과제명+과제번호 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -130,19 +130,23 @@
                                         </a>
                                     </div>
                                 </li>
+                                <li style="margin-left: auto;">
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-inner-from btn-rpa -w160">
+                                            RPA 동기화
+                                        </a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="-table">
+                    <div class="-table ">
                         <div class="tableFixHead-con">
                             <div class="titleWrap -pt-pb-5">
-                                <h3 class="tit_head">FAQ목록</h3>
+                                <h3 class="tit_head">과제목록</h3>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-inner btn-excel -mr-10">
+                                    <a href="#" class="btn-inner btn-excel">
                                         엑셀다운로드
-                                    </a>
-                                    <a href="#pop-open01" class="btn-inner btn-pj pop-open">
-                                        FAQ등록
                                     </a>
                                 </div>
                             </div>
@@ -151,39 +155,64 @@
                                     <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
                                             <col width="80px">
-                                            <col width="100px">
+                                            <col width="150px">
+                                            <col width="150px">
                                             <col width="*">
-                                            <col width="*">
-                                            <col width="80px">
                                             <col width="150px">
                                             <col width="150px">
+                                            <col width="150pxㅍ">
                                             <col width="150px">
+                                            <col width="350px">
                                         </colgroup>
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>유형</th>
+                                                <th>설계부문</th>
+                                                <th>과제번호</th>
                                                 <th>과제명</th>
-                                                <th>제목</th>
-                                                <th>첨부파일</th>
-                                                <th>작성자</th>
-                                                <th>등록일</th>
-                                                <th>조회수</th>
+                                                <th>Ver.</th>
+                                                <th>운영부서</th>
+                                                <th>운영자</th>
+                                                <th>스케줄수</th>
+                                                <th>Desc.</th>
                                             </tr>
                                         </thead>
+
                                         <tbody>
                                             <tr class="-txt-c pop-open" href="#pop-open">
                                                 <td>1</td>
-                                                <td>일반</td>
-                                                <td class="-txt-lf">과제명과제명과제명과제명과제명과제명과제명</td>
-                                                <td class="-txt-lf">제목제목제목제목제목제목제목제목</td>
-                                                <td>
-                                                    <img src="../../assets/images/icon_clip_wt.svg" alt="첨부파일" class="icon_clip">
-                                                </td>
-                                                <td>관리자</td>
-                                                <td>2024.09.25</td>
-                                                <td>10</td>
+                                                <td>사용자</td>
+                                                <td class="-txt-lf">RPA</td>
+                                                <td class="-txt-lf">RPA</td>
+                                                <td>RPA</td>
+                                                <td>사용자</td>
+                                                <td>사용자</td>
+                                                <td>RPA</td>
+                                                <td  class="-txt-lf">RPA</td>
                                             </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>2</td>
+                                                <td>Part A</td>
+                                                <td class="-txt-lf">A-24-0001</td>
+                                                <td class="-txt-lf">Test 과제</td>
+                                                <td>1.1</td>
+                                                <td>설계A파트</td>
+                                                <td>홍길동</td>
+                                                <td>1</td>
+                                                <td  class="-txt-lf">설계 A파트 24년 1번째 과제. B...</td>
+                                            </tr>
+                                            <tr class="-txt-c pop-open" href="#pop-open">
+                                                <td>3</td>
+                                                <td>Part A</td>
+                                                <td class="-txt-lf">B-23-0001</td>
+                                                <td class="-txt-lf">B Test 과제</td>
+                                                <td>1.1</td>
+                                                <td>설계B파트</td>
+                                                <td>홍길동</td>
+                                                <td>1</td>
+                                                <td  class="-txt-lf">BOT1에 2개, >BOT2에 1개의...</td>
+                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                     </table>
@@ -198,12 +227,12 @@
 
 
     <!-- 상시과제제출 pop[S] -->
-    <div id="pop-open" class="pop-overlay" style="display:;">
+    <div id="pop-open" class="pop-overlay" style="display: ;">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
-                        FAQ
+                        상시과제제출
                         <a href="#" onclick="closeLayer('pop-open')" class="close pop-close-btn"></a>
                     </li>
                     <li class="sheet-content">
@@ -219,12 +248,20 @@
                                     <tr>
                                         <th>유형구분</th>
                                         <td><span>설계 - 호선 자료</span> </td>
+                                        <th>적용범위</th>
+                                        <td><span>설계</span> </td>
+                                    </tr>
+                                    <tr>
                                         <th>작성자</th>
+                                        <td><span>임혜지</span> </td>
+                                        <th>부서</th>
                                         <td><span>설계운영부 임혜지</span> </td>
                                     </tr>
                                     <tr>
-                                        <th>과제명</th>
-                                        <td colspan="3">과제명과제명과제명과제명과제명과제명</td>
+                                        <th>소요시간</th>
+                                        <td><span>10</span> </td>
+                                        <th>수행주기</th>
+                                        <td><span>2</span> </td>
                                     </tr>
                                     <tr>
                                         <th>등록일시</th>
@@ -273,129 +310,6 @@
     <!-- // pop-search -->
 
 
-
-    <!-- FAQ등록 pop[S]  -->
-    <div id="pop-open01" class="pop-overlay" style="display:;">
-        <div id="draggable02" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-md">
-                <ul class="pop-sheet-container">
-                    <li class="sheet-header">
-                        FAQ
-                        <a href="#" onclick="closeLayer('pop-open01')" class="close pop-close-btn"></a>
-                    </li>
-                    <li class="sheet-content">
-                        <div class="table-scroll">
-                            <table class="pop-table">
-                                <tbody>
-                                    <colgroup>
-                                        <col style="width: 200px;">
-                                        <col>
-                                        <col style="width: 200px;">
-                                        <col>
-                                    </colgroup>
-                                    <tr>
-                                        <th>유형구분</th>
-                                        <td class="pop-tb-forms">
-                                            <select>
-                                                <option value="" selected="selected">--유형구분 전체--</option>
-                                                <option value="">일반</option>
-                                                <option value="">중요</option>
-                                            </select>
-                                        </td>
-                                        <th>작성자/소속부서</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="관리자/소속부서"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>과제명</th>
-                                        <td colspan="3" class="pop-tb-forms">
-                                            <select>
-                                                <option value="" selected="selected">--과제명 전체--</option>
-                                                <option value="">과제관리의 프로세스명 1 </option>
-                                                <option value="">과제관리의 프로세스명 2</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>등록일시</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="등록일시는 상세 정보일때 표출"></td>
-                                        <th>조회수</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="조회수는 상세 정보일때 표출"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>제목</th>
-                                        <td colspan="3" class="pop-tb-forms">
-                                            <input type="text" placeholder="제목입력">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>내용</th>
-                                        <td colspan="3" class="pop-tb-forms tb_contents">
-                                            <textarea rows="4" cols="50" placeholder="내용 입력하세요."></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>첨부파일</th>
-                                        <td colspan="3" class="-p-15">
-                                            <ul>
-                                                <li class="drop_zone">
-                                                    <span>영역을 클릭 또는 파일을 드래그하세요.</span>
-                                                    <span>(※ 업로드 최대용량은 100MB입니다.)</span>
-                                                </li>
-                                                <li>
-                                                    <p class="txt-note -mt-10">※ 첨부파일은 동영상과 ppt를 첨부해 주세요.</p>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </li>
-                    <li class="pop-btnBottomArea -gap-10">
-                        <a href="#pop-small-save" class="btn-md01 pop-btn-wrap btn-save pop-open">저장</a>
-                        <a href="#pop-small-delete" class="btn-md01 pop-btn-wrap btn-delete pop-open">삭제</a>
-                        <a href="#" onclick="closeLayer('pop-open01')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- // pop-search -->
-
-
-
-    <!-- pop-small-save -->
-    <div id="pop-small-save" class="pop-overlay" style="display:;">
-        <div id="draggable03" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-sm">
-                <div class="pop-btnBottomArea flex-col">
-                    <a href="#" onclick="closeLayer('pop-small-save')" class="close pop-close-btn"></a>
-                    <p class="pop-sm-txt">
-                        <span>FAQ가 정상적으로</span> <span>저장되었습니다</span>
-                    </p>
-                    <a href="#" onclick="closeLayer('pop-small-save')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// pop-small-save -->
-
-    <!-- pop-small-delete -->
-    <div id="pop-small-delete" class="pop-overlay" style="display:;">
-        <div id="draggable03" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-sm">
-                <div class="pop-btnBottomArea flex-col">
-                    <a href="#" onclick="closeLayer('pop-small-delete')" class="close pop-close-btn"></a>
-                    <p class="pop-sm-txt">
-                        <span>FAQ가 정상적으로</span> <span>삭제되었습니다</span>
-                    </p>
-                    <a href="#" onclick="closeLayer('pop-small-delete')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// pop-small-delete -->
-
     <!-- pop-small-logout -->
     <div id="pop-small-logout" class="pop-overlay" style="display:;">
         <div id="draggable03" class="-w100-h100 flex-c-c">
@@ -412,5 +326,6 @@
         </div>
     </div>
     <!--// pop-small-logout -->
+
 
 </body>

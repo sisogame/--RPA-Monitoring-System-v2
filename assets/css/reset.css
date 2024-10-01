@@ -176,7 +176,7 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
+em{font-style: normal;}
 button {
     cursor: pointer;
     background-color: transparent;
@@ -232,7 +232,8 @@ input::-webkit-search-results-decoration {
     font-size: 14px;
     border-radius: 5px;
     background-color: #202636;
-    min-width: 200px;
+    /* min-width: 200px; */
+    width: 200px;
     padding: 0 20px 0 15px;
 }
 
@@ -299,8 +300,6 @@ input:disabled {
 }
 
 
-
-
 /* popup table Forms [s] */
 .pop-table tbody td.pop-tb-forms {
     padding: 0;
@@ -315,7 +314,7 @@ input:disabled {
     line-height: 45px;
     background-color: #131720;
     font-size: 16px;
-    color: #fff;
+    color: #aaa;
     text-indent: 0;
     padding: 0 15px;
     width: 100%;
@@ -327,11 +326,11 @@ input:disabled {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
     background: #131720 url(../images/icon_arrow_down.svg) no-repeat center right 10px;
     background-size: 15px 15px;
     padding: 0 20px 0 15px;
 }
+
 
 .pop-tb-forms input[type=text]:hover,
 .pop-tb-forms input[type=text]:focus,
