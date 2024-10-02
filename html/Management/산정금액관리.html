@@ -275,16 +275,16 @@
     <!-- // pop-search -->
 
       <!-- 소요시간별 산정금액 pop[S]  -->
-      <div id="pop-open01" class="pop-overlay" style="display: block;">
+      <div id="pop-open01" class="pop-overlay" style="display: ;">
         <div id="draggable02" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-smd">
+            <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
                         소요시간별 산정금액
                         <a href="#" onclick="closeLayer('pop-open01')" class="close pop-close-btn"></a>
                     </li>
                     <li class="sheet-content">
-                        <div class="table-scroll">
+                        <div class="pop-scroll">
                             <table class="pop-table">
                                 <tbody>
                                     <colgroup>
@@ -303,8 +303,11 @@
                                     <tr>
                                         <th>적용시작년월</th>
                                         <td colspan="3" class="pop-tb-forms">
-                                         
-                                                <input type="text" id="M_startDate2" name="M_startDate2" class="input-line input-calendar" placeholder="시작연도-월2222" style="height: 40px;"/>
+                                            <div class="calendar">
+                                                <input type="text" id="M_startDate2" name="M_startDate2" class="input-line input-calendar" placeholder="시작연도-월" />
+                                                <em class="entiti-tilde"></em>
+                                                <input type="text" id="M_endDate2" name="M_endDate2" class="input-line input-calendar" placeholder="마지막연도-월" />
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>

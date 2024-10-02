@@ -158,6 +158,7 @@ $(function () {
         }
       };
 
+      
       if (null !== this.opts.minValue || null !== this.opts.minYear) {
         if (null !== this.opts.minValue) {
           var b = this.opts.minValue.split("-"); // Change separator to "-"
@@ -470,7 +471,7 @@ $(function () {
         minValue: $("#M_startDate").val() // YYYY-MM format now
       });
     }
-  });
+  }); 
 
   $("#M_endDate").Monthpicker({
     onSelect: function () {

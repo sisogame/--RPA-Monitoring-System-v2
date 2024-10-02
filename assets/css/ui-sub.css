@@ -436,12 +436,12 @@ a.btn-primary:hover {
 .btn-wrap .btn-inner.btn-excel {
     border: 1px solid rgba(255, 255, 255, 0.2);
     /* background: #949ACE; */
-    background: #2E7D32;
+    background: #4EA180;
 }
 
 .btn-wrap .btn-inner.btn-excel:hover {
     /* background: #767BA4; */
-    background: #247128;
+    background: #3d9170;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, .5);
 }
@@ -493,15 +493,15 @@ a.btn-primary:hover {
 }
 
 .btn-wrap .btn-inner-from.btn-rpa {
-    background: transparent;
-    border: 2px solid #2972DF;
+    background: #4C75D6;
+    /* border: 2px solid #2972DF; */
     color: #fff;
 }
 
 .btn-wrap .btn-inner-from.btn-rpa:hover {
     background: #fff;
     border: 1px solid rgba(255, 255, 255, .5);
-    color: #2972DF;
+    color: #4C75D6;
 }
 /* File Inputs [s] */
 .-table .icon_clip {

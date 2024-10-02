@@ -375,3 +375,22 @@ textarea::-webkit-input-placeholder {
     background: rgba(0, 0, 0, 0);
     transition: all .2s linear;
 }
+
+
+.sm-inputWrap.sm-input input[type=text],
+.sm-inputWrap.sm-input input[type=text] {
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #56566a;
+    height: 36px;
+    padding: 2px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.sm-inputWrap.sm-input input[type=text]:hover,
+.sm-inputWrap.sm-input input[type=text]:focus{
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid #fff;
+}

@@ -8,8 +8,12 @@
 .-w95 { width: 95% !important; }
 .-w100-h100 { width: 100% !important; height: 100% !important; } 
 
+.-w50{width: 50px !important;}
+.-w100{width: 100px !important;}
 .-w120{width: 120px !important;}
 .-w160{width: 160px !important;}
+
+
 /*[ height ]
 ///////////////////////////////////////////////////////////
 */
@@ -74,6 +78,13 @@
 
 .tb-layout-fix { table-layout: fixed; } 
 
+/*[ diplay ]
+///////////////////////////////////////////////////////////
+*/
+
+
+.display-block { display: block; } 
+.display-none { display: none; } 
 
 /*[ gap ]
 ///////////////////////////////////////////////////////////

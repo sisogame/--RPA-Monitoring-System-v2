@@ -743,7 +743,6 @@ table.notice tbody tr td.date {
     height: calc(100% - 56px);
 }
 
-
 .table-scroll::-webkit-scrollbar,
 .pop-scroll::-webkit-scrollbar {
     width: 6px;
@@ -761,6 +760,8 @@ table.notice tbody tr td.date {
     /* background-color: rgba(255, 255, 255, 0.5); */
     background-color: #7699bd;
 }
+
+
 
 
 
@@ -862,7 +863,7 @@ table.notice tbody tr td.date {
     body {
         overflow: scroll;
         min-width: 1600px;
-    }
+    }c
 }
 
 
@@ -876,7 +877,7 @@ table.notice tbody tr td.date {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, .3);
-    z-index: 999999;
+    z-index: 50;
     display: none;
     color: #111;
 }
@@ -950,11 +951,7 @@ table.notice tbody tr td.date {
     max-width: 1600px;
     width: 100%;
 }
-.pop-sheet-container .sheet-content .pop-scroll {
-    scrollbar-width: auto;
-    scrollbar-color: auto;
-    max-height: 400px;
-    overflow-y: scroll; } 
+
 
 
 .pop-btnBottomArea .pop-btn-wrap {
@@ -1036,11 +1033,21 @@ table.notice tbody tr td.date {
 }
 
 .pop-sheet-container .sheet-content {
-    height: 100%;
+    /* height: 100%; */
     font-size: 16px;
     color: #fff;
     padding: 10px;
+    height: calc(100% - 50px - 65px);
 }
+
+
+.pop-sheet-container .sheet-content .pop-scroll {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+    max-height: 600px;
+    overflow-y: auto; 
+} 
+
 
 
 /* modal-table */
@@ -1057,6 +1064,7 @@ table.notice tbody tr td.date {
     background-color: #1089ff;
 }
 
+
 .pop-table tbody th {
     border: none;
     padding: 10px 20px;
@@ -1064,6 +1072,7 @@ table.notice tbody tr td.date {
     color: #fff;
     font-weight: 700;
 }
+
 
 .pop-table tbody th {
     text-align: left;
@@ -1087,6 +1096,7 @@ table.notice tbody tr td.date {
     height: 40px;
     background: rgba(0, 0, 0, 0.15);
     border-top: 1px solid #56566a;
+    border-right:1px solid #56566a;
     font-weight: 400;
 }
 
@@ -1128,6 +1138,12 @@ table.notice tbody tr td.date {
     display: block;
 }
 
+.pop-table tbody td p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 /* test table row link */
 .table-row-link {
     position: relative;
@@ -1139,7 +1155,7 @@ table.notice tbody tr td.date {
 }
 
 
-
+.sm-inputWrap{display: flex;gap:9px; padding: 0 15px;align-items: center;}
 /* monthPicker */
 
 .intervalInput {
@@ -1148,7 +1164,19 @@ table.notice tbody tr td.date {
     margin-bottom: 15px;
 }
 
-/* monthpicker.css */
 
 
-/* months */
+.pop-table thead th{
+    text-align: left;
+    padding: 0 10px;
+    height: 40px;
+    border-top: 1px solid #56566a;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 1px solid #56566a;
+}
