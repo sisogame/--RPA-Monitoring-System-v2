@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid #3c3c4a;
-    z-index: 1;
+    z-index: 15;
     margin-top: 60px;
 }
 
@@ -38,6 +38,7 @@
 .contents-right .contents-right-inner {
     height: 100%;
     padding: 10px;
+    overflow: hidden;
 }
 
 /* left menu */
@@ -95,28 +96,53 @@
     color: #fff;
 }
 
-/* side menu - home [s] */
+/* side menu -  공통메뉴 [s] */
 .btn-nav a.side-nav-on p.menu-home {
     position: relative;
 }
 
-.btn-nav a.side-nav-on>p.menu-home.ico-01::before {
+.btn-nav a.side-nav-on>p.menu-home.ico-home::before {
     content: "";
     display: block;
     width: 45px;
     height: 45px;
-    background: url('../images/m_home00_wt.svg') no-repeat center center/ 24px 24px;
+    background: url('../images/m_home_wt.svg') no-repeat center center/ 24px 24px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-home.ico-01::before {
+.btn-nav a.side-nav-on.active>p.menu-home.ico-home::before {
     content: "";
     display: block;
     width: 45px;
     height: 45px;
-    background: url('../images/m_home00_blue.svg') no-repeat center center/ 24px 24px;
+    background: url('../images/m_home_blue.svg') no-repeat center center/ 24px 24px;
 }
 
-/* side menu - home [s] */
+
+.btn-nav a.side-nav-on>p.menu-list.ico-faq::before {
+    background: url('../images/m_faq_wt.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on.active>p.menu-list.ico-faq::before {
+    background: url('../images/m_faq_blue.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on>p.menu-list.ico-task::before {
+    background: url('../images/m_task_wt.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on.active>p.menu-list.ico-task::before {
+    background: url('../images/m_task_blue.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on>p.menu-list.ico-notice::before {
+    background: url('../images/m_notice_wt.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on.active>p.menu-list.ico-notice::before {
+    background: url('../images/m_notice_blue.svg') no-repeat center center/ 20px 20px;
+}
+
+/* side menu - 공통메뉴 [s] */
 
 /* side menu - list [s] */
 
@@ -134,42 +160,59 @@
     height: 20px;
 }
 
-.btn-nav a.side-nav-on>p.menu-list.ico-01::before {
+.btn-nav a.side-nav-on>p.menu-list.ico-wk-01::before {
     background: url('../images/m_workuser01_wt.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-list.ico-01::before {
+.btn-nav a.side-nav-on.active>p.menu-list.ico-wk-01::before {
     background: url('../images/m_workuser01_blue.svg') no-repeat center center/ 20px 20px;
 }
-.btn-nav a.side-nav-on>p.menu-list.ico-02::before {
+.btn-nav a.side-nav-on>p.menu-list.ico-wk-02::before {
     background: url('../images/m_workuser02_wt.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-list.ico-02::before {
+.btn-nav a.side-nav-on.active>p.menu-list.ico-wk-02::before {
     background: url('../images/m_workuser02_blue.svg') no-repeat center center/ 20px 20px;
 }
-.btn-nav a.side-nav-on>p.menu-list.ico-03::before {
-    background: url('../images/m_workuser03_wt.svg') no-repeat center center/ 20px 20px;
+
+/* management */
+.btn-nav a.side-nav-on>p.menu-list.ico-mg-01::before {
+    background: url('../images/m_management01_wt.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-list.ico-03::before {
-    background: url('../images/m_workuser03_blue.svg') no-repeat center center/ 20px 20px;
+.btn-nav a.side-nav-on.active>p.menu-list.ico-mg-01::before {
+    background: url('../images/m_management01_blue.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on>p.menu-list.ico-04::before {
-    background: url('../images/m_workuser04_wt.svg') no-repeat center center/ 20px 20px;
+.btn-nav a.side-nav-on>p.menu-list.ico-mg-02::before {
+    background: url('../images/m_management02_wt.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-list.ico-04::before {
-    background: url('../images/m_workuser04_blue.svg') no-repeat center center/ 20px 20px;
+.btn-nav a.side-nav-on.active>p.menu-list.ico-mg-02::before {
+    background: url('../images/m_management02_blue.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on>p.menu-list.ico-05::before {
-    background: url('../images/m_workuser05_wt.svg') no-repeat center center/ 20px 20px;
+.btn-nav a.side-nav-on>p.menu-list.ico-mg-03::before {
+    background: url('../images/m_management03_wt.svg') no-repeat center center/ 20px 20px;
 }
 
-.btn-nav a.side-nav-on.active>p.menu-list.ico-05::before {
-    background: url('../images/m_workuser05_blue.svg') no-repeat center center/ 20px 20px;
+.btn-nav a.side-nav-on.active>p.menu-list.ico-mg-03::before {
+    background: url('../images/m_management03_blue.svg') no-repeat center center/ 20px 20px;
+}
+.btn-nav a.side-nav-on>p.menu-list.ico-mg-04::before {
+    background: url('../images/m_management04_wt.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on.active>p.menu-list.ico-mg-04::before {
+    background: url('../images/m_management04_blue.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on>p.menu-list.ico-mg-05::before {
+    background: url('../images/m_dashboard01_wt.svg') no-repeat center center/ 20px 20px;
+}
+
+.btn-nav a.side-nav-on.active>p.menu-list.ico-mg-05::before {
+    background: url('../images/m_dashboard01_blue.svg') no-repeat center center/ 20px 20px;
 }
 
 
@@ -232,13 +275,14 @@
 }
 .-search .-search-area {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    flex-flow:wrap
 }
 .-search li {
     display: flex;
     height: 40px;
     align-items: center;
-    gap: 16px;
+    gap: 15px;
 }
 
 
@@ -264,7 +308,8 @@ em.entiti-tilde::after {
     min-width: 160px;
     height: 40px;
     background-size: 15px 15px;
-    color: #aaa;
+    /* color: #aaa; */
+    color: #fff;
 }
 .-search select:hover,
 .-search select:focus
@@ -307,7 +352,7 @@ input.input-line {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
-    color: #ff0000;
+    color: #fff;
     border: 1px solid #555;
     background: #202636;
     border-radius: 5px;
@@ -318,8 +363,9 @@ input.input-line:focus,
 input.input-line.focus {
     height: 40px;
     line-height: 40px;
-    border: 2px solid #fff;
+    border: 2px solid #287dfa;
     border-radius: 5px;
+     outline: none;
 }
 
 input.input-calendar {
@@ -568,3 +614,94 @@ top: 5px;}
 
 .fix-table td.time-price{font-weight: 700;font-size: 16px;}
 .fix-table td.time-price em{font-size: 14px; font-weight: 400; font-style: normal;}
+
+
+/* WorkUser > home area */
+.tableFixHead-con .titleWrap .txt-time {
+
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+/* DashBoard home  */
+.card-Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+.card-Wrap .card-contents {
+    width: calc((100% - 15px * 2) / 3);
+    margin-top: 0;
+    margin-right: 15px;
+    background-color: #202636;
+    min-height:550px;
+    display: flex;
+    flex-direction: column
+}
+.card-Wrap .card-contents:nth-child(3n) {
+    margin-right: 0;
+}
+.card-Wrap .card-contents:nth-child(n+4) {
+    margin-top: 15px;
+}
+
+.card-contents .title-area {
+    border-bottom: 3px solid #56566a;
+    padding: 10px;
+}
+.card-contents .title-area .-h-lh-32{height: 32px;line-height: 32px;}
+.card-contents .card-body {
+    margin: 10px;
+    height: 100%;
+}
+.card-contents .card-body .tit-chart {
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+}
+.card-contents .card-body .dummy_img-chart {
+    object-fit: contain;
+    height: calc(100% - 55px);
+    background-color:#202636;
+}
+/* popup - inner area */
+.pop-sheet-container .sheet-content
+.pop-forms {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 15px;
+}
+.col-container {
+    display: flex;
+    gap: 15px;
+    background-color: #202636;
+    padding: 10px;
+}
+.col-1 {
+   flex: 1;
+}
+.col-container .col-left {
+    flex: 45%;
+}
+.col-container .col-right {
+    flex: 55%;
+    background-color: #202636;
+}
+.col-container .col-right .tit-chart,
+.col-container .col-1 .tit-chart
+{text-align: center;font-size: 16px;color: #fff;margin: 20px 0;}
+.col-container .col-1 .tit-chart .inner-tit {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #202636;
+    border: 1px solid #56566a;
+    padding: 10px 30px;
+    margin-right: 10px;
+}

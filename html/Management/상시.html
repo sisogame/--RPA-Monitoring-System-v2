@@ -55,32 +55,42 @@
                 <ul class="left-menu">
                     <li class="btn-nav">
                         <a rel="Home" href="#" class="-h100 ripple side-nav-on">
-                            <p class="flex-c-c -h100 menu-home ico-01"></p>
+                            <p class="flex-c-c -h100 menu-home ico-home"></p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="대기" href="#" class="-h100 ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-01">대기</p>
+                        <a rel="리소스" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-01">리소스</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="작업" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-02">작업</p>
+                        <a rel="관리" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-02">관리</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="과제" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-03">과제</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="산정" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-04">산정</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="공지" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-03">공지</p>
+                            <p class="navbox-area menu-list ico-notice">공지</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="FAQ" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-04">FAQ</p>
+                            <p class="navbox-area menu-list ico-faq">FAQ</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="상시" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-05">상시</p>
+                            <p class="navbox-area menu-list ico-task">상시</p>
                         </a>
                     </li>
                     <li class="btn-nav">
@@ -93,7 +103,7 @@
             <div class="contents-right">
                 <div class="contents-right-inner">
                     <div class="-search">
-                        <div class="-w100">
+                        <div class="-w100p">
                             <ul class="-search-area">
                                 <li class="forms">
                                     <label class="label" for="유형구분">유형구분</label>
@@ -114,9 +124,9 @@
                                 <li class="forms">
                                     <label class="label" for="유형구분">등록일</label>
                                     <div class="calendar">
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" class="input-line input-calendar"/>
                                         <em class="entiti-tilde"></em>
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" />
+                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" class="input-line input-calendar"/>
                                     </div>
                                 </li>
                                 <li class="forms">
@@ -126,8 +136,7 @@
                                         <option value="">일반</option>
                                         <option value="">중요</option>
                                     </select>
-                                    <input type="text" class="input hg46" placeholder="키워드 검색
-                                    ">
+                                    <input type="text" class="input hg46 -w240" placeholder="키워드 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -331,11 +340,8 @@
                                     </tr>
                                     <tr>
                                         <th>내용</th>
-                                        <td class="tb_contents" colspan="3">
-                                            <div class="tb_contents-inner">
-                                                <p>8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.
-                                                </p>
-                                            </div>
+                                        <td class="tb_contents pop-tb-forms" colspan="3">
+                                            <textarea rows="4" cols="50" placeholder="내용 입력하세요." disabled="disabled"> 8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다. </textarea>
                                         </td>
                                     </tr>
                                     <tr>
@@ -393,18 +399,18 @@
                                                 <option value="">중요</option>
                                             </select>
                                         </td>
-                                        <th>적용범위</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="적용범위"></td>
+                                        <th>적용부서</th>
+                                        <td class="pop-tb-forms"><input type="text" placeholder="적용부서"></td>
                                     </tr>
                                     <tr>
                                         <th>작성자</th>
                                         <td class="pop-tb-forms"><input type="text" placeholder="작성자"></td>
-                                        <th>부서</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="부서"></td>
+                                        <th>작성자 부서</th>
+                                        <td class="pop-tb-forms"><input type="text" placeholder="작성자 부서"></td>
                                     </tr>
                                     <tr>
-                                        <th>소요시간</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="소요시간"></td>
+                                        <th>1회 소요시간</th>
+                                        <td class="pop-tb-forms"><input type="text" placeholder="1회  소요시간"></td>
                                         <th>수행주기</th>
                                         <td class="pop-tb-forms"><input type="text" placeholder="수행주기"></td>
                                     </tr>

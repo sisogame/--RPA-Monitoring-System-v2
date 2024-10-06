@@ -55,32 +55,42 @@
                 <ul class="left-menu">
                     <li class="btn-nav">
                         <a rel="Home" href="#" class="-h100 ripple side-nav-on">
-                            <p class="flex-c-c -h100 menu-home ico-01"></p>
+                            <p class="flex-c-c -h100 menu-home ico-home"></p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="대기" href="#" class="-h100 ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-01">대기</p>
+                        <a rel="리소스" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-01">리소스</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="작업" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-02">작업</p>
+                        <a rel="관리" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-02">관리</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="과제" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-03">과제</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="산정" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-04">산정</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="공지" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-03">공지</p>
+                            <p class="navbox-area menu-list ico-notice">공지</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="FAQ" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-04">FAQ</p>
+                            <p class="navbox-area menu-list ico-faq">FAQ</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="상시" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-05">상시</p>
+                            <p class="navbox-area menu-list ico-task">상시</p>
                         </a>
                     </li>
                     <li class="btn-nav">
@@ -93,7 +103,7 @@
             <div class="contents-right">
                 <div class="contents-right-inner">
                     <div class="-search">
-                        <div class="-w100">
+                        <div class="-w100p">
                             <ul class="-search-area">
                                 <li class="forms">
                                     <label class="label" for="설계부문">설계부문</label>
@@ -121,7 +131,7 @@
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
-                                    <input type="text" class="input hg46" placeholder="과제명+과제번호 검색">
+                                    <input type="text" class="input hg46 -w240" placeholder="과제명+과제번호 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -151,7 +161,7 @@
                                 </div>
                             </div>
                             <div class="tableFixHead-inner -mt-10">
-                                <div class="table-scroll">
+                                <div class="table-scroll -max-ht-400">
                                     <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
                                             <col width="80px">
@@ -224,13 +234,13 @@
         </div>
     </div>
 
-    <!-- 상시과제제출 pop[S] -->
-    <div id="pop-open" class="pop-overlay" style="display:block ;">
+    <!-- 과제관리 pop[S] -->
+    <div id="pop-open" class="pop-overlay" style="display: ;">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
-                        상시과제제출
+                        과제관리
                         <a href="#" onclick="closeLayer('pop-open')" class="close pop-close-btn"></a>
                     </li>
                     <li class="sheet-content">
@@ -245,23 +255,48 @@
                                     </colgroup>
                                     <tr>
                                         <th>Process ID</th>
-                                        <td><span>Db6378768-53be-455b-af4f-c23</span> </td>
+                                        <td>
+                                        <label class="disabled">
+                                            <input type="disabled" name="manage" id="manage-01" disabled="disabled">
+                                            <span for="manage-01">Db6378768-53be-455b-af4f-c23</span>
+                                        </label>
+                                    </td>
                                         <th>배포 Version</th>
-                                        <td><span>1.00</span> </td>
+                                        <td>
+                                            <label class="disabled">
+                                                <input type="disabled" name="manage" id="manage-02" disabled="disabled">
+                                                <span for="manage-02">1.00</span>
+                                            </label>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Process Name</th>
-                                        <td colspan="3"><span>SSSSS-SSSSS124</span> </td>
+                                        <td colspan="3">
+                                            <label class="disabled">
+                                                <input type="disabled" name="manage" id="manage-03" disabled="disabled">
+                                                <span for="manage-03">SSSSS-SSSSS124</span>
+                                            </label>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>부문</th>
                                         <td class="pop-tb-forms"><input type="text" placeholder="설계부문 입력"></td>
                                         <th>과제번호</th>
-                                        <td><span>B-23-001A</span> </td>
+                                        <td>
+                                        <label class="disabled">
+                                        <input type="disabled" name="manage" id="manage-04" disabled="disabled">
+                                        <span for="manage-04">B-23-001A</span>
+                                        </label>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>과제명</th>
-                                        <td colspan="3"><span>B Test 과제</span></td>
+                                        <td colspan="3" class="">
+                                            <label class="disabled">
+                                                <input type="disabled" name="manage_01" id="manage_01"  disabled="disabled">
+                                                <span for="manage_01">B Test 과제</span>
+                                            </label>                                    
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>운영자</th>
@@ -319,52 +354,64 @@
                                     </tr>
                                 </tbody>
                             </table>
-
-                            <div class="">
-                                <div class="titleWrap -pt-pb-5">
-                                    <h3 class="tit_head">스케줄</h3>
-                                </div>
-                                <table class="pop-table">
+                        </div>
+                        <div>
+                            <h3 class="tit_head -mt15-mb15">스케줄</h3>
+                           <div class="pop-scroll -max-ht-200">
+                                <table class="fix-table tb-layout-fix table-row-link">
                                     <colgroup>
-                                        <col width="50px" >
-                                        <col  width="120px">
-                                        <col  width="120px">
-                                        <col  width="50px">
-                                        <col  width="120px">
-                                        <col  width="120px">
-                                        <col  width="120px">
-                                        <col  width="*">
-                                        <col>
+                                        <col width="80px">
+                                        <col width="100px">
+                                        <col width="*">
+                                        <col width="*">
+                                        <col width="80px">
+                                        <col width="150px">
+                                        <col width="150px">
+                                        <col width="150px">
                                     </colgroup>
                                     <thead>
-                                    <tr>
-                                      <th>No</th>
-                                      <th>BOT</th>
-                                      <th>작업이름</th>
-                                      <th>주기</th>
-                                      <th>완료예정</th>
-                                      <th>다음작업시간</th>
-                                      <th>종료일시</th>
-                                      <th>Desc.</th>
-                                    </tr>
-                                </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>1</td>
-                                      <td>botName</td>
-                                      <td>jobScheduleName</td>
-                                      <td>freq</td>
-                                      <td>botSchedulePeriod</td>
-                                      <td>nextJobTime</td>
-                                      <td>schUntil</td>
-                                      <td>description</td>
-                                    </tr>
-                                  </tbody>
-                                  </table>
-                            </div>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>BOT</th>
+                                            <th>작업이름</th>
+                                            <th>주기</th>
+                                            <th>완료예정</th>
+                                            <th>다음작업시간</th>
+                                            <th>종료일시</th>
+                                            <th>Desc.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="-txt-c" href="#">
+                                            <td>1</td>
+                                            <td>BOT</td>
+                                            <td class="-txt-lf">jobScheduleName</td>
+                                            <td>freq</td>
+                                            <td>
+                                                botSchedulePeriod
+                                            </td>
+                                            <td>nextJobTime</td>
+                                            <td>schUntil</td>
+                                            <td class="-txt-lf">description</td>
+                                        </tr>
+                                        <tr class="-txt-c" href="#">
+                                            <td>1</td>
+                                            <td>BOT</td>
+                                            <td class="-txt-lf">jobScheduleName</td>
+                                            <td>freq</td>
+                                            <td>
+                                                botSchedulePeriod
+                                            </td>
+                                            <td>nextJobTime</td>
+                                            <td>schUntil</td>
+                                            <td class="-txt-lf">description</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                           </div>
                         </div>
                     </li>
-                    <li class="pop-btnBottomArea">
+                    <li class="pop-btnBottomArea -gap-10">
                         <a href="#pop-small-save" class="btn-md01 pop-btn-wrap btn-save pop-open">저장</a>
                         <a href="#" onclick="closeLayer('pop-open')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
                     </li>

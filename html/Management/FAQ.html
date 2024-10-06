@@ -30,57 +30,67 @@
 <body>
     <div class="wrap">
         <div class="navbarWrap">
-            <div class="navbar-logo">
-                <a href="#" class="logo-text">
-                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" class="navbar-logo-img">
-                    <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
-                </a>
-            </div>
-
-            <nav class="nav-container">
-                <div class="gnbWrap">
-                    <ul class="gnbWrap-menu">
-                        <li><a href="#" class="gnb-list btn btn-purple"> Main </a></li>
-                        <li><a href="#" class="gnb-list btn btn-sky active"> WorkUser </a></li>
-                        <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
-                    </ul>
-                    <ul class="gnbWrap-cog">
-                        <li style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
-                    </ul>
+                <div class="navbar-logo">
+                    <a href="#" class="logo-text">
+                        <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" class="navbar-logo-img">
+                        <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
+                    </a>
                 </div>
-            </nav>
+    
+                <nav class="nav-container">
+                    <div class="gnbWrap">
+                        <ul class="gnbWrap-menu">
+                            <li><a href="#" class="gnb-list btn btn-purple"> Main </a></li>
+                            <li><a href="#" class="gnb-list btn btn-sky active"> WorkUser </a></li>
+                            <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
+                        </ul>
+                        <ul class="gnbWrap-cog">
+                            <li style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
+                        </ul>
+                    </div>
+                </nav>
         </div>
         <div class="sub-contentsWrap">
             <div class="fixed-sidebar-left">
                 <ul class="left-menu">
                     <li class="btn-nav">
                         <a rel="Home" href="#" class="-h100 ripple side-nav-on">
-                            <p class="flex-c-c -h100 menu-home ico-01"></p>
+                            <p class="flex-c-c -h100 menu-home ico-home"></p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="대기" href="#" class="-h100 ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-01">대기</p>
+                        <a rel="리소스" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-01">리소스</p>
                         </a>
                     </li>
                     <li class="btn-nav">
-                        <a rel="작업" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-02">작업</p>
+                        <a rel="관리" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-02">관리</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="과제" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-03">과제</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="산정" href="#" class="ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-04">산정</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="공지" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-03">공지</p>
+                            <p class="navbox-area menu-list ico-notice">공지</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="FAQ" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-04">FAQ</p>
+                            <p class="navbox-area menu-list ico-faq">FAQ</p>
                         </a>
                     </li>
                     <li class="btn-nav">
                         <a rel="상시" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-05">상시</p>
+                            <p class="navbox-area menu-list ico-task">상시</p>
                         </a>
                     </li>
                     <li class="btn-nav">
@@ -93,11 +103,11 @@
             <div class="contents-right">
                 <div class="contents-right-inner">
                     <div class="-search">
-                        <div class="-w100">
+                        <div class="-w100p">
                             <ul class="-search-area">
                                 <li class="forms">
                                     <label class="label" for="유형구분">유형구분</label>
-                                    <select>
+                                    <select  required>
                                         <option value="" selected="selected">--유형구분 전체--</option>
                                         <option value="">자주묻는질문</option>
                                         <option value="">메뉴얼</option>
@@ -121,7 +131,7 @@
                                 </li>
                                 <li class="forms">
                                     <label class="label" for="검색키워드">검색키워드</label>
-                                    <input type="text" class="input hg46" placeholder="제목+내용 검색">
+                                    <input type="text" class="input hg46 -w240" placeholder="제목+내용 검색">
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -147,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="tableFixHead-inner -mt-10">
-                                <div class="table-scroll">
+                                <div class="table-scroll -max-ht-400">
                                     <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
                                             <col width="80px">
@@ -234,15 +244,12 @@
                                     </tr>
                                     <tr>
                                         <th>제목</th>
-                                        <td colspan="3">설계 완료보고서_8150 호선 (15.6K CNTR, FLOURISH)</td>
+                                        <td colspan="3"><span>설계 완료보고서_8150 호선 (15.6K CNTR, FLOURISH)</span> </td>
                                     </tr>
                                     <tr>
                                         <th>내용</th>
-                                        <td class="tb_contents" colspan="3">
-                                            <div class="tb_contents-inner">
-                                                <p>8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.
-                                                </p>
-                                            </div>
+                                        <td class="tb_contents pop-tb-forms" colspan="3">
+                                                <textarea rows="4" cols="50" placeholder="내용 입력하세요." disabled="disabled"> 8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다.8150 호선 (15.6K CNTR, FLOURISH) 설계 완료보고서를 공유하오니 참조하시기 바랍니다. </textarea>
                                         </td>
                                     </tr>
                                     <tr>
@@ -275,7 +282,7 @@
 
 
     <!-- FAQ등록 pop[S]  -->
-    <div id="pop-open01" class="pop-overlay" style="display:;">
+    <div id="pop-open01" class="pop-overlay" style="display: ;">
         <div id="draggable02" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
@@ -317,9 +324,13 @@
                                     </tr>
                                     <tr>
                                         <th>등록일시</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="등록일시는 상세 정보일때 표출"></td>
+                                        <td class="pop-tb-forms">
+                                            <input type="text" placeholder="등록일시는 상세 정보일때 표출">
+                                        </td>
                                         <th>조회수</th>
-                                        <td class="pop-tb-forms"><input type="text" placeholder="조회수는 상세 정보일때 표출"></td>
+                                        <td class="pop-tb-forms">
+                                            <input type="text" placeholder="조회수는 상세 정보일때 표출">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>제목</th>

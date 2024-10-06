@@ -9,22 +9,10 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현대삼호-RPA Monitoring System</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
-    
+
     <script src="../../assets/js/jquery-3.7.1.js"></script>
-    <script src="../../assets/js/ui.js"></script>
-    
-    <!-- datepicker -->
     <script src="../../assets/js/jquery-ui.js"></script>
-    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
-    <script src="../../assets/js/datetimepicker.js"></script>
-    
-    <!-- datepicker >  reset, 확인버튼 감추기 -->
-    <style>
-        .xdsoft_datetimepicker .btn_calendar {
-            display: none;
-        }
-    </style>
+    <script src="../../assets/js/ui.js"></script>
 </head>
 
 <body>
@@ -40,8 +28,8 @@
             <nav class="nav-container">
                 <div class="gnbWrap">
                     <ul class="gnbWrap-menu">
-                        <li><a href="#" class="gnb-list btn btn-purple active"> Main </a></li>
-                        <li><a href="#" class="gnb-list btn btn-sky"> WorkUser </a></li>
+                        <li><a href="#" class="gnb-list btn btn-purple"> Main </a></li>
+                        <li><a href="#" class="gnb-list btn btn-sky active"> WorkUser </a></li>
                         <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
                     </ul>
                     <ul class="gnbWrap-cog">
@@ -51,7 +39,7 @@
             </nav>
         </div>
         <div class="contentsWrap" style="height: 100%;">
-            <div class="con-left">
+            <div class="con-container">
                 <ul class="card card-box-top -mt-0" style="height: 300px;">
                     <li class="col-w-1">
                         <div class="tableWrap">
@@ -186,17 +174,69 @@
                         </div>
                     </li>
                     <li class="col-w-1">
-                        <div class="flex-col">
-                            <div class="tit-header-wrap">
-                                <div class="titleWrap">
-                                    <h3 class="tit_head">수행현황</h3>
-                                    <a href="#pop-search03" class="btn_dock pop-open"></a>
-                                </div>
-                            </div>
-
-                            <div class="img-fx-wrap">
-                                <img src="../../assets/images/dummy_img01_edit.png" alt="dummy_img01" class="dummy_img-sm">
-                            </div>
+                        <div class="tableWrap">
+                            <table class="notice">
+                                <thead>
+                                    <tr class="table-head rounded-corners">
+                                        <th>
+                                            <div class="titleWrap">
+                                                <h3 class="tit_head">상시과제제출</h3>
+                                                <a href="http://hsrpa2.oop.kr/tt/cu/page/fa" class="btn_arrow" target="_blank"></a>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#pop-search03" class="flex-sb-c pop-open">
+                                                <span class="notice-title">상시과제제출 테스트1</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title">상시과제제출 테스트2</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title">상시과제제출 테스트3</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title">상시과제제출 테스트4</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title">상시과제제출 테스트5</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="row-1">
+                                        <td class="border-t -pl-pr-10">
+                                            <a href="#" class="flex-sb-c">
+                                                <span class="notice-title">상시과제제출 테스트6</span>
+                                                <span class="date">24-09-01</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </li>
                 </ul>
@@ -204,96 +244,50 @@
 
                     <div class="tableFixHead-con">
                         <div class="titleWrap">
-                            <h3 class="tit_head">과제별대기순서표</h3>
-                            <a href="https://www.naver.com/" class="btn_arrow" target="_blank"></a>
+                            <h3 class="tit_head">과제별대기현황</h3>
+                           <div class="flex-c-c">
+                                <span class="txt-time">2024.09.19 11시 조회기준</span>
+                                <a href="#" class="btn_arrow" target="_blank"></a>
+                           </div>
                         </div>
                         <div class="tableFixHead-inner -mt-10">
                             <div class="table-scroll -max-ht-400">
                                 <table class="fix-table">
-
                                     <colgroup>
-                                        <col width="60px">
-                                        <col width="*">
-                                        <col width="120px">
-                                        <col width="*">
-                                        <col width="120px">
-                                        <col width="120px">
-                                        <col width="120px">
-                                        <col width="120px">
-                                        <col width="60px">
+                                        <col width="8%">
+                                        <col width="*%">
+                                        <col width="10%">
+                                        <col width="12%">
+                                        <col width="12%">
+                                        <col width="12%">
+                                        <col width="12%">
+                                        <col width="12%">
                                     </colgroup>
-
-
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th>과제코드</th>
                                             <th>과제명</th>
-                                            <th>봇(BOT)</th>
-                                            <th>수행목록</th>
-                                            <th>개발자</th>
-                                            <th>다음 작업시간</th>
-                                            <th>종료일자</th>
-                                            <th>배포일자</th>
+                                            <th>수행BOT</th>
                                             <th>상태</th>
+                                            <th>수행예정시간</th>
+                                            <th>완료예정시간</th>
+                                            <th>배포일자</th>
+                                            <th>개발자</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr class="-txt-c">
-                                            <td>1</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>2024.09.27</td>
-                                            <td>2024.10.15</td>
+                                            <td>과제코드 1</td>
+                                            <td class="-txt-lf">과제명-1</td>
+                                            <td>수행BOT-1</td>
                                             <td>정상</td>
-                                        </tr>
-                                        <tr class="-txt-c">
-                                            <td>2</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>2024.09.27</td>
+                                            <td>2024.09.27 09:00</td>
+                                            <td>2024.09.27 22:00</td>
                                             <td>2024.10.15</td>
-                                            <td>정상</td>
+                                            <td>홍길동</td>
                                         </tr>
-                                        <tr class="-txt-c">
-                                            <td>3e</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>2024.09.27</td>
-                                            <td>2024.10.15</td>
-                                            <td>정상</td>
-                                        </tr>
-                                        <tr class="-txt-c">
-                                            <td>4</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>2024.09.27</td>
-                                            <td>2024.10.15</td>
-                                            <td>정상</td>
-                                        </tr>
-                                        <tr class="-txt-c">
-                                            <td>5</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>2024.09.27</td>
-                                            <td>2024.10.15</td>
-                                            <td>정상</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                                 </table>
@@ -301,46 +295,6 @@
 
                         </div>
                     </div>
-                </ul>
-            </div>
-            <div class="con-right">
-                <ul class="card card-box-column  -mt-0">
-                    <li class="col-h-1">
-                        <div class="flex-col">
-                            <div class="tit-header-wrap">
-                                <div class="titleWrap">
-                                    <h3 class="tit_head">절감금액</h3>
-                                    <a href="#pop-search04" class="btn_dock pop-open"></a>
-                                </div>
-                            </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img02_edit.png" alt="dummy_img02" class="dummy_img-md">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-h-1">
-                        <div class="flex-col">
-                            <div class="tit-header-wrap">
-                                <div class="titleWrap">
-                                    <h3 class="tit_head">과제별 절감 TOP5</h3>
-                                    <a href="#pop-search05" class="btn_dock pop-open"></a>
-                                </div>
-                            </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img03_edit.png" alt="dummy_img03" class="dummy_img-md">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-h-1">
-                        <div class="flex-col">
-                            <div class="tit-header-wrap">
-                                <div class="titleWrap">
-                                    <h3 class="tit_head">RPA 절감시간</h3>
-                                    <a href="#pop-search06" class="btn_dock pop-open"></a>
-                                </div>
-                            </div>
-                            <div class="img-fx-wrap"><img src="../../assets/images/dummy_img04_edit.png" alt="dummy_img04" class="dummy_img-md">
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -485,6 +439,79 @@
         </div>
     </div>
     <!-- // pop-search -->
+
+    <!-- pop[S] -->
+    <div id="pop-search03" class="pop-overlay" style="display:C;">
+        <div id="draggable03" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-md">
+                <ul class="pop-sheet-container">
+                    <li class="sheet-header">
+                        상시과제제출
+                        <a href="#" onclick="closeLayer('pop-search03')" class="close pop-close-btn"></a>
+                    </li>
+                    <li class="sheet-content">
+                        <div class=" table-scroll">
+                            <table class="pop-table">
+                                <tbody>
+                                    <colgroup>
+                                        <col style="width: 200px;">
+                                        <col>
+                                        <col style="width: 200px;">
+                                        <col>
+                                    </colgroup>
+                                    <tr>
+                                        <th>유형구분</th>
+                                        <td><span>설계 - 호선 자료</span> </td>
+                                        <th>작성자</th>
+                                        <td><span>디지털혁신부 박일권</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>과제명</th>
+                                        <td colspan="3">공통 - 주요 공지 사항</td>
+                                    </tr>
+                                    <tr>
+                                        <th>등록일시</th>
+                                        <td><span>2024-09-03 09:02:30</span> </td>
+                                        <th>조회수</th>
+                                        <td><span>50</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>질문</th>
+                                        <td colspan="3">
+                                            <div class="tb_contents-inner">
+                                                <p>삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>답변</th>
+                                        <td class="tb_contents" colspan="3">
+                                            <div class="tb_contents-inner">
+                                                <p>삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.삼호 트윈 포스 시스템 간단 사용설명서.
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td colspan="3">
+                                            <p>첨부파일-01.txt</p>
+                                            <p>첨부파일-02.txt</p>
+                                            <p>첨부파일-03.txt</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="pop-btnBottomArea">
+                        <a href="#" onclick="closeLayer('pop-search03')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // pop-search -->
+
     <!-- pop[S] -->
     <div id="pop-search03" class="pop-overlay" style="display:;">
         <div id="draggable03" class="-w100-h100 flex-c-c">
@@ -493,76 +520,8 @@
                     <li class="sheet-header">수행현황
                         <a href="#" onclick="closeLayer('pop-search03')" class="close pop-close-btn"></a>
                     </li>
-                    <li class="sheet-content flex-col">
-                        <div class="-search bg-dark">
-                            <ul class="-search-area">
-                                <li class="forms">
-                                    <label class="label" for="기간">기간</label>
-                                    <div class="calendar">
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart" class="input-line input-calendar bg-dark">
-                                        <em class="entiti-tilde"></em>
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd" class="input-line input-calendar bg-dark">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-container">
-                            <div class="col-left">
-                                <div class="table-scroll -max-ht-400">
-                                    <table class="fix-table">
-                                        <colgroup>
-                                            <col width="10%">
-                                            <col width="*">
-                                            <col width="25%">
-                                            <col width="25%">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th>No</th>
-                                                <th>과제명</th>
-                                                <th>봇(BOT)</th>
-                                                <th>수행시간</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="-txt-c">
-                                                <td>1</td>
-                                                <td class="-txt-lf">과제명과제명과제명</td>
-                                                <td>봇(BOT)</td>
-                                                <td>2024.09.25 09:00</td>
-                                            </tr>
-                                            <tr class="-txt-c">
-                                                <td>2</td>
-                                                <td class="-txt-lf">과제명과제명과제명</td>
-                                                <td>봇(BOT)</td>
-                                                <td>2024.09.25 09:00</td>
-                                            </tr>
-                                            <tr class="-txt-c">
-                                                <td>3</td>
-                                                <td class="-txt-lf">과제명과제명과제명</td>
-                                                <td>봇(BOT)</td>
-                                                <td>2024.09.25 09:00</td>
-                                            </tr>
-                                            <tr class="-txt-c">
-                                                <td>4</td>
-                                                <td class="-txt-lf">과제명과제명과제명</td>
-                                                <td>봇(BOT)</td>
-                                                <td>2024.09.25 09:00</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                    
-                            <div class="col-right">
-                                <h4 class="tit-chart">부서별 진행현황</h4>
-                                <img src="../../assets/images/dummy_img07.png" alt="dummy_img01" class="dummy_img-chart">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="pop-btnBottomArea">
-                        <a href="#" onclick="closeLayer('pop-search03')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                    </li>
+                    <li class="sheet-content"><img src="../../assets/images/dummy_img05_edit.png" alt="dummy_img05" class=""></li>
+                    <li></li>
                 </ul>
             </div>
         </div>
@@ -576,37 +535,8 @@
                     <li class="sheet-header">절감금액
                         <a href="#" onclick="closeLayer('pop-search04')" class="close pop-close-btn"></a>
                     </li>
-                    <li class="sheet-content">
-                        <div class="-search bg-dark">
-                            <ul class="-search-area">
-                                <li class="forms">
-                                    <label class="label" for="기간">기간</label>
-                                    <div class="calendar">
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart2" class="input-line input-calendar bg-dark">
-                                        <em class="entiti-tilde"></em>
-                                        <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd2" class="input-line input-calendar bg-dark">
-                                    </div>
-                                </li>
-                                <li class="forms">
-                                    <label class="label" for="카테고리">카테고리</label>
-                                    <select class="bg-dark">
-                                        <option value="" selected="selected">--카테고리 전체--</option>
-                                        <option value="">설계부문</option>
-                                        <option value="">부서</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-container "> 
-                            <div class="col-1">
-                                <h4 class="tit-chart"><span class="inner-tit"> ** 별</span>절감추이</h4>
-                                <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="pop-btnBottomArea">
-                        <a href="#" onclick="closeLayer('pop-search04')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                    </li>
+                    <li class="sheet-content"><img src="../../assets/images/dummy_img05_edit.png" alt="dummy_img05" class=""></li>
+                    <li></li>
                 </ul>
             </div>
         </div>
@@ -637,37 +567,8 @@
                     <li class="sheet-header">RPA 절감시간
                         <a href="#" onclick="closeLayer('pop-search06')" class="close pop-close-btn"></a>
                     </li>
-                <li class="sheet-content">
-                    <div class="-search bg-dark">
-                        <ul class="-search-area">
-                            <li class="forms">
-                                <label class="label" for="기간">기간</label>
-                                <div class="calendar">
-                                    <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicStart3" class="input-line input-calendar bg-dark">
-                                    <em class="entiti-tilde"></em>
-                                    <input type="text" autocomplete="off" placeholder="YYYY/MM/DD" id="datebasicEnd3" class="input-line input-calendar bg-dark">
-                                </div>
-                            </li>
-                            <li class="forms">
-                                <label class="label" for="카테고리">카테고리</label>
-                                <select class="bg-dark">
-                                    <option value="" selected="selected">--카테고리 전체--</option>
-                                    <option value="">설계부문</option>
-                                    <option value="">부서</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-container ">
-                        <div class="col-1">
-                            <h4 class="tit-chart"><span class="inner-tit"> ** 별</span>절감추이</h4>
-                            <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
-                        </div>
-                    </div>
-                </li>
-                <li class="pop-btnBottomArea">
-                    <a href="#" onclick="closeLayer('pop-search06')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                </li>
+                    <li class="sheet-content"><img src="../../assets/images/dummy_img05_edit.png" alt="dummy_img05" class=""></li>
+                    <li></li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>현대삼호-RPA Monitoring System</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css" />
+
+    <script src="../../assets/js/jquery-3.7.1.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+
+    <!-- datepicker -->
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+    <script src="../../assets/js/datetimepicker.js"></script>
+
+    <!-- datepicker >  reset, 확인버튼 감추기 -->
+    <style>
+        .xdsoft_datetimepicker .btn_calendar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="navbarWrap">
+            <div class="navbar-logo">
+                <a href="#" class="logo-text">
+                    <img src="../../assets/images/left_menu_m.png" alt="현대삼호로고" class="navbar-logo-img">
+                    <h3 class="navbar-logo-tit">RPA Monitoring System</h3>
+                </a>
+            </div>
+
+            <nav class="nav-container">
+                <div class="gnbWrap">
+                    <ul class="gnbWrap-menu">
+                        <li><a href="#" class="gnb-list btn btn-purple"> Main </a></li>
+                        <li><a href="#" class="gnb-list btn btn-sky active"> WorkUser </a></li>
+                        <li><a href="#" class="gnb-list btn btn-bluePurple"> Dashboard </a></li>
+                    </ul>
+                    <ul class="gnbWrap-cog">
+                        <li style="margin-left: inherit;"><a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sub-contentsWrap">
+            <div class="fixed-sidebar-left">
+                <ul class="left-menu">
+                    <li class="btn-nav">
+                        <a rel="Home" href="#" class="-h100 ripple side-nav-on">
+                            <p class="flex-c-c -h100 menu-home ico-home"></p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="스케줄" href="#" class="-h100 ripple side-nav-on">
+                            <p class="navbox-area menu-list ico-mg-05">스케줄</p>
+                        </a>
+                    </li>
+                    <li class="btn-nav">
+                        <a rel="로그아웃" href="#pop-small-logout" class="-h100 ripple side-nav-on pop-open">
+                            <p class="flex-c-c -h100 txt-logout">로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents-right">
+                <div class="contents-right-inner">
+                    <div class="-table -h100">
+                        <div class="tableFixHead-con">
+                                <ul class="card-Wrap">
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">설계부문별 절감추이(금액-건)</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="tit-chart">설계부문절감추이</h4>
+                                            <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
+                                        </div>
+                                    </li>
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">부서별 과제진행 부문(건수기준)</h3>
+                                            <a href="#pop-search03" class="btn_dock pop-open"></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="tit-chart">부서별 진행현황</h4>
+                                            <img src="../../assets/images/dummy_img07.png" alt="dummy_img01" class="dummy_img-chart">
+                                        </div>
+                                    </li>
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">부서별 절감추이 (시간-건수)</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="tit-chart">설계부문절감추이</h4>
+                                            <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
+                                        </div>
+                                    </li>
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">설계부문 절감금액 전년 동월 비교</h3>
+                                            <a href="#pop-search03" class="btn_dock pop-open"></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="tit-chart">설계부문절감추이</h4>
+                                            <img src="../../assets/images/dummy_img08.png" alt="dummy_img01" class="dummy_img-chart">
+                                        </div>
+                                    </li>
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">과제별 절감금액 추이</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="tit-chart">설계부문절감추이</h4>
+                                            <img src="../../assets/images/dummy_img06.png" alt="dummy_img01" class="dummy_img-chart">
+                                        </div>
+                                    </li>
+                                    <li class="card-contents">
+                                        <div class="titleWrap title-area">
+                                            <h3 class="tit_head -h-lh-32">부서별 절감추이목록</h3>
+                                            <a href="#" class="btn_arrow" target="_blank"></a>
+                                        </div>
+                                        <div class="tableFixHead-inner -mt-10">
+                                            <div class="table-scroll -max-ht-400">
+                                                <table class="fix-table">
+                                                    <colgroup>
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>운영부서</th>
+                                                            <th>운영과제수</th>
+                                                            <th>수행횟수</th>
+                                                            <th>절감시간</th>
+                                                            <th>절감금액</th>
+                                                        </tr>
+                                                    </thead>
+                                        
+                                                    <tbody>
+                                                        <tr class="-txt-c">
+                                                            <td>설계</td>
+                                                            <td class="-txt-rt">27</td>
+                                                            <td class="-txt-rt">1,275</td>
+                                                            <td class="-txt-rt">2,409.5</td>
+                                                            <td class="-txt-rt">28,914,000</td>
+                                                        </tr>
+                                                        <tr class="-txt-c"></tr>
+                                                            <td>미등록</td>
+                                                            <td class="-txt-rt">5</td>
+                                                            <td class="-txt-rt">681</td>
+                                                            <td class="-txt-rt">0.0</td>
+                                                            <td class="-txt-rt">0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                        
+                                            </div>
+                                        
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- pop-small-logout -->
+    <div id="pop-small-logout" class="pop-overlay" style="display:;">
+        <div id="draggable03" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-sm">
+                <div class="pop-btnBottomArea flex-col">
+                    <a href="#" onclick="closeLayer('pop-small-logout')" class="close pop-close-btn"></a>
+                    <p class="pop-sm-txt">
+                        <span>정상적으로 로그아웃</span>
+                        <span>되었습니다.</span>
+                    </p>
+                    <a href="#" onclick="closeLayer('pop-small-logout')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// pop-small-logout -->
+
+</body>
