@@ -783,7 +783,7 @@ a.btn-primary:hover {
 .card-wrap-grid .card-grid-list .card-body {
     height: calc(100% - 50px);
     overflow: hidden;
-    min-height: 190px;
+    /* min-height: 190px; */
     display: flex;
     align-items: center;
     justify-content: center;
