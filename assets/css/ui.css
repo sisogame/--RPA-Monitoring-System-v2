@@ -323,12 +323,14 @@ img {
 }
 
 .titleWrap .btn_arrow,
-.titleWrap .btn_dock {
+.titleWrap .btn_dock,
+ .card-head .-mlf-auto .btn_dock {
     width: 32px;
     height: 32px;
 }
 
-.titleWrap .btn_dock::before {
+.titleWrap .btn_dock::before,
+.card-head .-mlf-auto .btn_dock::before {
     content: '';
     display: inline-block;
     line-height: inherit;
@@ -946,28 +948,32 @@ table.notice tbody tr td.date {
 
 .pop-sm {
     width: 400px;
-    padding: 0
+    padding: 0;
+    max-width: 100%;
 }
 
 .pop-smd {
     width: 600px;
-    padding: 0
+    padding: 0;
+    max-width: 100%;
 }
 
 .pop-md {
     width: 1000px;
-    padding: 0
+    padding: 0;
+    max-width: 100%;
 }
 
 .pop-lg {
     width: 1280px;
-    padding: 0
+    padding: 0;
+    max-width: 100%;
 }
 
 .pop-xlg {
     padding: 60px;
     min-width: 1200px;
-    max-width: 1600px;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -1122,8 +1128,9 @@ table.notice tbody tr td.date {
 .pop-sheet-container .sheet-content .pop-scroll {
     scrollbar-width: auto;
     scrollbar-color: auto;
-    max-height: 600px;
+    /* max-height: 600px; */
     overflow-y: auto;
+    max-height: calc(-180px + 100vh);
 }
 
 /* modal-table */
@@ -1177,6 +1184,7 @@ table.notice tbody tr td.date {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 .pop-table tbody tr:first-child th,

@@ -174,7 +174,8 @@ body {
 .table .title div:nth-last-child(4) {
     display: none;
     flex: none;
-    width: 18rem;
+    /* width: 18rem; */
+    width: 15%;
     padding: 2rem .2rem;
     text-align: left;
 }
@@ -182,7 +183,8 @@ body {
 .table .title div:nth-last-child(3) {
     display: none;
     flex: none;
-    width: 7rem;
+    /* width: 7rem; */
+    width: 10%;
     padding: 2rem .2rem;
     text-align: center;
 }
@@ -194,7 +196,8 @@ body {
 .table .title div:nth-last-child(2) {
     display: none;
     flex: none;
-    width: 10rem;
+    /* width: 10rem; */
+    width: 10%;
     padding: 2rem .2rem;
     text-align: center;
 }
@@ -202,7 +205,8 @@ body {
 .table .title div:nth-last-child(1) {
     display: none;
     flex: none;
-    width: 30rem;
+    /* width: 30rem; */
+    width: 20%;
     padding: 2rem .2rem;
     text-align: center;
 }
@@ -292,7 +296,8 @@ body {
 .table a div:nth-last-child(4) {
     display: none;
     flex: none;
-    width: 18rem;
+    /* width: 18rem; */
+    width: 15%;
     padding: 1rem .2rem;
     color: #666;
     text-align: left;
@@ -300,7 +305,8 @@ body {
 .table a div:nth-last-child(3) {
     display: none;
     flex: none;
-    width: 7rem;
+    /* width: 7rem; */
+    width: 10%;
     padding: 1rem .2rem;
     color: #666;
     text-align: center;
@@ -309,7 +315,8 @@ body {
 .table a div:nth-last-child(2) {
     display: none;
     flex: none;
-    width: 10rem;
+    /* width: 10rem; */
+    width: 10%;
     padding: 1rem .2rem;
     font-weight: 700;
     font-size: 1.2rem;
@@ -319,7 +326,8 @@ body {
 .table a div:nth-last-child(1) {
     display: none;
     flex: none;
-    width: 30rem;
+    /* width: 30rem; */
+    width: 20%;
     padding: 1rem .2rem;
     text-align: left;
 }
