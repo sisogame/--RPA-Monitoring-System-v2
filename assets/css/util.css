@@ -35,6 +35,9 @@
     width: 160px !important;
 }
 
+.-w180 {
+    width: 180px !important;
+}
 .-w200 {
     width: 200px !important;
 }
@@ -59,6 +62,15 @@
     overflow-y: auto;
     max-height: 400px;
 }
+.-ht-45 {
+    height: 45px !important;
+}
+.-ht-140 {
+    height: 140px !important;
+}
+.-ht-45-lht-45{height: 45px !important;
+ line-height: 45px;}
+
 
 /*[ PADDING ]
 ///////////////////////////////////////////////////////////
@@ -120,7 +132,9 @@
 .-mlf-auto {
     margin-left: auto;
 }
-
+.-mrt-10 {
+    margin-right: 10px;
+}
 
 
 /*[ Flex ] 
@@ -163,7 +177,7 @@
 }
 
 .-txt-rt {
-    text-align: right;
+    text-align: right !important;
 }
 
 .-txt-c {

@@ -62,13 +62,13 @@
           data = $this.data('monthpicker'),
           year = (options && options.year) ? options.year : (new Date()).getFullYear(),
           settings = $.extend({
-            pattern: 'mm/yyyy',
+            pattern: 'yyyy-mm',
             selectedMonth: null,
             selectedMonthName: '',
             selectedYear: year,
             startYear: year - 10,
             finalYear: year + 10,
-            monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
             id: "monthpicker_" + (Math.random() * Math.random()).toString().replace('.', ''),
             openOnFocus: true,
             disabledMonths: []
@@ -174,9 +174,9 @@
       container.find('.mtz-monthpicker-month').each(function () {
         var m = parseInt($(this).data('month'));
         if ($.inArray(m, months) >= 0) {
-          $(this).addClass('ui-state-disabled');
+          $(this).addClass('off ui-state-disabled');
         } else {
-          $(this).removeClass('ui-state-disabled');
+          $(this).removeClass('off ui-state-disabled');
         }
       });
     },
@@ -184,7 +184,7 @@
     mountWidget: function (settings) {
       var
         monthpicker = this,
-        container = $('<div id="' + settings.id + '" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" />'),
+        container = $('<div id="' + settings.id + '" class="monthpicker_selector ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" />'),
         header = $('<div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all mtz-monthpicker" />'),
         combo = $('<select class="mtz-monthpicker mtz-monthpicker-year" />'),
         table = $('<table class="mtz-monthpicker" />'),
@@ -242,7 +242,7 @@
 
       // mount months table
       for (var i = 1; i <= 12; i++) {
-        td = $('<td class="ui-state-default mtz-monthpicker mtz-monthpicker-month" style="padding:5px;cursor:default;" />').attr('data-month', i);
+        td = $('<td class="ui-state-default mtz-monthpicker mtz-monthpicker-month month" style="padding:5px;cursor:default;" />').attr('data-month', i);
         if (settings.selectedMonth == i) {
           td.addClass('ui-state-active');
         }

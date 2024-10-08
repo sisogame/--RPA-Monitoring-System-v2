@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <script src="../../assets/js/jquery-3.7.1.js"></script>
     <script src="../../assets/js/ui.js"></script>
-    
+
     <script src="../../assets/js/jquery-ui.js"></script>
-    
+
     <!-- monthpicker -->
     <link rel="stylesheet" href="../../assets/css/monthpicker.css">
-    <script src="../../assets/js/monthpicker-modifyt.js"></script>
+    <script src="../../assets/js/jquery.mtz.monthpicker.js"></script>
+    <script src="../../assets/js/monthpicker-hhj.js"></script>
 
 </head>
 
@@ -97,14 +98,14 @@
                 <div class="contents-right-inner">
                     <div class="-search">
                         <div class="-w100p">
-                            <ul class="-search-area">                               
+                            <ul class="-search-area">
                                 <li class="forms">
                                     <label class="label" for="등록일">등록일</label>
-                                <div class="calendar">
-                                    <input type="text" id="M_startDate" name="M_startDate" class="input-line input-calendar" placeholder="시작연도-월" />
-                                    <em class="entiti-tilde"></em>
-                                    <input type="text" id="M_endDate" name="M_endDate" class="input-line input-calendar" placeholder="마지막연도-월" />
-                                </div>
+                                    <div class="calendar">
+                                        <input type="text" id="startMon2" name="startMon2" class="input-line input-calendar" placeholder="시작연도-월" />
+                                        <em class="entiti-tilde"></em>
+                                        <input type="text" id="endMon2" name="endMon2" class="input-line input-calendar" placeholder="마지막연도-월" />
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="btn-wrap">
@@ -281,10 +282,10 @@
     </div>
     <!-- // pop-search -->
 
-      <!-- 소요시간별 산정금액 pop[S]  -->
-      <div id="pop-open01" class="pop-overlay" style="display: ;">
+    <!-- 소요시간별 산정금액 pop[S]  -->
+    <div id="pop-open01" class="pop-overlay" style="display: ;">
         <div id="draggable02" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-md">
+            <div class="pop-inner pop-smd">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
                         소요시간별 산정금액
@@ -303,17 +304,19 @@
                                     <tr>
                                         <th>산정금액</th>
                                         <td colspan="3" class="pop-tb-forms">
-                                            <input id="input-price" type="text" class="-w95 -txt-rt just-number price-format-input" placeholder="산정금액 입력">
+                                            <div id="" class="sm-inputWrap sm-input">
+                                            <input type="text" maxlength="11" placeholder="숫자 입력" class="-w180 -txt-rt just-number price-format-input ">
                                             <em> 원</em>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>적용시작년월</th>
                                         <td colspan="3" class="pop-tb-forms">
                                             <div class="calendar">
-                                                <input type="text" id="M_startDate2" name="M_startDate2" class="input-line input-calendar" placeholder="시작연도-월" />
-                                                <em class="entiti-tilde"></em>
-                                                <input type="text" id="M_endDate2" name="M_endDate2" class="input-line input-calendar" placeholder="마지막연도-월" />
+                                                <input type="text" id="startMon" name="startMon" class="input-line input-calendar -ht-45" placeholder="시작연도-월" />
+                                                <em class="entiti-tilde -ht-45-lht-45"></em>
+                                                <input type="text" id="endMon" name="endMon" class="input-line input-calendar -ht-45" placeholder="마지막연도-월" />
                                             </div>
                                         </td>
                                     </tr>

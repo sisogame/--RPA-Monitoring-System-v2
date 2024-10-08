@@ -916,6 +916,8 @@ table.notice tbody tr td.date {
     margin-right: auto;
     margin-top: 24px;
     margin-bottom: 24px;
+    /* 20241008 */
+    /* max-height: calc(-180px + 100vh); */
 }
 
 .pop-overlay .pop-tit,
@@ -1035,35 +1037,47 @@ table.notice tbody tr td.date {
 }
 
 .btn-duplicate {
-    padding: 15px 32px;
+    padding: 0 10px;
     display: inline-block;
     background: #2458A5;
     color: #fff;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .btn-duplicate:hover {
-    padding: 15px 32px;
+   padding: 0 10px;
     display: inline-block;
     background: #174a95;
     color: #fff;
-
 }
 
 .btn-reset {
-    padding: 15px 32px;
+    padding: 0 10px;
     display: inline-block;
     background: #146B98;
     color: #fff;
+    height: 35px;
+    line-height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: auto;
 }
 
 .btn-reset:hover {
-    padding: 15px 32px;
+    padding: 0 10px;
     display: inline-block;
     background: #0c5981;
     color: #fff;
-
 }
-
 .btn-yes {
     padding: 10px 20px;
     display: inline-block;
@@ -1114,13 +1128,15 @@ table.notice tbody tr td.date {
     display: flex;
     align-items: center;
     padding: 4px 16px;
+    gap: 10px;
 }
 
 .pop-sheet-container .sheet-content {
     /* height: 100%; */
     font-size: 16px;
     color: #fff;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 0;
     height: calc(100% - 50px - 65px);
 }
 
@@ -1132,6 +1148,12 @@ table.notice tbody tr td.date {
     overflow-y: auto;
     max-height: calc(-180px + 100vh);
 }
+
+.pop-sheet-container .sheet-content .-search.sheet-space{
+    padding: 10px !important;
+    margin-bottom: 0 !important;}
+
+
 
 /* modal-table */
 .pop-table {
@@ -1159,7 +1181,8 @@ table.notice tbody tr td.date {
 
 .pop-table tbody th {
     text-align: left;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
+    padding: 10px;
     height: 40px;
     border-top: 1px solid #56566a;
     background: rgba(255, 255, 255, 0.1);
@@ -1175,7 +1198,8 @@ table.notice tbody tr td.date {
 
 .pop-table tbody td {
     text-align: left;
-    padding: 12px 15px;
+    /* padding: 12px 15px; */
+    padding: 10px;
     height: 40px;
     background: rgba(0, 0, 0, 0.15);
     border-top: 1px solid #56566a;
@@ -1248,7 +1272,7 @@ table.notice tbody tr td.date {
 .sm-inputWrap {
     display: flex;
     gap: 9px;
-    padding: 0 15px;
+    padding:0 15px;
     align-items: center;
 }
 

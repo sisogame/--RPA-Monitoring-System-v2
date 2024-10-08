@@ -15,7 +15,7 @@ $(function () {
       dateFormat: "yy/mm/dd",
       timeFormat: "hh:mm:ss",
       timeFormat: false,
-      scrollMonth: false,
+      scrollMonth: true,
       scrollInput: false,
       showMonthAfterYear: true,
       onShow: function (ct) {
