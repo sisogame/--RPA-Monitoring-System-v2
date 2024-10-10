@@ -209,25 +209,24 @@
         </div>
     </div>
 
-
-    <!-- 상시과제제출 pop[S] -->
+    <!-- 소요시간 산정금액  pop[S] -->
     <div id="pop-open" class="pop-overlay" style="display:;">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
-                        FAQ
+                        소요시간 산정금액
                         <a href="#" onclick="closeLayer('pop-open')" class="close pop-close-btn"></a>
                     </li>
-                    <li class="sheet-content">
+                    <li class="sheet-content -p-10">
                         <div class=" table-scroll">
                             <table class="pop-table">
                                 <tbody>
                                     <colgroup>
-                                        <col style="width: 200px;">
-                                        <col>
-                                        <col style="width: 200px;">
-                                        <col>
+                                        <col width="20%">
+                                        <col width="30%">
+                                        <col width="20%">
+                                        <col width="30%">
                                     </colgroup>
                                     <tr>
                                         <th>유형구분</th>
@@ -287,19 +286,19 @@
         <div id="draggable02" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-smd">
                 <ul class="pop-sheet-container">
-                    <li class="sheet-header">
+                    <li class="sheet-header -p-10">
                         소요시간별 산정금액
                         <a href="#" onclick="closeLayer('pop-open01')" class="close pop-close-btn"></a>
                     </li>
-                    <li class="sheet-content">
+                    <li class="sheet-content -p-10">
                         <div class="pop-scroll">
                             <table class="pop-table">
                                 <tbody>
                                     <colgroup>
-                                        <col style="width: 200px;">
-                                        <col>
-                                        <col style="width: 200px;">
-                                        <col>
+                                        <col width="20%">
+                                        <col width="*">
+                                        <col width="20%">
+                                        <col width="*">
                                     </colgroup>
                                     <tr>
                                         <th>산정금액</th>
@@ -333,6 +332,24 @@
         </div>
     </div>
     <!-- // pop-search -->
+
+
+    <!-- pop-small-save -->
+    <div id="pop-small-save" class="pop-overlay" style="display:;">
+        <div id="draggable03" class="-w100-h100 flex-c-c">
+            <div class="pop-inner pop-sm">
+                <div class="pop-btnBottomArea flex-col">
+                    <a href="#" onclick="closeLayer('pop-small-save')" class="close pop-close-btn"></a>
+                    <p class="pop-sm-txt">
+                        <span>소요시간별 산정금액이</span> <span>정상적으로 저장되었습니다</span>
+                    </p>
+                    <a href="#" onclick="closeLayer('pop-small-save')" class="btn-md01 pop-btn-wrap btn-check close">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// pop-small-save -->
+
 
     <!-- pop-small-logout -->
     <div id="pop-small-logout" class="pop-overlay" style="display:;">

@@ -1193,7 +1193,9 @@ table.notice tbody tr td.date {
     font-size: 16px;
     font-weight: 500;
     border-left: 1px solid #56566a;
-    border-right: 1px solid #56566a
+    border-right: 1px solid #56566a;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .pop-table tbody td {

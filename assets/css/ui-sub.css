@@ -279,7 +279,8 @@
 .-search .-search-area {
     display: flex;
     gap: 15px;
-    flex-flow: wrap
+    flex-flow: wrap;
+    width: 100%;
 }
 
 .-search li {
@@ -598,7 +599,8 @@ a.btn-primary:hover {
     text-align: right;
 }
 
-.drop_zone .file-list {
+.drop_zone .file-list,
+.drop_zone .file-list-download {
     font-size: 16px;
     text-align: left;
     position: relative;
@@ -616,6 +618,17 @@ a.btn-primary:hover {
     margin-bottom: -5px;
     margin-right: 5px;
 }
+
+.drop_zone .file-list-download::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon_download.svg') no-repeat center center/ 20px 20px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+
 
 .drop_zone .file_delete {
     position: relative;
@@ -759,18 +772,19 @@ a.btn-primary:hover {
     padding: 10px 30px;
     margin-right: 10px;
 }
-.col-container .col-1 .dummy_img-chart{    
+
+.col-container .col-1 .dummy_img-chart {
     object-fit: contain;
     margin: 0 auto;
     width: 100%;
-    height: 400px;}
+    height: 400px;
+}
 
 /* dashboard > home > grid layout */
 .card-wrap-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card-wrap-grid .card-grid-list {
@@ -778,6 +792,7 @@ a.btn-primary:hover {
     background-color: #161b2f;
     padding: 0 10px 10px 10px;
     border-radius: 6px;
+    height: 29.6vh;
 }
 
 .card-wrap-grid .card-grid-list .card-head {
@@ -803,5 +818,68 @@ a.btn-primary:hover {
     display: block;
     margin: 0 auto;
 }
-.-search.-search-inner{margin-bottom: 0;border-bottom: 2px solid #56566a; padding: 4px 10px; height: 50px;border-radius:0}
-.card-wrap-grid .card-grid-list .card-body.-calc-ht-01{height: calc(100% - 50px - 50px) !important}
+
+.-search.-search-inner {
+    margin-bottom: 0;
+    border-bottom: 2px solid #56566a;
+    padding: 4px 10px;
+    height: 50px;
+    border-radius: 0
+}
+
+.card-wrap-grid .card-grid-list .card-body.-calc-ht-01 {
+    height: calc(100% - 50px - 50px) !important
+}
+
+/* 리소스 */
+.card-wrap-grid.resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-wrap-grid .card-grid-list.resource-ht {
+    height: 45vh;
+}
+
+.resource-title {
+    padding: 8px 16px;
+    background-color: #4e5773;
+    border-radius: 30px;
+}
+
+.card-wrap-grid .card-grid-list .card-head .card-head-fx1 {
+    flex: 1;
+}
+
+.card-wrap-grid .card-grid-list .card-head .card-head-fx3 {
+    flex: 3;
+}
+
+.card-fx1 {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 60px;
+    justify-content: space-around;
+}
+
+.gauge-wrap {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 30px;
+    width: auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #090909;
+    width: 150px;
+}
+
+.gauge-wrap.cpu-orange {
+    background: #f6b25e;
+}
+
+.gauge-wrap.ram-orange {
+    background: #ff905e;
+}

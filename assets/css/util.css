@@ -38,6 +38,7 @@
 .-w180 {
     width: 180px !important;
 }
+
 .-w200 {
     width: 200px !important;
 }
@@ -62,14 +63,19 @@
     overflow-y: auto;
     max-height: 400px;
 }
+
 .-ht-45 {
     height: 45px !important;
 }
+
 .-ht-140 {
     height: 140px !important;
 }
-.-ht-45-lht-45{height: 45px !important;
- line-height: 45px;}
+
+.-ht-45-lht-45 {
+    height: 45px !important;
+    line-height: 45px;
+}
 
 
 /*[ PADDING ]
@@ -89,7 +95,7 @@
 }
 
 .-p-10 {
-    padding: 10px;
+    padding: 10px !important;
 }
 
 .-p-15 {
@@ -132,6 +138,7 @@
 .-mlf-auto {
     margin-left: auto;
 }
+
 .-mrt-10 {
     margin-right: 10px;
 }
@@ -167,6 +174,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.flex-jc-sb {justify-content: space-between;}
 
 
 /*[ text-align ]
