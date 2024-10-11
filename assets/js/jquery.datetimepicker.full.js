@@ -2614,19 +2614,18 @@ var datetimepickerFactory = function ($) {
         month_picker = $(
           '<div class="xdsoft_monthpicker"><button type="button" class="xdsoft_prev _02"></button><button type="button" class="xdsoft_today_button1"></button>' +
             '<div class="xdsoft_label_wrap">' +
-            '<div class="xdsoft_label"><span></span> </div>' +
-            '<div class="xdsoft_label"><span></span> </div>' +
-            //년도, 날짜 셀렉트 선택
-            // '<div class="xdsoft_label xdsoft_month"><span></span><i></i></div>' +
-            // '<div class="xdsoft_label xdsoft_year"><span></span><i></i></div>' +
+            '<div class="xdsoft_label xdsoft_month" style="margin-right: 5px;width: 60px;"><span></span><i></i></div>' +
+            /*'<div class="xdsoft_label "><span></span> </div>' +
+            '<div class="xdsoft_label"><span></span> </div>' +*/
+            '<div class="xdsoft_label xdsoft_year"><span></span><i></i></div>' +
             "</div>" +
             '<button type="button" class="xdsoft_next _02"></button></div>'
         ),
         calendar = $('<div class="xdsoft_calendar"></div>'),
         timepicker = $(
-          '<div class="xdsoft_timepicker active"><button type="button" class="xdsoft_prev"></button><div div class= "xdsoft_time_box" ></div > <button type="button" class="xdsoft_next"></button></div > <div class="btn_calendar"><a href="#" class="btn-md btn-line02" id="resetBtn">Reset</a><a href="#" class="btn-md btn-primary" id="confirmBtn">확인</a></div>'
+          '<div class="xdsoft_timepicker active"><button type="button" class="xdsoft_prev"></button><div div class= "xdsoft_time_box" ></div > <button type="button" class="xdsoft_next"></button></div > <div class="btn_calendar"><a href="#" class="btn-md btn-line02" id="resetBtn" onclick="gfnResetBtn(); return false;">Reset</a><a href="#" class="btn-md btn-primary" id="confirmBtn" onclick="gfnConfirmBtn(); return false;">확인</a></div>'
       ),
-        
+
         timeboxparent = timepicker.find(".xdsoft_time_box").eq(0),
         timebox = $('<div class="xdsoft_time_variant"></div> '),
         applyButton = $(
@@ -2664,8 +2663,8 @@ var datetimepickerFactory = function ($) {
       datetimepicker.addClass("xdsoft_" + options.theme);
       datetimepicker.addClass(options.className);
 
-      month_picker.find(".xdsoft_month span").after(monthselect);
-      month_picker.find(".xdsoft_year span").after(yearselect);
+      month_picker.find(".xdsoft_year span").after(monthselect);
+      month_picker.find(".xdsoft_month span").after(yearselect);
 
       month_picker
         .find(".xdsoft_month,.xdsoft_year")
@@ -3797,7 +3796,7 @@ var datetimepickerFactory = function ($) {
 
             month_picker
               .find(".xdsoft_label span")
-              .eq(0)
+              .eq(1)
               .text(
                 options.i18n[globalLocale].months[
                   _xdsoft_datetime.currentTime.getMonth()
@@ -3805,7 +3804,7 @@ var datetimepickerFactory = function ($) {
               );
             month_picker
               .find(".xdsoft_label span")
-              .eq(1)
+              .eq(0)
               .text(
                 _xdsoft_datetime.currentTime.getFullYear() + options.yearOffset
               );
@@ -5119,6 +5118,6 @@ var datetimepickerFactory = function ($) {
 
   //test
 
- 
-  
+
+
 });

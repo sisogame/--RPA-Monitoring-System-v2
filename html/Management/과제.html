@@ -65,7 +65,7 @@
                     </li>
                     <li class="btn-nav">
                         <a rel="관리" href="#" class="ripple side-nav-on">
-                            <p class="navbox-area menu-list ico-mg-02">관리</p>
+                            <p class="navbox-area menu-list ico-mg-02">관리자</p>
                         </a>
                     </li>
                     <li class="btn-nav">
@@ -164,15 +164,15 @@
                                 <div class="table-scroll -max-ht-400">
                                     <table class="fix-table tb-layout-fix table-row-link">
                                         <colgroup>
-                                            <col width="80px">
-                                            <col width="150px">
-                                            <col width="150px">
+                                            <col width="5%">
+                                            <col width="8%">
                                             <col width="*">
-                                            <col width="150px">
-                                            <col width="150px">
-                                            <col width="150pxㅍ">
-                                            <col width="150px">
-                                            <col width="350px">
+                                            <col width="*">
+                                            <col width="8%">
+                                            <col width="8%">
+                                            <col width="8%">
+                                            <col width="8%">
+                                            <col width="15%">
                                         </colgroup>
                                         <thead>
                                             <tr>
@@ -235,7 +235,7 @@
     </div>
 
     <!-- 과제관리 pop[S] -->
-    <div id="pop-open" class="pop-overlay" style="display: ;">
+    <div id="pop-open" class="pop-overlay" style="display:;">
         <div id="draggable" class="-w100-h100 flex-c-c">
             <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
@@ -256,11 +256,11 @@
                                     <tr>
                                         <th>Process ID</th>
                                         <td>
-                                        <label class="disabled">
-                                            <input type="disabled" name="manage" id="manage-01" disabled="disabled">
-                                            <span for="manage-01">Db6378768-53be-455b-af4f-c23</span>
-                                        </label>
-                                    </td>
+                                            <label class="disabled">
+                                                <input type="disabled" name="manage" id="manage-01" disabled="disabled">
+                                                <span for="manage-01">Db6378768-53be-455b-af4f-c23</span>
+                                            </label>
+                                        </td>
                                         <th>배포 Version</th>
                                         <td>
                                             <label class="disabled">
@@ -283,19 +283,19 @@
                                         <td class="pop-tb-forms"><input type="text" placeholder="설계부문 입력"></td>
                                         <th>과제번호</th>
                                         <td>
-                                        <label class="disabled">
-                                        <input type="disabled" name="manage" id="manage-04" disabled="disabled">
-                                        <span for="manage-04">B-23-001A</span>
-                                        </label>
+                                            <label class="disabled">
+                                                <input type="disabled" name="manage" id="manage-04" disabled="disabled">
+                                                <span for="manage-04">B-23-001A</span>
+                                            </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>과제명</th>
                                         <td colspan="3" class="">
                                             <label class="disabled">
-                                                <input type="disabled" name="manage_01" id="manage_01"  disabled="disabled">
+                                                <input type="disabled" name="manage_01" id="manage_01" disabled="disabled">
                                                 <span for="manage_01">B Test 과제</span>
-                                            </label>                                    
+                                            </label>
                                         </td>
                                     </tr>
                                     <tr>
@@ -356,59 +356,55 @@
                             </table>
                         </div>
                         <div>
-                            <h3 class="tit_head -mt15-mb15">스케줄</h3>
-                           <div class="pop-scroll -max-ht-200">
+                            <h3 class="tit_head -mt15-mb15">부서별 목표</h3>
+                            <div class="pop-scroll -max-ht-200">
                                 <table class="fix-table tb-layout-fix table-row-link">
                                     <colgroup>
-                                        <col width="80px">
-                                        <col width="100px">
-                                        <col width="*">
-                                        <col width="*">
-                                        <col width="80px">
-                                        <col width="150px">
-                                        <col width="150px">
-                                        <col width="150px">
+                                        <col width="10%">
+                                        <col width="32.5%">
+                                        <col width="32.5%">
+                                        <col width="15%">
                                     </colgroup>
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>BOT</th>
-                                            <th>작업이름</th>
-                                            <th>주기</th>
-                                            <th>완료예정</th>
-                                            <th>다음작업시간</th>
-                                            <th>종료일시</th>
-                                            <th>Desc.</th>
+                                            <th>부서</th>
+                                            <th>목표건수(일별)</th>
+                                            <th>삭제</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="-txt-c" href="#">
-                                            <td>1</td>
-                                            <td>BOT</td>
-                                            <td class="-txt-lf">jobScheduleName</td>
-                                            <td>freq</td>
-                                            <td>
-                                                botSchedulePeriod
+                                        <tr class="-txt-c bg-dark" href="#">
+                                            <td style="padding: 0;">1</td>
+                                            <td class="pop-tb-forms" style="padding: 0;">
+                                                <select>
+                                                    <option value="" selected="selected">--사용여부 전체--</option>
+                                                    <option value="">사용</option>
+                                                    <option value="">미사용</option>
+                                                </select>
                                             </td>
-                                            <td>nextJobTime</td>
-                                            <td>schUntil</td>
-                                            <td class="-txt-lf">description</td>
+                                            <td class="pop-tb-forms" style="padding: 0;"><input type="text" placeholder="사용자입력"></td>
+                                            <td style="padding: 0;"><a href="#" class="btn-del"> <span>삭제 </span></a>
+
+                                            </td>
                                         </tr>
-                                        <tr class="-txt-c" href="#">
-                                            <td>1</td>
-                                            <td>BOT</td>
-                                            <td class="-txt-lf">jobScheduleName</td>
-                                            <td>freq</td>
-                                            <td>
-                                                botSchedulePeriod
+                                        <tr class="-txt-c bg-dark" href="#">
+                                            <td style="padding: 0;">2</td>
+                                            <td class="pop-tb-forms" style="padding: 0;">
+                                                <select>
+                                                    <option value="" selected="selected">--사용여부 전체--</option>
+                                                    <option value="">사용</option>
+                                                    <option value="">미사용</option>
+                                                </select>
                                             </td>
-                                            <td>nextJobTime</td>
-                                            <td>schUntil</td>
-                                            <td class="-txt-lf">description</td>
+                                            <td class="pop-tb-forms" style="padding: 0;"><input type="text" placeholder="사용자입력"></td>
+                                            <td style="padding: 0;"><a href="#" class="btn-del"> <span>삭제 </span></a>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                           </div>
+                            </div>
                         </div>
                     </li>
                     <li class="pop-btnBottomArea -gap-10">
