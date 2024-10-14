@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,17 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" data-description="정보구조도 스타일" href="css/index.css" />
     <style>
-        .totalBox{position:fixed;right:250px;top:6px;z-index:1000;}
-        .totalBox p{float:left;width:100px; }
-        .전체::before{content:'전체 : ';color:red;vertical-align:bottom;}
-        .전::before{content:'작업전 : ';color:gray;vertical-align:bottom;}
-        .작::before{content:'작업중 : ';color:blue ;vertical-align:bottom;}
-        .검::before{content:'검토요청 : ';color:#f8c657;vertical-align:bottom;}
-        .완료::before{content:'완료 : ';color:green;vertical-align:bottom;}
-        .퍼센트::before{content:'진행률 : ';color:green;vertical-align:bottom;}
-        .개발자::before{content:'개발자 : ';color:rgb(0, 119, 255);vertical-align:bottom;}
+        .totalBox {
+            position: fixed;
+            right: 250px;
+            top: 6px;
+            z-index: 1000;
+        }
+
+        .totalBox p {
+            float: left;
+            width: 100px;
+        }
+
+        .전체::before {
+            content: '전체 : ';
+            color: red;
+            vertical-align: bottom;
+        }
+
+        .전::before {
+            content: '작업전 : ';
+            color: gray;
+            vertical-align: bottom;
+        }
+
+        .작::before {
+            content: '작업중 : ';
+            color: blue;
+            vertical-align: bottom;
+        }
+
+        .검::before {
+            content: '검토요청 : ';
+            color: #f8c657;
+            vertical-align: bottom;
+        }
+
+        .완료::before {
+            content: '완료 : ';
+            color: green;
+            vertical-align: bottom;
+        }
+
+        .퍼센트::before {
+            content: '진행률 : ';
+            color: green;
+            vertical-align: bottom;
+        }
+
+        .개발자::before {
+            content: '개발자 : ';
+            color: #0077ff;
+            vertical-align: bottom;
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="project-name">RPA Monitoring System</div>
@@ -32,19 +78,16 @@
                 <div class="title">
                     <div>Level<sup>1</sup></div>
                     <div>Level<sup>2</sup></div>
-                    <div>Level<sup>3</sup></div>
-                    <div>Level<sup>4</sup></div>
+
                     <div>File Name</div>
-                    <div>개발자</div>
-                    <div>Progress</div>
+                    <div>개발진행</div>
+                    <div>퍼블확인</div>
                     <div>Memo</div>
                 </div>
                 <a href="../html/main/메인.html" target='_blank'>
                     <div>메인</div>
                     <div></div>
-                    <div></div>
-                    <div></div>
-                    <div>메인</div>
+                    <div>/메인.html</div>
                     <div></div>
                     <div><i progress="검토요청"></i></div>
                     <div>레이아웃변경예정／수행현황, 절감금액 팝업추가</div>
@@ -52,9 +95,7 @@
                 <a href="../html/workuser/home.html" target='_blank'>
                     <div>WorkUser</div>
                     <div>Home</div>
-                    <div></div>
-                    <div></div>
-                    <div>WorkUser-Home</div>
+                    <div>/home.html</div>
                     <div></div>
                     <div><i progress="검토요청"></i></div>
                     <div></div>
@@ -62,51 +103,41 @@
                 <a href="../html/workuser/대기.html" target='_blank'>
                     <div></div>
                     <div>대기</div>
-                    <div></div>
-                    <div></div>
-                    <div>WorkUser-대기</div>
-                    <div></div>
+                    <div>/대기.html</div>
+                    <div><span class="name blue">진행중: 서상아</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div>datepicker+time 완료</div>
                 </a>
-                <a href="../html/workuser/작업.html" target='_blank'>
+                <a href="../html/workuser/작업내역.html" target='_blank'>
                     <div></div>
                     <div>작업</div>
-                    <div></div>
-                    <div></div>
-                    <div>WorkUser-작업</div>
-                    <div></div>
+                    <div>/작업.html</div>
+                    <div><span class="name blue">진행중: 서상아</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div>datepicker+time 완료</div>
                 </a>
                 <a href="../html/workuser/공지.html" target='_blank'>
                     <div></div>
                     <div>공지</div>
-                    <div> </div>
-                    <div></div>
-                    <div>WorkUser-공지</div>
-                    <div></div>
+                    <div>/공지.html</div>
+                    <div><span class="name blue">진행중: 조수진</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div>첨부파일 샘플화면 있음.</div>
                 </a>
-                <a href="../html/workuser/FAQ.html"target='_blank'>
+                <a href="../html/workuser/FAQ.html" target='_blank'>
                     <div></div>
                     <div>FAQ</div>
-                    <div></div>
-                    <div></div>
-                    <div>WorkUser-FAQ</div>
-                    <div><span class="name">개발자:김수지</span></div>
+                    <div>/FAQ.html</div>
+                    <div><span class="name green">완료:김수지</span></div>
                     <div><i progress="완료"></i></div>
                     <div></div>
                 </a>
                 <a href="../html/workuser/상시.html" target='_blank'>
                     <div></div>
                     <div>상시</div>
-                    <div></div>
-                    <div></div>
-                    <div>WorkUser-상시</div>
-                    <div></div>
-                    <div><i progress="검토요청"></i></div>
+                    <div>/상시.html</div>
+                    <div><span class="name blue">진행중: 서상아</span></div>
+                    <div><i progress="완료"></i></div>
                     <div></div>
                 </a>
 
@@ -114,20 +145,16 @@
                 <a href="../html/Dashboard/home.html" target='_blank'>
                     <div>DashBoard</div>
                     <div>Home</div>
-                    <div></div>
-                    <div></div>
-                    <div>DashBoard-Home</div>
-                    <div></div>
+                    <div>/home.html</div>
+                    <div><span class="name blue">진행중: 조수진</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div>챠트 3*3 총 9칸으로 변경예정 > 화면 완료> 수정 완료</div>
                 </a>
                 <a href="../html/Dashboard/스케쥴표.html" target='_blank'>
                     <div></div>
                     <div>스케줄</div>
-                    <div></div>
-                    <div></div>
-                    <div>DashBoard-스케줄</div>
-                    <div></div>
+                    <div>/스케쥴표.html</div>
+                    <div><span class="name blue">진행중: 조수진</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>
@@ -135,29 +162,23 @@
                 <a href="../html/Management/리소스.html" target='_blank'>
                     <div>Management</div>
                     <div>리소스</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-리소스</div>
-                    <div></div>
+                    <div>/리소스.html</div>
+                    <div><span class="name blue">진행중: 조수진</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div>LNB-메뉴아이콘 변경</div>
                 </a>
                 <a href="../html/Management/관리자.html" target='_blank'>
                     <div></div>
                     <div>관리자</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-관리자</div>
-                    <div><span class="name">개발자: 고홍근</span></div>
+                    <div>/관리자.html</div>
+                    <div><span class="name green">완료: 고홍근</span></div>
                     <div><i progress="완료"></i></div>
                     <div>LNB-메뉴아이콘,메뉴명 변경></div>
                 </a>
                 <a href="../html/Management/과제.html" target='_blank'>
                     <div></div>
                     <div>과제</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-과제</div>
+                    <div>/과제.html</div>
                     <div></div>
                     <div><i progress="검토요청"></i></div>
                     <div>화면설계 30pg-부서별목표>작업</div>
@@ -165,29 +186,23 @@
                 <a href="../html/Management/산정금.html" target='_blank'>
                     <div></div>
                     <div>산정금</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-산정금</div>
-                    <div><span class="name">개발자:허희진</span></div>
+                    <div>/산정금.html</div>
+                    <div><span class="name green">완료:허희진</span></div>
                     <div><i progress="완료"></i></div>
                     <div>month picker완료</div>
                 </a>
                 <a href="../html/Management/공지.html" target='_blank'>
                     <div></div>
                     <div>공지</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-공지</div>
-                    <div></div>
+                    <div>/공지.html</div>
+                    <div><span class="name blue">진행중: 조수진</span></div>
                     <div><i progress="검토요청"></i></div>
                     <div></div>
                 </a>
                 <a href="../html/workuser/FAQ.html" target='_blank'>
                     <div></div>
                     <div>FAQ</div>
-                    <div></div>
-                    <div></div>
-                    <div>Management-FAQ</div>
+                    <div>/FAQ.html</div>
                     <div></div>
                     <div><i progress="검토요청"></i></div>
                     <div></div>
@@ -195,18 +210,13 @@
                 <a href="../html/Management/상시.html" target='_blank'>
                     <div></div>
                     <div>상시</div>
+                    <div>/상시.html</div>
+                    <div><span class="name blue">진행중: 서상아</span></div>
+                    <div><i progress="완료"></i></div>
                     <div></div>
-                    <div></div>
-                    <div>Management-상시</div>
-                    <div></div>
-                    <div><i progress="검토요청"></i></div>
-                    <div></div>
-                </a> 
-                
+                </a>
             </div>
-            
         </div>
-
     </div>
     <div class="function">
         <button type="button" class="function__top">TOP</button>
@@ -216,7 +226,7 @@
     <script src="js/lodash.min.js"></script>
     <script src="js/index.js"></script>
     <script>
-        $(function(){
+        $(function () {
             var 작 = $('i[progress="작업중"]').length;
             var 검 = $('i[progress=검토요청"]').length;
             var 전 = $('i[progress=""]').length;
@@ -234,4 +244,5 @@
         });
     </script>
 </body>
+
 </html>
