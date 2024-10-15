@@ -2614,10 +2614,10 @@ var datetimepickerFactory = function ($) {
         month_picker = $(
           '<div class="xdsoft_monthpicker"><button type="button" class="xdsoft_prev _02"></button><button type="button" class="xdsoft_today_button1"></button>' +
             '<div class="xdsoft_label_wrap">' +
-            '<div class="xdsoft_label xdsoft_month" style="margin-right: 5px;width: 60px;"><span></span><i></i></div>' +
+            '<div class="xdsoft_label xdsoft_year"><span></span><i></i></div>' +
             /*'<div class="xdsoft_label "><span></span> </div>' +
             '<div class="xdsoft_label"><span></span> </div>' +*/
-            '<div class="xdsoft_label xdsoft_year"><span></span><i></i></div>' +
+            '<div class="xdsoft_label xdsoft_month"><span></span><i></i></div>' +
             "</div>" +
             '<button type="button" class="xdsoft_next _02"></button></div>'
         ),
@@ -2663,8 +2663,8 @@ var datetimepickerFactory = function ($) {
       datetimepicker.addClass("xdsoft_" + options.theme);
       datetimepicker.addClass(options.className);
 
-      month_picker.find(".xdsoft_year span").after(monthselect);
-      month_picker.find(".xdsoft_month span").after(yearselect);
+      month_picker.find(".xdsoft_month span").after(monthselect);
+      month_picker.find(".xdsoft_year span").after(yearselect);
 
       month_picker
         .find(".xdsoft_month,.xdsoft_year")
@@ -3806,7 +3806,7 @@ var datetimepickerFactory = function ($) {
               .find(".xdsoft_label span")
               .eq(0)
               .text(
-                _xdsoft_datetime.currentTime.getFullYear() + options.yearOffset
+                _xdsoft_datetime.currentTime.getFullYear() + options.yearOffset + "년"
               );
 
             // generate timebox
@@ -3962,7 +3962,7 @@ var datetimepickerFactory = function ($) {
                 i +
                 '">' +
                 (i + options.yearOffset) +
-                "</div>";
+                "년</div>";
             }
             yearselect.children().eq(0).html(opt);
 
