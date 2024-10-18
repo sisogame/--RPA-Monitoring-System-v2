@@ -832,11 +832,16 @@ table.notice tbody tr td.date {
 	}
 }
 
-@media only screen and (max-width: 1680px) {
+/* 2024-10-18 modify  엣지 스크롤, breakPoint 수정 [s] */
+@media only screen and (max-width: 1900px) {
 	body {
-		overflow: scroll; /* min-width: 1600px; */
+		overflow: scroll; 
+		/* min-width: 1600px; */
 	}
 }
+/* 2024-10-18 modify  엣지 스크롤, breakPoint 수정 [e] */
+
+
 
 /*popup*/
 .pop-open {

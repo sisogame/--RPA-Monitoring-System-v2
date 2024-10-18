@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* Reset */
 /* :root { font-size: 62.5%; } */
 * {
@@ -9,11 +10,14 @@
 	box-sizing: border-box;
 }
 
-*[class]:before, *[class]:after {
+*[class]:before,
+*[class]:after {
 	box-sizing: border-box;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
 	/* -webkit-box-sizing: border-box; box-sizing: border-box; */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -42,51 +46,127 @@
 	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
 	font-family: "Spoqa Han Sans Neo", sans-serif, Verdana, Arial
 }
 
-html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code,
-	address, ul, ol, li, menu, nav, section, article, aside, dl, dt, dd,
-	table, thead, tbody, tfoot, label, caption, th, td, form, fieldset,
-	legend, hr, input, button, textarea, object, figure, figcaption {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+menu,
+nav,
+section,
+article,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
 	margin: 0;
 	padding: 0;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
 }
 
+
+
 body {
 	height: 100%;
-	min-width: 1920px; /* overflow: hidden; */
+	min-width: 1920px;
+	/* 2024-10-18 modify  엣지 스크롤 [s] */
+	overflow: hidden;
+	/* overflow: auto; */
 	background-color: #202636;
-	overflow: auto;
+	/* 2024-10-18 modify  엣지 스크롤 [e]*/
 }
 
-select, input, a, button, footer, h3, h4, h5, h6 {
+select,
+input,
+a,
+button,
+footer,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup,
-	menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
-body, input, select, textarea, button {
+body,
+input,
+select,
+textarea,
+button {
 	border: none;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
 	list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 
-blockquote:after, blockquote:before, q:after, q:before {
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
 	content: "";
 	content: none;
 }
@@ -137,11 +217,21 @@ button {
 	position: relative;
 }
 
-.forms input[type=tel], .forms input[type=time], .forms input[type=text],
-	.forms input[type=password], .forms input[type=email], .forms input[type=file],
-	.forms input[type=url], .forms input[type=number], .forms input[type=date],
-	.forms [type=email], .forms [type=password], .forms [type=search],
-	.forms [type=tel], .forms [type=text], .forms select {
+.forms input[type=tel],
+.forms input[type=time],
+.forms input[type=text],
+.forms input[type=password],
+.forms input[type=email],
+.forms input[type=file],
+.forms input[type=url],
+.forms input[type=number],
+.forms input[type=date],
+.forms [type=email],
+.forms [type=password],
+.forms [type=search],
+.forms [type=tel],
+.forms [type=text],
+.forms select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -158,30 +248,55 @@ button {
 	padding: 0 20px 0 15px;
 }
 
-input[type=tel]:hover, input[type=tel]:focus, input[type=time]:hover,
-	input[type=time]:focus, input[type=text]:hover, input[type=text]:focus,
-	input[type=password]:hover, input[type=password]:focus, input[type=email]:hover,
-	input[type=email]:focus, input[type=file]:hover, input[type=file]:focus,
-	input[type=url]:hover, input[type=url]:focus, input[type=number]:hover,
-	input[type=number]:focus, input[type=date]:hover, input[type=date]:focus,
-	.forms [type=text]:hover, .forms select:focus, .forms select:hover {
+input[type=tel]:hover,
+input[type=tel]:focus,
+input[type=time]:hover,
+input[type=time]:focus,
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=password]:hover,
+input[type=password]:focus,
+input[type=email]:hover,
+input[type=email]:focus,
+input[type=file]:hover,
+input[type=file]:focus,
+input[type=url]:hover,
+input[type=url]:focus,
+input[type=number]:hover,
+input[type=number]:focus,
+input[type=date]:hover,
+input[type=date]:focus,
+.forms [type=text]:hover,
+.forms select:focus,
+.forms select:hover {
 	color: #fff;
 	font-size: 14px;
 	border-radius: 5px;
 	border: 2px solid #287dfa;
 }
 
-input[type=tel][readonly], input[type=text][readonly], input[type=password][readonly],
-	input[type=email][readonly], input[type=search][readonly], input[type=tel][disabled],
-	input[type=text][disabled], input[type=password][disabled], input[type=search][disabled],
-	input[type=email][disabled], .forms [type="text"][readonly], .forms [type="search"][readonly],
-	.forms [type="password"][readonly], .forms [type="email"][readonly],
-	.forms [type="tel"][readonly], .forms select[readonly], .forms textarea[readonly]
-	{
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=email][readonly],
+input[type=search][readonly],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled],
+.forms [type="text"][readonly],
+.forms [type="search"][readonly],
+.forms [type="password"][readonly],
+.forms [type="email"][readonly],
+.forms [type="tel"][readonly],
+.forms select[readonly],
+.forms textarea[readonly] {
 	border-bottom: solid 2px #D9DBE1;
 }
 
-input[type=search].error:hover, input[type=search].error:focus {
+input[type=search].error:hover,
+input[type=search].error:focus {
 	height: 60px;
 	line-height: 58px;
 	border: 2px solid #FF0000;
@@ -189,10 +304,15 @@ input[type=search].error:hover, input[type=search].error:focus {
 	text-indent: 19px
 }
 
-input[type=tel].error, input[type=time].error, input[type=text].error,
-	input[type=password].error, input[type=email].error, input[type=file].error,
-	input[type=url].error, input[type=number].error, input[type=date].error
-	{
+input[type=tel].error,
+input[type=time].error,
+input[type=text].error,
+input[type=password].error,
+input[type=email].error,
+input[type=file].error,
+input[type=url].error,
+input[type=number].error,
+input[type=date].error {
 	height: 52px;
 	line-height: 50px;
 	border: 2px solid #FF0000;
@@ -200,33 +320,50 @@ input[type=tel].error, input[type=time].error, input[type=text].error,
 	text-indent: 18px
 }
 
-input[type=tel].error:hover, input[type=tel].error:focus, input[type=time].error:hover,
-	input[type=time].error:focus, input[type=text].error:hover, input[type=text].error:focus,
-	input[type=password].error:hover, input[type=password].error:focus,
-	input[type=email].error:hover, input[type=email].error:focus, input[type=file].error:hover,
-	input[type=file].error:focus, input[type=url].error:hover, input[type=url].error:focus,
-	input[type=number].error:hover, input[type=number].error:focus, input[type=date].error:hover,
-	input[type=date].error:focus {
+input[type=tel].error:hover,
+input[type=tel].error:focus,
+input[type=time].error:hover,
+input[type=time].error:focus,
+input[type=text].error:hover,
+input[type=text].error:focus,
+input[type=password].error:hover,
+input[type=password].error:focus,
+input[type=email].error:hover,
+input[type=email].error:focus,
+input[type=file].error:hover,
+input[type=file].error:focus,
+input[type=url].error:hover,
+input[type=url].error:focus,
+input[type=number].error:hover,
+input[type=number].error:focus,
+input[type=date].error:hover,
+input[type=date].error:focus {
 	border: 2px solid #FF0000;
 }
 
-input::-webkit-search-decoration, input::-webkit-search-cancel-button,
-	input::-webkit-search-results-button, input::-webkit-search-results-decoration
-	{
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
 	display: none;
 }
 
 /* e */
 
 /* forms focus [s] */
-.forms input[type=text]:focus, .forms select:focus {
+.forms input[type=text]:focus,
+.forms select:focus {
 	color: #fff;
 	font-size: 14px;
 	border-radius: 5px;
 	border: 2px solid #287dfa;
 }
 
-input:focus, select:focus, option:focus, textarea:focus, button:focus {
+input:focus,
+select:focus,
+option:focus,
+textarea:focus,
+button:focus {
 	outline: none;
 }
 
@@ -237,7 +374,9 @@ select option:focus {
 /* forms focus [e] */
 
 /* disabled */
-input[type=text]:disabled, select:disabled, textarea:disabled {
+input[type=text]:disabled,
+select:disabled,
+textarea:disabled {
 	border: 0px !important;
 	background: transparent;
 	cursor: not-allowed;
@@ -255,7 +394,7 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	width: 0 !important;
 }
 
-.disabled input[disabled] ~span {
+.disabled input[disabled]~span {
 	color: #fff;
 }
 
@@ -270,8 +409,9 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	height: 45px;
 }
 
-.pop-tb-forms input[type=text], .pop-tb-forms input[type=password],
-	.pop-tb-forms select {
+.pop-tb-forms input[type=text],
+.pop-tb-forms input[type=password],
+.pop-tb-forms select {
 	height: 45px;
 	line-height: 45px;
 	background-color: #131720;
@@ -283,30 +423,34 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	border-radius: 0;
 }
 
-.pop-tb-forms select { /* 기존에 있는 화살표를 없애기 */
+.pop-tb-forms select {
+	/* 기존에 있는 화살표를 없애기 */
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: #131720 url(../images/icon_arrow_down.svg) no-repeat center
-		right 10px;
+	background: #131720 url(../images/icon_arrow_down.svg) no-repeat center right 10px;
 	background-size: 15px 15px;
-	padding: 0 20px 0 15px; /* color: #aaa; */
+	padding: 0 20px 0 15px;
+	/* color: #aaa; */
 	color: #fff;
 }
 
-.pop-tb-forms input[type=text]:hover, .pop-tb-forms input[type=text]:focus,
-.pop-tb-forms input[type=password]:hover, .pop-tb-forms input[type=password]:focus,
-.pop-tb-forms select:hover, .pop-tb-forms select:focus {
+.pop-tb-forms input[type=text]:hover,
+.pop-tb-forms input[type=text]:focus,
+.pop-tb-forms input[type=password]:hover,
+.pop-tb-forms input[type=password]:focus,
+.pop-tb-forms select:hover,
+.pop-tb-forms select:focus {
 	border-radius: 0;
 	color: #fff;
 	border: 1px solid #999;
 }
 
-.pop-tb-forms input[type=text]::-webkit-input-placeholder, .pop-tb-forms input[type=password]::-webkit-input-placeholder
-, .sm-inputWrap.sm-input input[type=text]::-webkit-input-placeholder
-, textarea::-webkit-input-placeholder
-, .pop-tb-forms select::-webkit-input-placeholder
-{
+.pop-tb-forms input[type=text]::-webkit-input-placeholder,
+.pop-tb-forms input[type=password]::-webkit-input-placeholder,
+.sm-inputWrap.sm-input input[type=text]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.pop-tb-forms select::-webkit-input-placeholder {
 	font-size: 16px;
 	color: #aaa;
 }
@@ -315,7 +459,8 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	background-color: #131720;
 	font-size: 16px;
 	color: #fff;
-	text-indent: 0; /* padding: 15px; */
+	text-indent: 0;
+	/* padding: 15px; */
 	padding: 12px;
 	width: 100%;
 	border-radius: 0;
@@ -325,8 +470,8 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	font-size: 16px;
 }
 
-.pop-tb-forms textarea[readonly]{
-    cursor: default;
+.pop-tb-forms textarea[readonly] {
+	cursor: default;
 }
 
 .form-outline .form-control {
@@ -350,8 +495,8 @@ input[type=text]:disabled, select:disabled, textarea:disabled {
 	font-size: 16px;
 }
 
-.sm-inputWrap.sm-input input[type=text]:hover, .sm-inputWrap.sm-input input[type=text]:focus
-	{
+.sm-inputWrap.sm-input input[type=text]:hover,
+.sm-inputWrap.sm-input input[type=text]:focus {
 	border-radius: 0;
 	color: #fff;
 	border: 1px solid #fff;
