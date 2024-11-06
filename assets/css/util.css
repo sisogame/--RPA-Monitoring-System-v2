@@ -112,10 +112,9 @@
 
 .tb-layout-fix { table-layout: fixed; } 
 
-/*[ diplay ]
+/*[ display ]
 ///////////////////////////////////////////////////////////
 */
-
 
 .display-block { display: block; } 
 
@@ -133,5 +132,12 @@
 ///////////////////////////////////////////////////////////
 */
 .bg-dark { background-color: #161b26 !important}
+
+
+/*[ position ]
+///////////////////////////////////////////////////////////
+*/
+.pos-rel { position: relative;}
+.pos-abs{position: absolute;}
 
 /* +++++++++++++++++++++++++++++ util [e] +++++++++++++++++++++++++++++ */
