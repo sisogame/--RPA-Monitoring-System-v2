@@ -945,18 +945,12 @@ a.btn-primary:hover {
 
 
 /* 2024-10-15 [s] */
-
 .gnbWrap-cog {
     display: flex;
     gap: 12px;
 }
 
-/* .titleWrap .tit_head .asterisk::before{
-    content: ""; display: inline-block; width:33px; height: 20px; background: url('../images/icon_refresh.svg') no-repeat center center/33px 20px;
-    margin-right: 4px; vertical-align: sub;
-} */
 .icon-tooltip {
-
     display: inline-block;
     width: 40px;
     height: 20px;
@@ -964,14 +958,15 @@ a.btn-primary:hover {
 }
 
 /* tooltip */
-.icon-tooltip:hover + .tooltip,
-.icon-tooltip:focus + .tooltip,
-.icon-tooltip.hover + .tooltip {
-  opacity: 1;
-  transform: translate(-50%, -100%) scale(1) rotate(0deg);
-  pointer-events: inherit;
-  
+.icon-tooltip:hover+.tooltip,
+.icon-tooltip:focus+.tooltip,
+.icon-tooltip.hover+.tooltip {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1) rotate(0deg);
+    pointer-events: inherit;
+
 }
+
 .tooltip {
     display: block;
     position: absolute;
@@ -979,28 +974,27 @@ a.btn-primary:hover {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.75) rotate(0deg);
     transform-origin: bottom center;
-    padding: 10px ;
+    padding: 10px;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.75);
     text-align: center;
-    color: white;
+    color: #fff;
     transition: all 0.15s ease-in-out;
-    /* transition: all .2s ease; */
     opacity: 0;
-    /* width: 100%;
-    max-width: 100vw; */
-     min-width: 230px;
+    min-width: 230px;
     pointer-events: none;
     z-index: 5;
-  
-  }
-  .tooltip:hover {
+
+}
+
+.tooltip:hover {
     opacity: 1;
     transform: translate(-50%, -100%) scale(1) rotate(0deg);
     pointer-events: inherit;
 
-  }
-  .tooltip:after {
+}
+
+.tooltip:after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -1012,62 +1006,128 @@ a.btn-primary:hover {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 100%);
- 
-  }
-  .tooltip.green {
-    background: rgba(46, 196, 182, 0.75);
-  }
-  .tooltip.green:after {
-    border-top: 5px solid rgba(46, 196, 182, 0.75);
-  }
-  .tooltip p{font-size: 14px;}
 
-/* TOOLTIP */
-/* [data-tooltip] {
-    position: relative;
 }
 
-[data-tooltip]:before,
-[data-tooltip]:after {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    transition: all .2s ease;
-    font-size: 13px;
-    letter-spacing: -1px;
+.tooltip.green {
+    background: #2458A5;
 }
 
-[data-tooltip]:before {
-    content: attr(data-tooltip);
-    height:24px;
-    position: absolute;
-    top: -20px;
-    padding: 5px 10px;
-    border-radius: 5px;
+.tooltip.green:after {
+    border-top: 5px solid #2458A5;
+}
+
+.tooltip p {
+    font-size: 14px;
+}
+
+/*  2024-11-07 신호등 설명 팝업 [s] */
+.sheet-content .popup-tit {
+    font-size: 20px;
     color: #fff;
-    background: #ff0000;
-    box-shadow: 0 3px 8px rgba(165, 165, 165, 0.5);
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-[data-tooltip]:after {
+.sheet-content .popup-tit::before {
     content: '';
-    border-left: 5px solid transparent;
-    top: 0px;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #ff0000;
+    display: inline-block;
+    line-height: inherit;
+    width: 32px;
+    height: 32px;
+    background: url('../images/ico_popupioc.svg') no-repeat center center;
+    background-size: 24px 24px;
+    margin-right: 10px;
 }
 
-[data-tooltip]:not([data-tooltip=""]):hover:before {
-    visibility: visible;
-    opacity: 1;
-    top: -30px
+.lightWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    width: fit-content;
+    border: 1px solid #494D5D;
+    padding: 5px 15px;
+    margin-top: 10px;
 }
 
-[data-tooltip]:not([data-tooltip=""]):hover:after {
-    visibility: visible;
-    opacity: 1;
-    top: -8px
-} */
+.light-con {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px !important;
+}
+
+.light-con.green {
+    background-color: #3CC518;
+}
+
+.light-con.yellow {
+    background-color: #E2B20D;
+}
+
+.light-con.red {
+    background-color: #E31E1E;
+}
+
+/* popup table */
+.popup-tb {
+    /* margin-top: 10px; */
+    padding : 5px 5px 0 5px;
+}
+
+.popup-tb table {
+    border-collapse: separate;
+    border-spacing:5px;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+
+
+.popup-tb table thead th {
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    height: 40px;
+    position: relative;
+    font-size: 15px;
+
+}
+.popup-tb table thead th.th-bgCo-01 {
+    background-color: #4B5F9B;
+}
+
+.popup-tb table thead th.th-bgCo-02 {
+    background-color: #3158A7;
+}
+.popup-tb table thead th.th-bgCo-03 {
+    background-color: #51549B;
+}
+.popup-tb table thead th.th-bgCo-04 {
+    background-color: #2F5E94;
+}
+.popup-tb table tbody td {
+    border-bottom: 1px solid #343A47;
+    text-align: center;
+    padding: 10px 0 10px 10px; font-size: 15px; font-weight: 300; text-align: left;
+    height: 40px;
+
+background-color:#252B37 ;}
+
+
+.exp-area ul.a {
+    list-style-position: outside;
+    padding-left: 30px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  .exp-area ul.a li::before {
+    content: ' \25CF';
+    font-size: 8px;
+   color: #3158A7;
+   padding-right: 10px;
+
+  }
+/*  2024-11-07 신호등 설명 팝업 [e] */
