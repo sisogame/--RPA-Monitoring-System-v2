@@ -1048,7 +1048,7 @@ a.btn-primary:hover {
     font-size: 16px;
     width: fit-content;
     border: 1px solid #494D5D;
-    padding: 5px 15px;
+    padding: 5px 10px;
     margin-top: 10px;
 }
 
@@ -1073,13 +1073,14 @@ a.btn-primary:hover {
 /* popup table */
 .popup-tb {
     /* margin-top: 10px; */
-    padding: 5px 5px 0 5px;
+    /* padding: 5px 5px 0 5px; */
+    padding: 10px
 }
 
 .popup-tb table {
-    border-collapse: separate;
+    /* border-collapse: separate;
     border-spacing: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0); */
 }
 
 
@@ -1092,7 +1093,8 @@ a.btn-primary:hover {
     height: 40px;
     position: relative;
     font-size: 15px;
-
+border-right: 5px solid #161b26;
+border-bottom: 5px solid #161b26;
 }
 
 .popup-tb table thead th.th-bgCo-01 {
@@ -1114,23 +1116,26 @@ a.btn-primary:hover {
 .popup-tb table tbody td {
     border-bottom: 1px solid #343A47;
     text-align: center;
-    padding: 10px 0 10px 10px;
+    padding-left: 10px;
     font-size: 15px;
     font-weight: 300;
     text-align: left;
-    height: 40px;
+    height: 35px;
     background-color: #252B37;
+    border-right: 5px solid #161b26;
 }
+
 
 .exp-area ul.a {
     list-style-position: outside;
     padding-left: 30px;
     line-height: 24px;
     font-weight: 300;
+
 }
 .exp-area ul.a .marker-dot{font-weight: 500;
     /* text-indent: 20px; */
-    padding-left: 20px; 
+    padding-left: 15px; 
     position: relative;}
 
 .exp-area ul.a .marker-dot::before {
@@ -1140,9 +1145,10 @@ a.btn-primary:hover {
     padding-right: 10px;
     position: absolute;
     left: 0;
-    bottom: 2px;
+    bottom: 0px;
 }
 
+.exp-area ul.a .marker-dot.fsz-18{font-size: 18px;}
 .exp-area .f-blue{color: #5e9ade;
 }
 .exp-area .f-red{color: #f94e5c;
@@ -1165,4 +1171,15 @@ a.btn-primary:hover {
 }
 
 
+   .exp-area .double-list {
+        counter-reset: count 0;
+    }
+
+    .exp-area .double-list li {
+        counter-increment: count 1;
+    }
+
+    .exp-area .double-list li::marker {
+        content: counter(count, decimal) ') ';
+    }
 /* 2024-11-08 icon-pin add [s] */
