@@ -45,10 +45,10 @@
                         <li><a href="#" class="gnb-list btn btn-bluePurple active"> Dashboard </a></li>
                     </ul>
                     <ul class="gnbWrap-cog">
-                        <li style="">
+                        <li>
                             <a href="#pop-search03" class="btn_dock pop-open"><img src="../../assets/images/icon_info.svg" alt="cog" class="icon ico_cog"></a>
                         </li>
-                        <li style="">
+                        <li>
                             <a href=""><img src="../../assets/images/icon_manage.svg" alt="cog" class="icon ico_cog"></a>
                         </li>
                     </ul>
@@ -283,7 +283,7 @@
                         </div>
                         <div class="col-container ">
                             <div class="col-1">
-                                <h4 class="tit-chart"><span class="inner-tit"> ** 별</span>절감추이</h4>
+                                <h4 class="tit-chart"><span class="inner-tit"> &#42;&#42; 별</span>절감추이</h4>
                                 <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
                             </div>
                         </div>
@@ -327,7 +327,7 @@
                         </div>
                         <div class="col-container ">
                             <div class="col-1">
-                                <h4 class="tit-chart"><span class="inner-tit"> ** 별</span>절감추이</h4>
+                                <h4 class="tit-chart"><span class="inner-tit"> &#42;&#42; 별</span>절감추이</h4>
                                 <img src="../../assets/images/dummy_img09.png" alt="dummy_img01" class="dummy_img-chart">
                             </div>
                         </div>
@@ -343,55 +343,69 @@
     <!-- pop[S] -->
     <div id="pop-search03" class="pop-overlay" style="display:block;">
         <div id="" class="-w100-h100 flex-c-c">
-            <div class="pop-inner pop-lg">
+            <div class="pop-inner pop-md">
                 <ul class="pop-sheet-container">
                     <li class="sheet-header">
                         <p>신호등 설명</p>
                         <a href="#" onclick="closeLayer('pop-search03')" class="close pop-close-btn"></a>
                     </li>
-                    <li class="sheet-content -pt-pb-10">
-                        <p class="popup-tit -pl-pr-10">신호등 표시</p>
-                        <ul class="lightWrap -mlf-10">
-                            <li class="light-con green"></li>
-                            <li>90% 이상 &#126;</li>
-                            <li class="light-con yellow"></li>
-                            <li>80% 이상 &#126; 90% 미만</li>
-                            <li class="light-con red"></li>
-                            <li>80% 이상 &#126; 90% 미만</li>
-                        </ul>
+                    <li class="sheet-content -p-10 -pb-0">
+                        <div class="flex">
+                            <p class="popup-tit">신호등 표시
+
+                            <ul class="lightWrap -mlf-auto">
+                                <li class="light-con green"></li>
+                                <li>90% 이상</li>
+                                <li class="light-con yellow"></li>
+                                <li>80% 이상 &#126; 90% 미만</li>
+                                <li class="light-con red"></li>
+                                <li>80% 이상 &#126; 90% 미만</li>
+                            </ul>
+                            </p>
+                        </div>
+
                         <div class="popup-tb">
+                            <ul class="popup-tb-header">
+                                <li class="th-bgCo-01">Chart</li>
+                                <li class="th-bgCo-02">Chart 설명</li>
+                                <li class="th-bgCo-03">신호등 적용 기준</li>
+                                <li class="th-bgCo-04">비고</li>
+                            </ul>
                             <table>
-                                <thead>
-                                    <tr>
-                                        <th class="th-bgCo-01" >Chart</th>
-                                        <th class="th-bgCo-02">Chart 설명</th>
-                                        <th class="th-bgCo-03">신호등 적용 기준</th>
-                                        <th class="th-bgCo-04">비고</th>
-                                    </tr>
-                                </thead>
+                                <colgroup>
+                                    <col width="22%">
+                                    <col width="*">
+                                    <col width="24%">
+                                    <col width="22%">
+                                </colgroup>
                                 <tbody>
                                     <tr>
-                                        <td>월간 업무효율성 향상추이</td>
+                                        <td>월간 업무효율성 향상 추이</td>
                                         <td>지난 1년간 수행 과제의 월별 달성율</td>
                                         <td>그래프 마지막 월의 달성율 기준</td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>부서별 업무효율성 향상추이</td>
+                                        <td>부서별 업무효율성 향상 비교</td>
                                         <td>지난 주 수행과제의 부서별 달성율</td>
                                         <td>해당 주차의 부서별 달성율 기준</td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>과제별 업무효율성 향상추이</td>
+                                        <td>과제별 업무효율성 향상 비교</td>
                                         <td>지난 주 수행과제의 과제별 달성율</td>
                                         <td>해당 주차의 과제별 달성율 기준</td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>과제별 업무효율성 향상추이</td>
-                                        <td>지난 12주간 수행과제의 과제별-주차별 달성율
-                                        </td>
+                                        <td>과제별 업무효율성 향상 추이</td>
+                                        <td>지난 12주간 수행과제의 과제별-주차별 달성율</td>
+                                        <td>그래프 마지막 주차의 달성율 기준</td>
+                                        <td>그래프 페이징될 때마다 바뀜</td>
+                                    </tr>
+                                    <tr>
+                                        <td>부서별 업무효율성 향상 추이</td>
+                                        <td>지난 12주간 수행과제의 부서별-주차별 달성율</td>
                                         <td>그래프 마지막 주차의 달성율 기준</td>
                                         <td>그래프 페이징될 때마다 바뀜</td>
                                     </tr>
@@ -400,46 +414,46 @@
                         </div>
 
                         <div class="exp-area">
-                            <p class="popup-tit  -mlf-10 -mt-10">용어 설명</p>
-                            <ul class="a -mt-10">
+                            <p class="popup-tit -mt-10">용어 설명</p>
+                            <ul class="a">
                                 <li>
-                                    <p class="marker-dot fsz-18">작업일(Work Day)</p>
+                                    <p class="marker-dot fsz-14">작업일(WorkDay)</p>
 
-                                    <ol class="double-list -pl-40">
+                                    <ol class="double-list -pl-40 -mt-5">
                                         <li> 주 &#58; 일요일 &#126; 토요일까지, <em class="f-blue">토요일</em>, <em class="f-red">일요일, 휴일</em>을 제외하고 카운트합니다.
                                         </li>
                                         <li> 월 &#58; 매월 01일 &#126; 말일까지, <em class="f-blue">토요일</em>, <em class="f-red">일요일, 휴일</em>을 제외하고 카운트합니다 </li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <p class="marker-dot fsz-18 -mt-10">목표건수 &#58; 각 과제별로 부서의 목표 건을 일일목표로 환산하여 관리자 메뉴의 "과제관리"화면에서 등록합니다.</p>
-                                   <ol class="double-list -pl-40">
+                                    <p class="marker-dot fsz-14 -mt-5">목표건수 &#58; 각 과제별로 부서의 목표 건을 일일목표로 환산하여 관리자 메뉴의 <em class="f-lightGreen">"과제관리"</em> 화면에서 등록합니다.</p>
+                                    <ol class="double-list -pl-40 -mt-5">
                                         <li> 일별 목표 건수 &#58; 목표건수 (과제관리 화면에서 부서별로 등록한 값)</li>
-                                        <li>주별 목표 건수 &#58; 일별목표건수 * 작업일</li>
-                                        <li>월별 목표 건수 &#58; 일별목표건수 * 작업일</li>
-                                   </ol>
-                                </li>
-                                <li>
-                                    <p class="marker-dot fsz-18 -mt-10">절감시간 &#58; 각 과제 1건이 수행될 때 절감되는 시간으로 관리자 메뉴의 "과제관리"화면에서 등록합니다.</p>
-                                </li>
-                                <li >
-                                    <p class="marker-dot fsz-18 -mt-10">목표절감시간</p>
-
-                                    <ol class="double-list -pl-40">
-                                        <li>일별 목표 절감시간 : 일별목표건수 * 건별절감시간</li>
-                                        <li>주별 목표 절감시간: 일별목표건수 * 건별절감시간 * 작업일</li>
-                                        <li> 월별 목표 절감시간: 일별목표건수 * 건별절감시간 * 작업일</li>
+                                        <li>주별 목표 건수 &#58; 일별목표건수 &#42; 작업일</li>
+                                        <li>월별 목표 건수 &#58; 일별목표건수 &#42; 작업일</li>
                                     </ol>
                                 </li>
-                                <li class="marker-dot fsz-18 -mt-10">수행건수 : 작업수행 기록에서 상태가 PASS인 건만 카운트</li>
-                                <li class="marker-dot fsz-18 -mt-10">수행절감시간 &#58; 수행건수 * 건별절감시간</li>
-                                <li class="marker-dot fsz-18 -mt-10">달성율-시간 &#58; 수행절감시간 / 목표절감시간 * 100</li>
-                              </ul>
+                                <li>
+                                    <p class="marker-dot fsz-14 -mt-5">절감시간 &#58; 각 과제 1건이 수행될 때 절감되는 시간으로 관리자 메뉴의 <em class="f-lightGreen">"과제관리"</em> 화면에서 등록합니다.</p>
+                                </li>
+                                <li>
+                                    <p class="marker-dot fsz-14 -mt-5">목표절감시간</p>
+
+                                    <ol class="double-list -pl-40 -mt-5">
+                                        <li>일별 목표 절감시간 : 일별목표건수 &#42; 건별절감시간</li>
+                                        <li>주별 목표 절감시간: 일별목표건수 &#42; 건별절감시간 &#42; 작업일</li>
+                                        <li> 월별 목표 절감시간: 일별목표건수 &#42; 건별절감시간 &#42; 작업일</li>
+                                    </ol>
+                                </li>
+                                <li class="marker-dot fsz-14 -mt-5">수행건수 : 작업수행 기록에서 상태가 PASS인 건만 카운트</li>
+                                <li class="marker-dot fsz-14 -mt-5">수행절감시간 &#58; 수행건수 &#42; 건별절감시간</li>
+                                <li class="marker-dot fsz-14 -mt-5">달성율-시간 &#58; 수행절감시간 / 목표절감시간 &#42; 100</li>
+                            </ul>
                         </div>
                     </li>
-                    <!-- <li class="pop-btnBottomArea">
+                    <li class="pop-btnBottomArea">
                         <a href="#" onclick="closeLayer('pop-search03')" class="btn-md01 pop-btn-wrap btn-close close">닫기</a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>

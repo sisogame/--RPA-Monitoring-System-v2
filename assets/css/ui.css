@@ -1174,7 +1174,6 @@ table.notice tbody tr td.date {
 
 .pop-table tbody th {
 	text-align: left;
-	/* padding: 10px 40px; */
 	padding: 10px;
 	height: 40px;
 	border-top: 1px solid #56566a;
@@ -1193,7 +1192,6 @@ table.notice tbody tr td.date {
 
 .pop-table tbody td {
 	text-align: left;
-	/* padding: 12px 15px; */
 	padding: 15px;
 	height: 40px;
 	background: rgba(0, 0, 0, 0.15);
@@ -1219,7 +1217,6 @@ table.notice tbody tr td.date {
 	text-align: left;
 	word-wrap: break-word;
 	word-break: break-all;
-	/* white-space: pre-line !important; white-space: pre-wrap; */
 }
 
 .pop-table tbody td p {
@@ -1249,22 +1246,6 @@ table.notice tbody tr td.date {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-/* test table row link */
-.table-row-link {
-	position: relative;
-}
-
-.table-row-link tbody tr {
-	cursor: pointer;
-}
-
-.sm-inputWrap {
-	display: flex;
-	gap: 9px;
-	padding: 0 15px;
-	align-items: center;
 }
 
 /* monthPicker */

@@ -1022,9 +1022,9 @@ a.btn-primary:hover {
 
 /*  2024-11-07 신호등 설명 팝업 [s] */
 .sheet-content .popup-tit {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     display: flex;
     align-items: center;
@@ -1034,28 +1034,26 @@ a.btn-primary:hover {
     content: '';
     display: inline-block;
     line-height: inherit;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     background: url('../images/ico_popupioc.svg') no-repeat center center;
-    background-size: 24px 24px;
-    margin-right: 10px;
+    background-size: 20px 20px;
+    margin-right: 5px;
 }
 
 .lightWrap {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
+    font-size: 15px;
     width: fit-content;
-    border: 1px solid #494D5D;
     padding: 5px 10px;
-    margin-top: 10px;
 }
 
 .light-con {
     border-radius: 50%;
-    width: 20px;
-    height: 20px !important;
+    width: 16px;
+    height: 16px !important;
 }
 
 .light-con.green {
@@ -1072,57 +1070,61 @@ a.btn-primary:hover {
 
 /* popup table */
 .popup-tb {
-    /* margin-top: 10px; */
-    /* padding: 5px 5px 0 5px; */
-    padding: 10px
+    margin-top: 5px;
 }
 
-.popup-tb table {
-    /* border-collapse: separate;
-    border-spacing: 5px;
-    border: 1px solid rgba(0, 0, 0, 0); */
+.popup-tb .popup-tb-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0 5px 5px 5px;
+    height:35px;
+    line-height: 35px;
 }
 
-
-
-.popup-tb table thead th {
+.popup-tb .popup-tb-header li {
+    width: 25%;
     border-radius: 10px 10px 0 0;
     text-align: center;
     font-weight: 500;
-    padding: 10px;
-    height: 40px;
-    position: relative;
     font-size: 15px;
-border-right: 5px solid #161b26;
-border-bottom: 5px solid #161b26;
 }
 
-.popup-tb table thead th.th-bgCo-01 {
+.popup-tb .popup-tb-header li.th-bgCo-01 {
     background-color: #4B5F9B;
+    width: 22%;
 }
 
-.popup-tb table thead th.th-bgCo-02 {
+.popup-tb .popup-tb-header li.th-bgCo-02 {
     background-color: #3158A7;
+    width:32% ;
 }
 
-.popup-tb table thead th.th-bgCo-03 {
+.popup-tb .popup-tb-header li.th-bgCo-03 {
     background-color: #51549B;
+    width: 24%;
 }
 
-.popup-tb table thead th.th-bgCo-04 {
+.popup-tb .popup-tb-header li.th-bgCo-04 {
     background-color: #2F5E94;
+    width: 22%;
+}
+
+.popup-tb table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+ 
 }
 
 .popup-tb table tbody td {
     border-bottom: 1px solid #343A47;
     text-align: center;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     text-align: left;
-    height: 35px;
+    height: 32px;
     background-color: #252B37;
-    border-right: 5px solid #161b26;
 }
 
 
@@ -1133,25 +1135,36 @@ border-bottom: 5px solid #161b26;
     font-weight: 300;
 
 }
-.exp-area ul.a .marker-dot{font-weight: 500;
-    /* text-indent: 20px; */
-    padding-left: 15px; 
-    position: relative;}
+
+.exp-area ul.a .marker-dot {
+    font-weight: 500;
+    padding-left: 15px;
+    position: relative;
+}
 
 .exp-area ul.a .marker-dot::before {
     content: ' \25CF';
-    font-size: 8px;
-    color: #3158A7;
+    font-size: 5px;
+    color: #5B7DE9;
     padding-right: 10px;
     position: absolute;
     left: 0;
     bottom: 0px;
 }
 
-.exp-area ul.a .marker-dot.fsz-18{font-size: 18px;}
-.exp-area .f-blue{color: #5e9ade;
+.exp-area ul.a .marker-dot.fsz-14 {
+    font-size: 14px;
 }
-.exp-area .f-red{color: #f94e5c;
+
+.exp-area .f-blue {
+    color: #5e9ade;
+}
+
+.exp-area .f-red {
+    color: #f94e5c;
+}
+.exp-area .f-lightGreen {
+    color: #8AAEC1;
 }
 /*  2024-11-07 신호등 설명 팝업 [e] */
 
@@ -1162,7 +1175,7 @@ border-bottom: 5px solid #161b26;
     filter: brightness(0) saturate(100%) invert(42%) sepia(30%) saturate(2618%) hue-rotate(321deg) brightness(99%) contrast(98%);
 }
 
-.fixed-sidebar-left .time_ticktock{
+.fixed-sidebar-left .time_ticktock {
     height: 60px;
     width: 60px;
     background: #202636;
@@ -1170,16 +1183,26 @@ border-bottom: 5px solid #161b26;
     border: 1px solid #3c3c4a;
 }
 
+.exp-area .double-list {
+    counter-reset: count 0;
+    font-size: 13px;
+    line-height: 22px;
+}
 
-   .exp-area .double-list {
-        counter-reset: count 0;
-    }
+.exp-area .double-list li {
+    counter-increment: count 1;
+}
 
-    .exp-area .double-list li {
-        counter-increment: count 1;
-    }
+.exp-area .double-list li::marker {
+    content: counter(count, decimal) ') ';
+}
 
-    .exp-area .double-list li::marker {
-        content: counter(count, decimal) ') ';
-    }
-/* 2024-11-08 icon-pin add [s] */
+/* 2024-11-08 icon-pin add [e] */
+
+/*  2024-11-11 time_ticktock add [s] */
+.lottie-container lottie-player.lottie-player-sm {
+    width: 30px;
+    height: 30px;
+}
+.lottie-container .countdown{ font-size: 13px;margin-top: 5px;color: #fff;}
+/*  2024-11-11 time_ticktock add [e] */
