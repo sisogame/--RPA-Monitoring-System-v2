@@ -11,18 +11,16 @@
 //   });
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navItems = document.querySelectorAll(".side-nav-on");
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const navItems = document.querySelectorAll(".side-nav-on");
-
-    navItems.forEach((item) => {
-      item.addEventListener("click", function () {
-        navItems.forEach((navItem) => navItem.classList.remove("active"));
-        this.classList.add("active");
-      });
+  navItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      navItems.forEach((navItem) => navItem.classList.remove("active"));
+      this.classList.add("active");
     });
   });
+});
 
 
 
@@ -65,36 +63,32 @@ $(function () {
   $("#draggable06").draggable();
 });
 
-//인풋박스 가격 콤마 
+//인풋박스 가격 콤마
 $(function () {
   $(document).on("keypress", ".just-number", function (e) {
-    let charCode = (e.which) ? e.which : e.keyCode;
+    let charCode = e.which ? e.which : e.keyCode;
     if (charCode > 31 && (charCode < 48 || charCode > 57)) {
       return false;
     }
   });
-  $(document).on('keyup', '.price-format-input', function (e) {
+  $(document).on("keyup", ".price-format-input", function (e) {
     let val = this.value;
     val = val.replace(/,/g, "");
     if (val.length > 3) {
       let noCommas = Math.ceil(val.length / 3) - 1;
-      let remain = val.length - (noCommas * 3);
+      let remain = val.length - noCommas * 3;
       let newVal = [];
       for (let i = 0; i < noCommas; i++) {
-        newVal.unshift(val.substr(val.length - (i * 3) - 3, 3));
+        newVal.unshift(val.substr(val.length - i * 3 - 3, 3));
       }
       newVal.unshift(val.substr(0, remain));
       this.value = newVal;
-    }
-    else {
+    } else {
       this.value = val;
     }
   });
-  
-  $(document).ready(function(){
-    $('#input-price').focus();
-  })
 
+  $(document).ready(function () {
+    $("#input-price").focus();
+  });
 });
-
-

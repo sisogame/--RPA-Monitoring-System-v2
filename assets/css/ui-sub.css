@@ -62,7 +62,9 @@
 /* //////////////////////// left side nav area [s] //////////////////////// */
 .btn-nav {
     position: relative;
-    overflow: hidden;
+    /* 2024-11-12  수정 
+    /* overflow: hidden;
+    // */
     cursor: pointer;
     width: 100%;
     height: 60px;
@@ -958,14 +960,19 @@ a.btn-primary:hover {
 }
 
 /* tooltip */
+
+/* .btn-nav a.side-nav-on.active:hover+.tooltip,
+.btn-nav a.side-nav-on.active:focus+.tooltip, */
+
+
 .icon-tooltip:hover+.tooltip,
-.icon-tooltip:focus+.tooltip,
-.icon-tooltip.hover+.tooltip {
+.icon-tooltip:focus+.tooltip{
     opacity: 1;
     transform: translate(-50%, -100%) scale(1) rotate(0deg);
     pointer-events: inherit;
 
 }
+
 
 .tooltip {
     display: block;
@@ -980,17 +987,18 @@ a.btn-primary:hover {
     text-align: center;
     color: #fff;
     transition: all 0.15s ease-in-out;
-    opacity: 0;
+    opacity:0;
+    /* opacity:1; */
     min-width: 230px;
     pointer-events: none;
-    z-index: 5;
+    /* z-index: 5; */
+    z-index: 99999;
 }
 
 .tooltip:hover {
     opacity: 1;
     transform: translate(-50%, -100%) scale(1) rotate(0deg);
     pointer-events: inherit;
-
 }
 
 .tooltip:after {
@@ -1005,7 +1013,6 @@ a.btn-primary:hover {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 100%);
-
 }
 
 .tooltip.green {
@@ -1019,6 +1026,9 @@ a.btn-primary:hover {
 .tooltip p {
     font-size: 14px;
 }
+
+
+.side-nav-on:focus + .tooltip{display: inline-block;}
 
 /*  2024-11-07 신호등 설명 팝업 [s] */
 .sheet-content .popup-tit {
@@ -1206,3 +1216,16 @@ a.btn-primary:hover {
 }
 .lottie-container .countdown{ font-size: 13px;margin-top: 5px;color: #fff;}
 /*  2024-11-11 time_ticktock add [e] */
+
+
+
+
+/* 2024-11-12  작업 중 */
+.btn-nav a.side-nav-on.active:active+.tooltip{
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1) rotate(0deg);
+    pointer-events: inherit;
+   display: block;
+}
+
+/* // 2024-11-12  작업 중 */

@@ -939,7 +939,8 @@ table.notice tbody tr td.date {
 }
 
 .pop-md {
-	width: 1000px;
+	/* width: 1000px; */
+	width: 1200px;
 	padding: 0;
 	max-width: 100%;
 }
