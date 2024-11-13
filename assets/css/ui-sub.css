@@ -970,7 +970,6 @@ a.btn-primary:hover {
     opacity: 1;
     transform: translate(-50%, -100%) scale(1) rotate(0deg);
     pointer-events: inherit;
-
 }
 
 
@@ -1028,7 +1027,7 @@ a.btn-primary:hover {
 }
 
 
-.side-nav-on:focus + .tooltip{display: inline-block;}
+/* .side-nav-on:focus + .tooltip{display: inline-block;} */
 
 /*  2024-11-07 신호등 설명 팝업 [s] */
 .sheet-content .popup-tit {
@@ -1221,11 +1220,67 @@ a.btn-primary:hover {
 
 
 /* 2024-11-12  작업 중 */
-.btn-nav a.side-nav-on.active:active+.tooltip{
+.btn-nav a.side-nav-on.active.mouseleave.mouseenter:hover+.tooltipA{
     opacity: 1;
     transform: translate(-50%, -100%) scale(1) rotate(0deg);
     pointer-events: inherit;
-   display: block;
+    display: block;
+}
+/* // 2024-11-12  작업 중 */
+
+/* 2024-11-13 add */
+
+.tooltipA {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* transform: translate(-50%, -50%) scale(0.75) rotate(0deg); */
+    transform: translate(-0%, -15%) scale(0.75) rotate(0deg);
+    transform-origin: bottom center;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+    opacity:0;
+    /* opacity:1; */
+    min-width: 230px;
+    pointer-events: none;
+    /* z-index: 5; */
+    z-index: 99999;
 }
 
-/* // 2024-11-12  작업 중 */
+.tooltipA:hover {
+    opacity: 1;
+    /* transform: translate(-50%, -100%) scale(1) rotate(0deg); */
+    transform: translate(15%, -0%) scale(1) rotate(0deg);
+    pointer-events: inherit;
+}
+
+.tooltipA:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    widtH: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.tooltipA.green {
+    background: lightcoral;
+}
+
+.tooltipA.green:after {
+    border-top: 5px solid lightcoral;
+}
+
+.tooltipA p {
+    font-size: 14px;
+}

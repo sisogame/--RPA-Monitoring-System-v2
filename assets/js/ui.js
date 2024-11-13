@@ -22,7 +22,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// 2024-11-13 왼쪽 메뉴 클릭 후 툴팁 [s]
+//첫 로딩 시 마우스 위치 확인
+document.addEventListener(
+  "mousemove",
+  (event) => {
+    const item = document.querySelector(".side-nav-on.active");
 
+    //기준 엘레멘트 밖에 있을 경우 mouseleave 추가
+    if (!checkHoverElement(item, event)) {
+      item.classList.add("mouseleave");
+    } 
+  },
+  { once: true }
+);
+
+// 지정 엘레멘트 위에 마우스 포인터가 있는지 확인
+function checkHoverElement(item, event) {
+  const rect = item.getBoundingClientRect();
+  if (
+    event.x >= rect.left &&
+    event.x <= rect.right &&
+    event.y >= rect.top &&
+    event.y <= rect.bottom
+  ) {
+    return true;
+  }
+  return false;
+}
+  
+document.addEventListener("DOMContentLoaded", function (e) {
+    const item = document.querySelector(".side-nav-on.active");
+
+    //엘레멘트 밖 -> 안으로 들어왔을때만 팝업이 나와야 함
+    item.addEventListener("mouseleave", function () {
+      item.classList.add("mouseleave");
+    });
+    
+    item.addEventListener("mouseenter", function () {
+      //나간 적 있을때만 실행
+      if (item.classList.contains("mouseleave")) {
+        item.classList.add("mouseenter");
+      }
+    });
+});
+
+// 왼쪽 메뉴 클릭 후 툴팁 [e]
 
 //팝업
 $(function () {
@@ -92,3 +137,4 @@ $(function () {
     $("#input-price").focus();
   });
 });
+
